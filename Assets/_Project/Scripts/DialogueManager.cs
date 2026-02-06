@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 using TMPro;
 using Ink.Runtime;
@@ -14,11 +13,12 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] float typeSpeed = 0.2f;
     [SerializeField] Button continueButton;
     [SerializeField] Button[] choices;
+    [SerializeField] InkEvent[] storyEvents;
+    
     InputSystem_Actions inputActions;
     private Story currentStory;
     private bool dialogueIsPlaying;
-    [SerializeField] bool selectEvent;
-    
+
     private static DialogueManager instance;
     public static DialogueManager Instance => instance;
     
@@ -48,21 +48,15 @@ public class DialogueManager : MonoBehaviour
             ContinueDialogue();
         }
     }
-
-    void Rain()
-    {
-        Debug.Log("Raining!");
-    }
-    
     public void EnterDialogueMode(TextAsset inkJSON, string characterName)
     {
         currentStory = new Story(inkJSON.text);
         dialogueIsPlaying = true;
         characterNameText.text = characterName;
-        //dialogueTextPanel.SetActive(true);
-        currentStory.BindExternalFunction("RainEvent", Rain);
-        currentStory.variablesState["selectEvent"] = true;
-        selectEvent = (bool) currentStory.variablesState["selectEvent"];
+        foreach (var storyEvent in storyEvents)
+        {
+            storyEvent.Bind(currentStory);
+        }
         ContinueDialogue();
     }
     
@@ -119,7 +113,7 @@ public class DialogueManager : MonoBehaviour
     void ProcessChoiceAndContinue(Choice currentChoice)
     {
         currentStory.ChooseChoiceIndex(currentChoice.index);
-        foreach (Button button in choices)
+        foreach (var button in choices)
         {
             button.gameObject.SetActive(false);
         }
@@ -131,6 +125,10 @@ public class DialogueManager : MonoBehaviour
         dialogueIsPlaying = false;
         characterNameText.text = string.Empty;
         textComponent.text = string.Empty;
+        foreach (var storyEvent in storyEvents)
+        {
+            storyEvent.Unbind(currentStory);
+        }
         continueButton.gameObject.SetActive(false);
     }
 
@@ -147,6 +145,8 @@ public class DialogueManager : MonoBehaviour
             }
         }
     }
+
+    
 
     private void OnEnable()
     {

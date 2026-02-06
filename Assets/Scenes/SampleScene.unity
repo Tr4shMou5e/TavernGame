@@ -202,7 +202,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1683789027}
         m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
         m_MethodName: ContinueDialogue
         m_Mode: 1
@@ -2020,7 +2020,7 @@ MonoBehaviour:
   dialogueTextPanel: {fileID: 788461930}
   characterNameText: {fileID: 1384005446}
   textComponent: {fileID: 691302409}
-  typeSpeed: 0.2
+  typeSpeed: 0.04
   continueButton: {fileID: 4080919}
   choices:
   - {fileID: 342531765}

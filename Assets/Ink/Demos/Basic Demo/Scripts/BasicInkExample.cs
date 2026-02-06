@@ -27,7 +27,7 @@ public class BasicInkExample : MonoBehaviour {
 		// Remove all the UI on screen
 		RemoveChildren ();
 		
-		// Read all the content until we can't continue anymore
+		// Read all the content until we can't continue any more
 		while (story.canContinue) {
 			// Continue gets the next line of the story
 			string text = story.Continue ();

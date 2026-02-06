@@ -1,4 +1,5 @@
 EXTERNAL RainEvent()
+EXTERNAL Relationship()
 VAR selectEvent = false
 
 ~ selectEvent = true
@@ -20,6 +21,7 @@ and now I'm thinking
     
 === Choice_1 ===
 You are the chosen one
+~ Relationship()
 -> END
 
 === Choice_2 ===
