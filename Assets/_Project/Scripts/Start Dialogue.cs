@@ -10,3 +10,5 @@ public class StartDialogue : MonoBehaviour
     }
     
 }
+//Every NPC should have a Dialogue component,
+//To access that dialogue, the player should be in range of the NPC and interact with it

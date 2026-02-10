@@ -50,6 +50,14 @@ public class DialogueManager : MonoBehaviour
     }
     public void EnterDialogueMode(TextAsset inkJSON, string characterName)
     {
+        if(inkJSON == null) return;
+        SetupStoryContext(inkJSON, characterName);
+        dialogueTextPanel.SetActive(true);
+        ContinueDialogue();
+    }
+
+    private void SetupStoryContext(TextAsset inkJSON, string characterName)
+    {
         currentStory = new Story(inkJSON.text);
         dialogueIsPlaying = true;
         characterNameText.text = characterName;
@@ -57,9 +65,8 @@ public class DialogueManager : MonoBehaviour
         {
             storyEvent.Bind(currentStory);
         }
-        ContinueDialogue();
     }
-    
+
     public void ContinueDialogue()
     {
         continueButton.gameObject.SetActive(false);
@@ -125,6 +132,7 @@ public class DialogueManager : MonoBehaviour
         dialogueIsPlaying = false;
         characterNameText.text = string.Empty;
         textComponent.text = string.Empty;
+        dialogueTextPanel.SetActive(false);
         foreach (var storyEvent in storyEvents)
         {
             storyEvent.Unbind(currentStory);

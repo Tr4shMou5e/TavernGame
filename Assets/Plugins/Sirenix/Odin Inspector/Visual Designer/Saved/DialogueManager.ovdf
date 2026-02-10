@@ -1,0 +1,69 @@
+OVDF v1.1
+DialogueManager, Assembly-CSharp
+MetaGuid:a15d0b1ff8714f0880d79f9b6af9caee
+
+# $XFedd3fbW72Sn1wiJgssJn
+Position: $GcmZZEphLrao186HPt5LTW:0
++ [Sirenix.OdinInspector.BoxGroupAttribute]
+	GroupName = "Properties"
+
+# $NuncW5n8CJLYbLESpDgrjD
+Position: $root:0
++ [Sirenix.OdinInspector.TabGroupAttribute]
+	GroupName = "Properties"
+
+# $6bKZqv92Kn87zHoQwJzLvX
+Position: $NuncW5n8CJLYbLESpDgrjD:0
++ [Sirenix.OdinInspector.TabGroupAttribute+TabSubGroupAttribute]
+	GroupName = "Properties"
+
+# $BpogWRZ5T2XruiuDn6Ah2Y
+Position: $XFedd3fbW72Sn1wiJgssJn:0
++ [Sirenix.OdinInspector.TitleGroupAttribute]
+	GroupName = "Text Properties"
+
+# $B57RgypNYfcTFSPfATXcNQ
+Position: $root:18
++ [Sirenix.OdinInspector.TabGroupAttribute]
+	GroupName = "Events"
+
+# $T9f64JvuEzvcmtLdPXY19G
+Position: $B57RgypNYfcTFSPfATXcNQ:0
++ [Sirenix.OdinInspector.TabGroupAttribute+TabSubGroupAttribute]
+	GroupName = "Events"
+
+# $GcmZZEphLrao186HPt5LTW
+Position: $6bKZqv92Kn87zHoQwJzLvX:0
++ [Sirenix.OdinInspector.FoldoutGroupAttribute]
+	GroupName = "Properties"
+
+# $3YtSYhd9mHVtF6csd5kea4
+Position: $WcLo4c5cfRcMD3vP36j5vt:0
++ [Sirenix.OdinInspector.TitleGroupAttribute]
+	GroupName = "Events"
+
+# $WcLo4c5cfRcMD3vP36j5vt
+Position: $T9f64JvuEzvcmtLdPXY19G:0
++ [Sirenix.OdinInspector.FoldoutGroupAttribute]
+	GroupName = "Events"
+
+# continueButton
+Position: $BpogWRZ5T2XruiuDn6Ah2Y:4
+
+# dialogueTextPanel
+Position: $BpogWRZ5T2XruiuDn6Ah2Y:0
+
+# characterNameText
+Position: $BpogWRZ5T2XruiuDn6Ah2Y:1
+
+# textComponent
+Position: $BpogWRZ5T2XruiuDn6Ah2Y:2
+
+# typeSpeed
+Position: $BpogWRZ5T2XruiuDn6Ah2Y:3
+
+# storyEvents
+Position: $3YtSYhd9mHVtF6csd5kea4:0
+
+# choices
+Position: $BpogWRZ5T2XruiuDn6Ah2Y:5

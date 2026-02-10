@@ -1,8 +1,7 @@
 fileFormatVersion: 2
-guid: ec91e919a6e98544f83b65d2a6c6a134
-NativeFormatImporter:
+guid: 107274d401f37654eaa944948191b633
+AssemblyDefinitionImporter:
   externalObjects: {}
-  mainObjectFileID: 11400000
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -11,5 +10,5 @@ AssetOrigin:
   productId: 303181
   packageName: "Wingman - Your Inspector\u2019s Best Friend"
   packageVersion: 1.2.3
-  assetPath: Assets/Wingman/WingmanPersistentData.asset
+  assetPath: Assets/Wingman/Wingman.asmdef
   uploadId: 823112
