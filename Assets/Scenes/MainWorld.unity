@@ -20722,6 +20722,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Market_Stall_02
       objectReference: {fileID: 0}
+    - target: {fileID: 1225538670376346, guid: 9b74b26f5b0ca284e91f0f89e7b26d86, type: 3}
+      propertyPath: m_TagString
+      value: Shop
+      objectReference: {fileID: 0}
     - target: {fileID: 4377127603086864, guid: 9b74b26f5b0ca284e91f0f89e7b26d86, type: 3}
       propertyPath: m_LocalPosition.x
       value: 59.71512
@@ -21977,6 +21981,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Market_Stall_07
       objectReference: {fileID: 0}
+    - target: {fileID: 1762519880802936, guid: 7ca6da48a27a1d24397890f33236cf8e, type: 3}
+      propertyPath: m_TagString
+      value: Shop
+      objectReference: {fileID: 0}
     - target: {fileID: 4434811753937970, guid: 7ca6da48a27a1d24397890f33236cf8e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 59.42
@@ -22408,6 +22416,10 @@ PrefabInstance:
     - target: {fileID: 1064461626251538, guid: 55319a7a63e4c0947858313b8d665d44, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Market_Stall_09
+      objectReference: {fileID: 0}
+    - target: {fileID: 1064461626251538, guid: 55319a7a63e4c0947858313b8d665d44, type: 3}
+      propertyPath: m_TagString
+      value: Shop
       objectReference: {fileID: 0}
     - target: {fileID: 4762651109033914, guid: 55319a7a63e4c0947858313b8d665d44, type: 3}
       propertyPath: m_LocalPosition.x

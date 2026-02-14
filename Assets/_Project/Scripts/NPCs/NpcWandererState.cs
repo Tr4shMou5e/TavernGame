@@ -12,7 +12,7 @@ public class NpcWandererState : NpcBaseState
     private readonly CountdownTimer shopTimer;
     
     private const float WaitTime = 5.5f;
-    private readonly float shopTime = 25f;
+    private readonly float shopTime = 10f;
     private bool waitingForNextPoint;
     
     public NpcWandererState(AIEntitiy entity, Animator animator, NavMeshAgent agent, float wanderRadius) : base(entity, animator)
@@ -21,7 +21,7 @@ public class NpcWandererState : NpcBaseState
         this.wanderRadius = wanderRadius;
         startPoint = entity.transform.position;
         
-        shopTime = Random.Range(20f, 35f);
+        //shopTime = Random.Range(20f, 35f);
         waitTimer = new CountdownTimer(WaitTime);
         shopTimer = new CountdownTimer(shopTime);
     }
@@ -41,11 +41,11 @@ public class NpcWandererState : NpcBaseState
     private void UpdateWandererBehavior()
     {
         //This state will exit once the shop timer is finished
-        shopTimer.Tick();
+        
         if (waitingForNextPoint)
         {
             waitTimer.Tick();
-
+            
             if (waitTimer.IsFinished)
             {
                 waitingForNextPoint = false;

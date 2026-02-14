@@ -16,8 +16,8 @@ public class NpcWanderer : AIEntitiy
         var wanderState = new NpcWandererState(this, animator, agent, wanderRadius);
         var shopState = new NpcShopState(this, animator, agent);
         
-        At(wanderState, shopState, new FuncPredicate(() => wanderState.ExitForShopState()));
-        At(shopState, wanderState, new FuncPredicate(() => shopState.ExitForWandererState()));
+        At(wanderState, shopState, new FuncPredicate(() => shopState.ExitForWandererState()));
+        At(shopState, wanderState, new FuncPredicate(() => wanderState.ExitForShopState()));
         
         stateMachine.SetState(wanderState);
     }
@@ -26,4 +26,5 @@ public class NpcWanderer : AIEntitiy
     public void Any(IState to, IPredicate condition) => stateMachine.AddAnyTransition(to, condition);
     
     private void Update() => stateMachine.Update();
+    private void FixedUpdate() => stateMachine.FixedUpdate();
 }

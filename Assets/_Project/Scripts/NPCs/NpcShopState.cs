@@ -21,6 +21,7 @@ public class NpcShopState : NpcBaseState
     
     public override void OnEnter()
     {
+        Debug.Log("Shop entered state");
         shops = GameObject.FindGameObjectsWithTag("Shop");
         shopWaitTimer.Reset();
         isShoppingDone = false;
