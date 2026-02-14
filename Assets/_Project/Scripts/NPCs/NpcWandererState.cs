@@ -1,7 +1,7 @@
 using ImprovedTimers;
 using UnityEngine;
 using UnityEngine.AI;
-
+using Random = UnityEngine.Random;
 public class NpcWandererState : NpcBaseState
 {
     private readonly NavMeshAgent agent;
@@ -12,7 +12,7 @@ public class NpcWandererState : NpcBaseState
     private readonly CountdownTimer shopTimer;
     
     private const float WaitTime = 5.5f;
-    private const float ShopTime = 25f;
+    private readonly float shopTime = 25f;
     private bool waitingForNextPoint;
     
     public NpcWandererState(AIEntitiy entity, Animator animator, NavMeshAgent agent, float wanderRadius) : base(entity, animator)
@@ -21,8 +21,9 @@ public class NpcWandererState : NpcBaseState
         this.wanderRadius = wanderRadius;
         startPoint = entity.transform.position;
         
+        shopTime = Random.Range(20f, 35f);
         waitTimer = new CountdownTimer(WaitTime);
-        shopTimer = new CountdownTimer(ShopTime);
+        shopTimer = new CountdownTimer(shopTime);
     }
     public override void OnEnter()
     {
