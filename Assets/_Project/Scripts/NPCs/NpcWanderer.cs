@@ -7,6 +7,7 @@ public class NpcWanderer : AIEntitiy
     [SerializeField] Animator animator;
     [SerializeField] NavMeshAgent agent;
     [SerializeField] float wanderRadius;
+    [SerializeField] ChangeStateWandererManager changeStateManager;
     StateMachine stateMachine;
     
     void Start()
@@ -14,10 +15,10 @@ public class NpcWanderer : AIEntitiy
         stateMachine = new StateMachine();
         
         var wanderState = new NpcWandererState(this, animator, agent, wanderRadius);
-        var shopState = new NpcShopState(this, animator, agent);
+        var shopState = new NpcShopState(this, animator, agent, changeStateManager);
         
-        At(wanderState, shopState, new FuncPredicate(() => shopState.ExitForWandererState()));
-        At(shopState, wanderState, new FuncPredicate(() => wanderState.ExitForShopState()));
+        At(wanderState, shopState, new FuncPredicate(() => changeStateManager.ExitForShopState()));
+        At(shopState, wanderState, new FuncPredicate(() => changeStateManager.ExitForWandererState()));
         
         stateMachine.SetState(wanderState);
     }

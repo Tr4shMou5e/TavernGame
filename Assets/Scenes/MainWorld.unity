@@ -13064,8 +13064,9 @@ GameObject:
   - component: {fileID: 1198823277}
   - component: {fileID: 1198823276}
   - component: {fileID: 1198823275}
+  - component: {fileID: 1198823283}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Wanderer NPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13109,6 +13110,7 @@ MonoBehaviour:
   animator: {fileID: 1198823275}
   agent: {fileID: 1198823278}
   wanderRadius: 10
+  changeStateManager: {fileID: 1198823283}
 --- !u!65 &1198823277
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13140,7 +13142,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 2
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -13200,7 +13202,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 4e016c54cdeee6a41a967f906757935b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13241,12 +13243,25 @@ Transform:
   m_GameObject: {fileID: 1198823274}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 53.75, y: 4.459, z: 50.86707}
+  m_LocalPosition: {x: 53.75, y: 4.459, z: 56.61}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1198823283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198823274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4fc55f720404e1d96cd713380aa63a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChangeStateManager
+  shopTime: 5
 --- !u!1001 &1200725169
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23234,6 +23249,10 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8481402224539560128, guid: f9d0bec09311bef48aa1fb044570e5de, type: 3}
+      propertyPath: m_StepOffset
+      value: 1.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23258,11 +23277,11 @@ SceneRoots:
   - {fileID: 2082233048}
   - {fileID: 785819443}
   - {fileID: 1030584836}
+  - {fileID: 2015482588}
   - {fileID: 1073272604}
   - {fileID: 1595481295}
   - {fileID: 1865219231}
-  - {fileID: 1198823282}
-  - {fileID: 223028193}
   - {fileID: 227333001}
   - {fileID: 5050726522527828663}
-  - {fileID: 2015482588}
+  - {fileID: 1198823282}
+  - {fileID: 223028193}
