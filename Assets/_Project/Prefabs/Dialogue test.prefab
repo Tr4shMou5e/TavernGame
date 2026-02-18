@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5719603959452469986}
   - component: {fileID: 766351851838793838}
-  - component: {fileID: 2491646519307749348}
+  - component: {fileID: 531870656968064601}
   m_Layer: 0
   m_Name: Dialogue test
   m_TagString: Untagged
@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSystem
   dialogue: {fileID: 11400000, guid: 71fd0f5c4ad23e442b82e647f103c725, type: 2}
---- !u!114 &2491646519307749348
+--- !u!114 &531870656968064601
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -61,6 +61,7 @@ MonoBehaviour:
   dialogueTextPanel: {fileID: 0}
   characterNameText: {fileID: 0}
   textComponent: {fileID: 0}
+  countText: {fileID: 0}
   typeSpeed: 0.04
   continueButton: {fileID: 0}
   choices:
@@ -70,3 +71,5 @@ MonoBehaviour:
   storyEvents:
   - {fileID: 11400000, guid: cd49953922392d44cb3cd2519b743f6b, type: 2}
   - {fileID: 11400000, guid: f8873a535c23c9146b9895d33129036b, type: 2}
+  hideLockCursor: {fileID: 0}
+  player: {fileID: 0}

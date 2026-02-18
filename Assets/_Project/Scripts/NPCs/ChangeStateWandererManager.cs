@@ -29,7 +29,6 @@ public class ChangeStateWandererManager : MonoBehaviour
     
     public bool ExitForShopState()
     {
-        Debug.Log(shopTimer.IsFinished);
         return shopTimer.IsFinished;
     }
     public bool ExitForWandererState()

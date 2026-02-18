@@ -32,7 +32,6 @@ public class NpcShopState : NpcBaseState
     }
     public override void Update()
     {
-        //Debug.Log(entity.transform.position);
         if (HasReachedDestination())
         {
             Shop();

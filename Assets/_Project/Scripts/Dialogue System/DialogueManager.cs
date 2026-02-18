@@ -1,38 +1,49 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 using TMPro;
 using Ink.Runtime;
+using Unity.Cinemachine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Interactions;
 
 public class DialogueManager : MonoBehaviour
 {
     [SerializeField] GameObject dialogueTextPanel;
     [SerializeField] TextMeshProUGUI characterNameText;
     [SerializeField] TextMeshProUGUI textComponent;
+    [SerializeField] TextMeshProUGUI countText;
     [SerializeField] float typeSpeed = 0.2f;
     [SerializeField] Button continueButton;
     [SerializeField] Button[] choices;
     [SerializeField] InkEvent[] storyEvents;
+    [SerializeField] HideLockCursor hideLockCursor;
+    [SerializeField] PlayerController player;
+    [SerializeField] CinemachineInputAxisController inputAxisController;
     
-    InputSystem_Actions inputActions;
-    private Story currentStory;
+    private const float SkipSpeed = 0f;
     private bool dialogueIsPlaying;
-
+    private bool isTypingLine;
+    private InputSystem_Actions inputActions;
+    private Story currentStory;
+    
     private static DialogueManager instance;
     public static DialogueManager Instance => instance;
     
+    
+    
     private void Awake()
     {
-        if(instance != null)
+        if(instance != null && instance != this)
         {
             Debug.LogError("DialogueManager already exists!");
+            Destroy(gameObject);
             return;
         }
         instance = this;
         inputActions = new InputSystem_Actions();
     }
-
     
     void Update()
     {
@@ -42,18 +53,27 @@ public class DialogueManager : MonoBehaviour
             return;
         }
         
-        if(inputActions.Player.Jump.WasPressedThisFrame())
-        {
-            Debug.Log("Continue");
-            ContinueDialogue();
-        }
+        // if(Keyboard.current.spaceKey.wasPressedThisFrame)
+        // {
+        //     Debug.Log("Continue");
+        //     ContinueDialogue();
+        // }
     }
     public void EnterDialogueMode(TextAsset inkJSON, string characterName)
     {
         if(inkJSON == null) return;
         SetupStoryContext(inkJSON, characterName);
-        dialogueTextPanel.SetActive(true);
+        SetupUIDialogue();
         ContinueDialogue();
+    }
+
+    private void SetupUIDialogue()
+    {
+        dialogueTextPanel.SetActive(true);
+        player.enabled = false;
+        hideLockCursor.SetLockState(CursorLockMode.None);
+        hideLockCursor.SetVisibility(true);
+        inputAxisController.enabled = false;
     }
 
     private void SetupStoryContext(TextAsset inkJSON, string characterName)
@@ -105,6 +125,8 @@ public class DialogueManager : MonoBehaviour
     {   
         
         choiceButton.gameObject.SetActive(true);
+        
+        choiceButton.onClick.RemoveAllListeners();
         choiceButton.GetComponentInChildren<TextMeshProUGUI>().text = currentChoice.text;
         choiceButton.onClick.AddListener(() =>
         {
@@ -138,30 +160,62 @@ public class DialogueManager : MonoBehaviour
             storyEvent.Unbind(currentStory);
         }
         continueButton.gameObject.SetActive(false);
+        player.enabled = true;
+        hideLockCursor.SetLockState(CursorLockMode.Locked);
+        hideLockCursor.SetVisibility(false);
+        inputAxisController.enabled = true;
     }
 
     IEnumerator DisplayEachLetter(string text)
     {
+        // This part makes it to where when you hold the space bar for 0.7s, it skips the dialogue
+        isTypingLine = true;
+        countText.text = "Skip";
+        textComponent.text = string.Empty;
+        
         for (var i = 0; i < text.Length; i++)
         {
             textComponent.text += text[i];
             yield return new WaitForSeconds(typeSpeed);
             //Wait for the last letter to be displayed, then enable the continue button
-            if (i == text.Length - 1)
-            {
-                continueButton.gameObject.SetActive(true);
-            }
+            // if (i == text.Length - 1)
+            // {
+            //     continueButton.gameObject.SetActive(true);
+            //     countText.text = "Normal";
+            // }
         }
+        continueButton.gameObject.SetActive(true);
+        isTypingLine = false;
     }
 
-    
+    void OnSkipPerformed(InputAction.CallbackContext ctx)
+    {
+        if (!dialogueIsPlaying) return;
+        if (!isTypingLine) return;
+        if (ctx.interaction is not HoldInteraction) return;
+
+        // Skip current line instantly
+        StopAllCoroutines();
+        textComponent.text = currentStory.currentText;
+        continueButton.gameObject.SetActive(true);
+        countText.text = "Skip";
+        isTypingLine = false;
+    }
 
     private void OnEnable()
     {
         inputActions.Enable();
+        inputActions.Player.Jump.performed += OnSkipPerformed;
+        
+        // OnDialogueLockState += hideLockCursor.SetLockState;
+        // OnDialogueVisibilityState += hideLockCursor.SetVisibility;
     }
     private void OnDisable()
     {
         inputActions.Disable();
+        inputActions.Player.Jump.performed -= OnSkipPerformed;
+        
+        // OnDialogueLockState -= hideLockCursor.SetLockState;
+        // OnDialogueVisibilityState -= hideLockCursor.SetVisibility;
     }
 }

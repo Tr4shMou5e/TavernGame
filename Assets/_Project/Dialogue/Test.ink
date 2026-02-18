@@ -6,7 +6,7 @@ VAR selectEvent = false
 
 -> main
 === main ===
-I won't deny the way time flies
+I won't deny the way time flies THIS IS TO MAKE THE TEXT LONGER TO TEST THE SKIP FUNCTION
 when we're so close to the end
 and now I'm thinking
 I spent my life learning to fly
