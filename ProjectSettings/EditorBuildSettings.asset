@@ -7,13 +7,22 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/MainWorld.unity
-    guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+    guid: 5821d03322def0546b84c9604c57e3b4
+  - enabled: 0
     path: Assets/Scenes/Tavern.unity
     guid: 62ffa7a9087d1d34bb161c1e92502562
   - enabled: 1
     path: Assets/Scenes/Home.unity
     guid: 391fe626864d6324fbbc674a98dc6ac1
+  - enabled: 1
+    path: Assets/Scenes/TitleScreen.unity
+    guid: 4d817d9ac78c1fc4dbb199cd1703d6e8
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 87ce858c6068cd1498b0c0e29d63d0cb
+  - enabled: 1
+    path: Assets/Scenes/MainTavern.unity
+    guid: b3eef529c01898e4fb61415ef206a15b
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

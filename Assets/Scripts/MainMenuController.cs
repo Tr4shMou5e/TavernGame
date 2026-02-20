@@ -6,7 +6,7 @@ public class MainMenuController : MonoBehaviour
     public void NewGame()
     {
         Debug.Log("Starting New Game...");
-        SceneManager.LoadScene("MainGame");
+        SceneManager.LoadScene("MainWorld");
     }
 
     public void LoadGame()
