@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/TitleScreen.unity
     guid: 4d817d9ac78c1fc4dbb199cd1703d6e8
   - enabled: 1
-    path: Assets/Scenes/MainGame.unity
+    path: Assets/Scenes/MainTavern.unity
     guid: b3eef529c01898e4fb61415ef206a15b
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
