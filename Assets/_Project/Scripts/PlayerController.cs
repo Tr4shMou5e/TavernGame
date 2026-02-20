@@ -3,30 +3,26 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField] float turnSpeed = 180f;
     private float playerSpeed = 5.0f;
     private float gravityValue = -9.81f;
 
-    public CharacterController controller;
+    private CharacterController controller;
     private Vector3 playerVelocity;
     private Camera cam;
     private bool groundedPlayer;
 
     [Header("Input Actions")]
-    public InputActionReference moveAction;
+    private InputManager moveAction;
 
-    private void OnEnable()
+    void Awake()
     {
-        moveAction.action.Enable();
+        controller = GetComponent<CharacterController>();
     }
-
-    private void OnDisable()
-    {
-        moveAction.action.Disable();
-    }
-
     void Start()
     {
         cam = Camera.main;
+        moveAction = InputManager.Instance;
     }
     void Update()
     {
@@ -40,7 +36,7 @@ public class PlayerController : MonoBehaviour
         }
 
         // Read input
-        Vector2 input = moveAction.action.ReadValue<Vector2>();
+        Vector2 input = moveAction.GetPlayerPosition();
         Vector3 move = new Vector3(input.x, 0, input.y);
         move = Vector3.ClampMagnitude(move, 1f);
         var forward = cam.transform.forward;
@@ -59,10 +55,8 @@ public class PlayerController : MonoBehaviour
         Vector3 finalMove = move * playerSpeed + Vector3.up * playerVelocity.y;
         controller.Move(finalMove * Time.deltaTime);
 
-        if (move.magnitude > 0.1f)
-        {
-            var targetRotation = Quaternion.LookRotation(move);
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 5f);
-        }
+        if (!(finalMove.magnitude  > 0.1f)) return;
+        var targetRotation = Quaternion.LookRotation(move, Vector3.up);
+        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, turnSpeed * Time.deltaTime);
     }
 }

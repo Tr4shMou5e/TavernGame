@@ -13,7 +13,6 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] GameObject dialogueTextPanel;
     [SerializeField] TextMeshProUGUI characterNameText;
     [SerializeField] TextMeshProUGUI textComponent;
-    [SerializeField] TextMeshProUGUI countText;
     [SerializeField] float typeSpeed = 0.2f;
     [SerializeField] Button continueButton;
     [SerializeField] Button[] choices;
@@ -21,8 +20,11 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] HideLockCursor hideLockCursor;
     [SerializeField] PlayerController player;
     [SerializeField] CinemachineInputAxisController inputAxisController;
+    [SerializeField] Image dialogueImage;
     
     private const float SkipSpeed = 0f;
+    private bool isDialogueDone;
+    public bool IsDialogueDone => isDialogueDone;
     private bool dialogueIsPlaying;
     private bool isTypingLine;
     private InputSystem_Actions inputActions;
@@ -59,17 +61,20 @@ public class DialogueManager : MonoBehaviour
         //     ContinueDialogue();
         // }
     }
-    public void EnterDialogueMode(TextAsset inkJSON, string characterName)
+    public void EnterDialogueMode(TextAsset inkJSON, string characterName, Sprite characterImage)
     {
+        Debug.Log("Entering Dialogue Mode");
         if(inkJSON == null) return;
         SetupStoryContext(inkJSON, characterName);
-        SetupUIDialogue();
+        SetupUIDialogue(characterImage);
         ContinueDialogue();
     }
 
-    private void SetupUIDialogue()
+    private void SetupUIDialogue(Sprite characterImage)
     {
         dialogueTextPanel.SetActive(true);
+        dialogueImage.sprite = characterImage;
+        isDialogueDone = false;
         player.enabled = false;
         hideLockCursor.SetLockState(CursorLockMode.None);
         hideLockCursor.SetVisibility(true);
@@ -125,7 +130,6 @@ public class DialogueManager : MonoBehaviour
     {   
         
         choiceButton.gameObject.SetActive(true);
-        
         choiceButton.onClick.RemoveAllListeners();
         choiceButton.GetComponentInChildren<TextMeshProUGUI>().text = currentChoice.text;
         choiceButton.onClick.AddListener(() =>
@@ -155,6 +159,7 @@ public class DialogueManager : MonoBehaviour
         characterNameText.text = string.Empty;
         textComponent.text = string.Empty;
         dialogueTextPanel.SetActive(false);
+        isDialogueDone = true;
         foreach (var storyEvent in storyEvents)
         {
             storyEvent.Unbind(currentStory);
@@ -170,7 +175,6 @@ public class DialogueManager : MonoBehaviour
     {
         // This part makes it to where when you hold the space bar for 0.7s, it skips the dialogue
         isTypingLine = true;
-        countText.text = "Skip";
         textComponent.text = string.Empty;
         
         for (var i = 0; i < text.Length; i++)
@@ -198,7 +202,6 @@ public class DialogueManager : MonoBehaviour
         StopAllCoroutines();
         textComponent.text = currentStory.currentText;
         continueButton.gameObject.SetActive(true);
-        countText.text = "Skip";
         isTypingLine = false;
     }
 

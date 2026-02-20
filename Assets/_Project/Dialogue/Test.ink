@@ -6,12 +6,10 @@ VAR selectEvent = false
 
 -> main
 === main ===
-I won't deny the way time flies THIS IS TO MAKE THE TEXT LONGER TO TEST THE SKIP FUNCTION
-when we're so close to the end
-and now I'm thinking
-I spent my life learning to fly
-against the constant decent
-and now I'm thinking 
+I'm the American nightmare with American dreams
+Of counting the bodies while you count sheep
+I'm the American nightmare, yeah, I'm living the dreams
+I'm slashing my way through the golden age of the silver screen(sweet dreams, ah!)
     * [This is choice one] // The * is for the choices and the [] is for the option after it gets picked won't show 
         -> Choice_1
     * [This is choice two]

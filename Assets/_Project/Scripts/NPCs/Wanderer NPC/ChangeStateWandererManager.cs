@@ -12,6 +12,8 @@ public class ChangeStateWandererManager : MonoBehaviour
     public bool IsShoppingDone { get => isShoppingDone; set => isShoppingDone = value;}
     private bool isShopWaitTimeDone;
     public bool IsShopWaitTimeDone {get => isShopWaitTimeDone; set => isShopWaitTimeDone = value;}
+    private bool isDialogueStateStarted;
+    public bool IsDialogueStateStarted { get => isDialogueStateStarted; set => isDialogueStateStarted = value;}
     private void Start()
     {
         shopTime = Random.Range(20f, 35f);
@@ -33,7 +35,17 @@ public class ChangeStateWandererManager : MonoBehaviour
     }
     public bool ExitForWandererState()
     {
-        return IsShoppingDone;
+        return isShoppingDone;
+    }
+
+    public bool ExitForDialogueState()
+    {
+        return isDialogueStateStarted;
+    }
+
+    public bool DialogueIsDone()
+    {
+        return DialogueManager.Instance.IsDialogueDone;
     }
 
     private void OnDestroy()

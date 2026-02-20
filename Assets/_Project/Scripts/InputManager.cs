@@ -6,9 +6,10 @@ public class InputManager : MonoBehaviour
     private static InputManager instance;
     public static InputManager Instance => instance;
     
+    // Singleton Pattern Implementation
     void Awake()
     {
-        if (instance != null)
+        if (instance != null && instance != this)
         {
             Debug.LogWarning("InputManager already exists!");
             return;
@@ -24,7 +25,7 @@ public class InputManager : MonoBehaviour
 
     public bool Interact()
     {
-        return input.Player.Interact.triggered;
+        return input.Player.Interact.WasPressedThisFrame();
     }
 
     public bool PlayerIsJumping()

@@ -7,23 +7,32 @@ public class NpcWandererState : NpcBaseState
     private readonly NavMeshAgent agent;
     private readonly Vector3 startPoint;
     private readonly float wanderRadius;
+    
 
     private readonly CountdownTimer waitTimer;
     
     private const float WaitTime = 5.5f;
     private bool waitingForNextPoint;
-    
-    public NpcWandererState(AIEntitiy entity, Animator animator, NavMeshAgent agent, float wanderRadius) : base(entity, animator)
+    private Vector3 destination;
+    private DialogueManager dialogue;
+    public NpcWandererState(AIEntitiy entity, Animator animator, NavMeshAgent agent, float wanderRadius, DialogueManager instance) : base(entity, animator)
     {
         this.agent = agent;
         this.wanderRadius = wanderRadius;
         startPoint = entity.transform.position;
+        dialogue = instance;
         
         waitTimer = new CountdownTimer(WaitTime);
     }
     public override void OnEnter()
     {
         Debug.Log("Wanderer entered state");
+        if (agent.isStopped && dialogue.IsDialogueDone)
+        {
+            agent.isStopped = false;
+            agent.SetDestination(destination);
+        }
+        Debug.Log(agent.isStopped);
         waitingForNextPoint = false;
         waitTimer.Reset();
         Wander();
@@ -67,6 +76,7 @@ public class NpcWandererState : NpcBaseState
         randomPoint += startPoint;
         NavMesh.SamplePosition(randomPoint, out var hit, wanderRadius, 1);
         var finalPosition = hit.position;
+        destination = finalPosition;
         agent.SetDestination(finalPosition);
     }
     private bool HasReachedDestination()

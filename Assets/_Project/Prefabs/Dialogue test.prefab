@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5719603959452469986}
-  - component: {fileID: 766351851838793838}
   - component: {fileID: 531870656968064601}
   m_Layer: 0
   m_Name: Dialogue test
@@ -33,19 +32,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &766351851838793838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7651212723088388}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c0d3bb4dd1ad814cb0d8fa38d0e1d8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DialogueSystem
-  dialogue: {fileID: 11400000, guid: 71fd0f5c4ad23e442b82e647f103c725, type: 2}
 --- !u!114 &531870656968064601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73,3 +59,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f8873a535c23c9146b9895d33129036b, type: 2}
   hideLockCursor: {fileID: 0}
   player: {fileID: 0}
+  inputAxisController: {fileID: 0}

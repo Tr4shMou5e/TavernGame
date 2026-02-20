@@ -44,11 +44,9 @@ public class NpcShopState : NpcBaseState
 
         var nearestIndex = 0;
         var nearestDistance = Vector3.Distance(entity.transform.position,shops[0].transform.position);
-        Debug.Log(nearestDistance);
         for (var i = 1; i < shops.Length; i++)
         {
             var currentDistance = Vector3.Distance(entity.transform.position,shops[i].transform.position);
-            Debug.Log(currentDistance);
             if (currentDistance < nearestDistance)
             {
                 nearestDistance = currentDistance;

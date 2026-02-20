@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 
@@ -5,14 +6,16 @@ using UnityEngine;
 public abstract class AIEntitiy : MonoBehaviour
 {
     public Dialogue dialogue;
-    
-    private void OnTriggerEnter(Collider other)
+    protected bool isPlayerInRange;
+    void OnTriggerEnter(Collider other)
     {
         if (!other.CompareTag("Player")) return;
+        isPlayerInRange = true;
+    }
 
-        if (InputManager.Instance.Interact())
-        {
-            DialogueManager.Instance.EnterDialogueMode(dialogue.textAsset, dialogue.characterName);
-        }
+    private void OnTriggerExit(Collider other)
+    {
+        if (!other.CompareTag("Player")) return;
+        isPlayerInRange = false;
     }
 }

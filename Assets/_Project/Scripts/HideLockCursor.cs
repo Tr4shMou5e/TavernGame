@@ -21,12 +21,10 @@ public class HideLockCursor : MonoBehaviour
 
     public void SetLockState(CursorLockMode state)
     {
-        Debug.Log("Setting lock state to " + state);
         LockState = state;
     }
     public void SetVisibility(bool state)
     {
-        Debug.Log("Setting visibility to " + state);
         isVisible = state;
     }
 }
