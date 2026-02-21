@@ -15,6 +15,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI textComponent;
     [SerializeField] float typeSpeed = 0.2f;
     [SerializeField] Button continueButton;
+    [SerializeField] Button leaveButton;
     [SerializeField] Button[] choices;
     [SerializeField] InkEvent[] storyEvents;
     [SerializeField] HideLockCursor hideLockCursor;
@@ -95,6 +96,7 @@ public class DialogueManager : MonoBehaviour
     public void ContinueDialogue()
     {
         continueButton.gameObject.SetActive(false);
+        leaveButton.gameObject.SetActive(false);
         if(currentStory.canContinue)
         {
             textComponent.text = string.Empty;
@@ -153,7 +155,7 @@ public class DialogueManager : MonoBehaviour
         ContinueDialogue();
     }
 
-    void ExitDialogueMode()
+    public void ExitDialogueMode()
     {
         dialogueIsPlaying = false;
         characterNameText.text = string.Empty;
@@ -189,6 +191,7 @@ public class DialogueManager : MonoBehaviour
             // }
         }
         continueButton.gameObject.SetActive(true);
+        leaveButton.gameObject.SetActive(true);
         isTypingLine = false;
     }
 

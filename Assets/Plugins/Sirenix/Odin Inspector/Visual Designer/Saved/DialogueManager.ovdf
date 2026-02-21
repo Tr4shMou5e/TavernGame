@@ -23,7 +23,7 @@ Position: $XFedd3fbW72Sn1wiJgssJn:0
 	GroupName = "Text Properties"
 
 # $B57RgypNYfcTFSPfATXcNQ
-Position: $root:15
+Position: $root:13
 + [Sirenix.OdinInspector.TabGroupAttribute]
 	GroupName = "Events"
 
@@ -48,7 +48,7 @@ Position: $T9f64JvuEzvcmtLdPXY19G:0
 	GroupName = "Events"
 
 # continueButton
-Position: $BpogWRZ5T2XruiuDn6Ah2Y:5
+Position: $BpogWRZ5T2XruiuDn6Ah2Y:6
 
 # dialogueTextPanel
 Position: $BpogWRZ5T2XruiuDn6Ah2Y:0
@@ -60,19 +60,25 @@ Position: $BpogWRZ5T2XruiuDn6Ah2Y:1
 Position: $BpogWRZ5T2XruiuDn6Ah2Y:2
 
 # typeSpeed
-Position: $BpogWRZ5T2XruiuDn6Ah2Y:3
+Position: $BpogWRZ5T2XruiuDn6Ah2Y:4
 
 # storyEvents
 Position: $3YtSYhd9mHVtF6csd5kea4:0
 
 # choices
-Position: $BpogWRZ5T2XruiuDn6Ah2Y:4
+Position: $BpogWRZ5T2XruiuDn6Ah2Y:5
 
 # hideLockCursor
-Position: $BpogWRZ5T2XruiuDn6Ah2Y:6
+Position: $BpogWRZ5T2XruiuDn6Ah2Y:8
 
 # player
-Position: $BpogWRZ5T2XruiuDn6Ah2Y:7
+Position: $BpogWRZ5T2XruiuDn6Ah2Y:9
 
 # inputAxisController
-Position: $BpogWRZ5T2XruiuDn6Ah2Y:8
+Position: $BpogWRZ5T2XruiuDn6Ah2Y:10
+
+# leaveButton
+Position: $BpogWRZ5T2XruiuDn6Ah2Y:7
+
+# dialogueImage
+Position: $BpogWRZ5T2XruiuDn6Ah2Y:3

@@ -28,35 +28,38 @@ public class PlayerController : MonoBehaviour
     {
         groundedPlayer = controller.isGrounded;
 
-        if (groundedPlayer)
+        if (groundedPlayer && playerVelocity.y < 0f)
+            playerVelocity.y = -2f;
+
+        Vector2 input = moveAction.GetPlayerPosition();
+
+        Vector3 camForward = cam.transform.forward;
+        Vector3 camRight = cam.transform.right;
+        camForward.y = 0f;
+        camRight.y = 0f;
+        camForward.Normalize();
+        camRight.Normalize();
+
+        Vector3 moveDir = (camForward * input.y + camRight * input.x);
+        if (moveDir.sqrMagnitude > 1f) moveDir.Normalize();
+
+        if (moveDir.sqrMagnitude < 0.001f || moveDir.sqrMagnitude > 0.001f)
         {
-            // Slight downward velocity to keep grounded stable
-            if (playerVelocity.y < -2f)
-                playerVelocity.y = -2f;
+            Quaternion targetRot = Quaternion.LookRotation(camForward);
+            transform.rotation = Quaternion.Slerp(
+                transform.rotation,
+                targetRot,
+                turnSpeed * Time.deltaTime
+            );
         }
 
-        // Read input
-        Vector2 input = moveAction.GetPlayerPosition();
-        Vector3 move = new Vector3(input.x, 0, input.y);
-        move = Vector3.ClampMagnitude(move, 1f);
-        var forward = cam.transform.forward;
-        var right = cam.transform.right;
-        move = forward * move.z + right * move.x;
-        forward.y = 0;
-        right.y = 0;
-        move.y = 0;
-        if (move != Vector3.zero)
-            transform.forward = move;
-
-        // Apply gravity
+        // Gravity
         playerVelocity.y += gravityValue * Time.deltaTime;
 
-        // Move
-        Vector3 finalMove = move * playerSpeed + Vector3.up * playerVelocity.y;
-        controller.Move(finalMove * Time.deltaTime);
+        // Move (horizontal + vertical)
+        Vector3 motion = moveDir * playerSpeed;
+        motion.y = playerVelocity.y;
 
-        if (!(finalMove.magnitude  > 0.1f)) return;
-        var targetRotation = Quaternion.LookRotation(move, Vector3.up);
-        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, turnSpeed * Time.deltaTime);
+        controller.Move(motion * Time.deltaTime);
     }
 }

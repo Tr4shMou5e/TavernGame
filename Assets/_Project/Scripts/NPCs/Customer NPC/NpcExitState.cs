@@ -11,5 +11,9 @@ public class NpcExitState : NpcBaseState
         this.agent = agent;
         this.changeStateManager = changeStateManager;
     }
-    
+
+    public override void OnEnter()
+    {
+        Debug.Log("Exiting entered state");
+    }
 }

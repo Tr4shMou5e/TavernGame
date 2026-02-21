@@ -7,6 +7,7 @@ TagManager:
   - Dialogue Text
   - Character Text
   - Shop
+  - Chair
   layers:
   - Default
   - TransparentFX
