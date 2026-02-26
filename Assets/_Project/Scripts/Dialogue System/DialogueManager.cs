@@ -205,6 +205,7 @@ public class DialogueManager : MonoBehaviour
         StopAllCoroutines();
         textComponent.text = currentStory.currentText;
         continueButton.gameObject.SetActive(true);
+        leaveButton.gameObject.SetActive(true);
         isTypingLine = false;
     }
 

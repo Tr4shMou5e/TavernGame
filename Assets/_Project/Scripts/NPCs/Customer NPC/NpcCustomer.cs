@@ -8,6 +8,7 @@ public class NpcCustomer : AIEntitiy
     [SerializeField] NavMeshAgent agent;
     [SerializeField] ChangeStateCustomerManager changeStateManager;
     [SerializeField] List<OrderNode> orderQueue;
+    [SerializeField] float eatDuration = 10f;
     private StateMachine stateMachine;
     void Start()
     {
@@ -16,7 +17,7 @@ public class NpcCustomer : AIEntitiy
         var orderState = new NpcOrderState(this, animator, agent, changeStateManager, orderQueue);
         var waitListState = new NpcWaitListState(this, animator, agent, changeStateManager, orderQueue);
         var sitState = new NpcSitState(this, animator, agent, changeStateManager);
-        var eatState = new NpcEatState(this, animator, agent, changeStateManager);
+        var eatState = new NpcEatState(this, animator, agent, changeStateManager, eatDuration);
         var exitState = new NpcExitState(this, animator, agent, changeStateManager);
         
         At(orderState, sitState, new FuncPredicate(() => changeStateManager.OrderTaken()));

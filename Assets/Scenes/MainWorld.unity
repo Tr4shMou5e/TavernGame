@@ -1054,6 +1054,7 @@ MonoBehaviour:
   - {fileID: 1363837881}
   - {fileID: 929339564}
   - {fileID: 2074391881}
+  eatDuration: 10
 --- !u!195 &51211883
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -14479,6 +14480,7 @@ MonoBehaviour:
   - {fileID: 1363837881}
   - {fileID: 929339564}
   - {fileID: 2074391881}
+  eatDuration: 10
 --- !u!195 &1210764244
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -14989,6 +14991,7 @@ MonoBehaviour:
   - {fileID: 1363837881}
   - {fileID: 929339564}
   - {fileID: 2074391881}
+  eatDuration: 10
 --- !u!195 &1251282101
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -18661,6 +18664,7 @@ MonoBehaviour:
   - {fileID: 1363837881}
   - {fileID: 929339564}
   - {fileID: 2074391881}
+  eatDuration: 10
 --- !u!195 &1545093950
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -21586,6 +21590,7 @@ MonoBehaviour:
   - {fileID: 1363837881}
   - {fileID: 929339564}
   - {fileID: 2074391881}
+  eatDuration: 10
 --- !u!195 &1768424970
 NavMeshAgent:
   m_ObjectHideFlags: 0

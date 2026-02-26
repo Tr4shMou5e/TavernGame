@@ -7,12 +7,11 @@ public class NpcEatState : NpcBaseState
     private NavMeshAgent agent;
     private ChangeStateCustomerManager changeStateManager;
     private CountdownTimer eatTimer;
-    private const float EatDuration = 10f;
-    public NpcEatState(NpcCustomer npcCustomer, Animator animator, NavMeshAgent agent, ChangeStateCustomerManager changeStateManager) : base(npcCustomer, animator)
+    public NpcEatState(NpcCustomer npcCustomer, Animator animator, NavMeshAgent agent, ChangeStateCustomerManager changeStateManager, float eatDuration = 10f) : base(npcCustomer, animator)
     {
         this.agent = agent;
         this.changeStateManager = changeStateManager;
-        eatTimer = new CountdownTimer(EatDuration);
+        eatTimer = new CountdownTimer(eatDuration);
     }
     
     public override void OnEnter()
