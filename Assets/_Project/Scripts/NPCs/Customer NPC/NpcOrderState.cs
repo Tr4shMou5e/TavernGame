@@ -7,18 +7,21 @@ public class NpcOrderState : NpcBaseState
     private NavMeshAgent agent;
     private ChangeStateCustomerManager changeStateManager;
     private List<OrderNode> orderQueue;
+    private MenuData menu;
     private Vector3 targetPosition;
     private OrderNode currentOrderNode;
     private int currentOrderIndex;
-    public NpcOrderState(AIEntitiy entity, Animator animator, NavMeshAgent agent, ChangeStateCustomerManager changeStateManager, List<OrderNode> orderQueue) : base(entity, animator)
+    public NpcOrderState(AIEntitiy entity, Animator animator, NavMeshAgent agent, ChangeStateCustomerManager changeStateManager, List<OrderNode> orderQueue, MenuData menu) : base(entity, animator)
     {
         this.agent = agent;
         this.changeStateManager = changeStateManager;
         this.orderQueue = orderQueue;
+        this.menu = menu;
     }
     public override void OnEnter()
     {
         Debug.Log("Order entered state");
+        // Checking if the Line is full
         for (int i = 0; i < orderQueue.Count; i++)
         {
             if (!orderQueue[i].isOccupied)
@@ -31,11 +34,13 @@ public class NpcOrderState : NpcBaseState
                 break;
             }
         }
-
+        
+        // If the line is not full, the agent will move to the next order node
         if (!changeStateManager.LineFull() && currentOrderNode != null)
         {
             agent.SetDestination(targetPosition);
         }
+        // If the line is full, the agent will go to the waiting area
         else if(currentOrderNode == null)
         {
             changeStateManager.HasOrderNode = false;
@@ -78,4 +83,4 @@ public class NpcOrderState : NpcBaseState
         if (currentOrderNode != null)
             currentOrderNode.isOccupied = false;
     }
-} 
+}
