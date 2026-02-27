@@ -4,9 +4,6 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - Dialogue Text
-  - Character Text
-  - Shop
   - Chair
   layers:
   - Default
