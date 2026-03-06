@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 8971007798394191870}
   - component: {fileID: 6601040403902466868}
   - component: {fileID: 916809903}
-  - component: {fileID: 916809904}
   m_Layer: 0
   m_Name: SM_Gen_Prop_Chair_01
   m_TagString: Chair
@@ -113,24 +112,3 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.50272596, y: 1.0096709, z: 0.14502543}
   m_Center: {x: 0, y: 0.5048354, z: -0.24585637}
---- !u!65 &916809904
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4655428122252159713}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.50272596, y: 0.44560596, z: 0.6367382}
-  m_Center: {x: 0, y: 0.22280298, z: 0}

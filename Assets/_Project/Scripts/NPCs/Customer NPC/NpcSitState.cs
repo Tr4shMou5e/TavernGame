@@ -5,11 +5,17 @@ public class NpcSitState : NpcBaseState
 {
     private NavMeshAgent agent;
     private ChangeStateCustomerManager changeStateManager;
+    private FoodItem selectedItem;
+    private CustomerName customerName;
+    //private GameObject heldItem;
+    private FoodItemInfoManager foodItemInfoManager;
     private GameObject[] chairs;
-    public NpcSitState(AIEntitiy entity, Animator animator, NavMeshAgent agent, ChangeStateCustomerManager changeStateManager) : base(entity, animator)
+    public NpcSitState(AIEntitiy entity, Animator animator, NavMeshAgent agent, ChangeStateCustomerManager changeStateManager, CustomerName customerName) : base(entity, animator)
     {
         this.agent = agent;
         this.changeStateManager = changeStateManager;
+        this.customerName = customerName;
+        foodItemInfoManager = FoodItemInfoManager.Instance;
         chairs = GameObject.FindGameObjectsWithTag("Chair");
     }
 
@@ -18,12 +24,19 @@ public class NpcSitState : NpcBaseState
         Debug.Log("Sitting entered state");
         
         agent.SetDestination(chairs[0].transform.position);
+        if(foodItemInfoManager.foodItemDictionary.TryGetValue(entity.gameObject.name, out var foodItem))
+        {
+            selectedItem = foodItem;
+        }
     }
 
     public override void Update()
     {
         Debug.Log("Sitting update state");
-        Debug.Log(changeStateManager.PlayerInRange);
+        if(foodItemInfoManager.foodItemDictionary.TryGetValue(entity.gameObject.name, out var foodItem))
+        {
+            selectedItem = foodItem;
+        }
         if (!changeStateManager.PlayerInRange) return;
         Debug.Log("Player in range");
         if (InputManager.Instance.Interact())
@@ -35,6 +48,7 @@ public class NpcSitState : NpcBaseState
     private void GiveFood()
     {
         //!Give Order (Implement Later)
+        // Check if the player is holding the correct food item the customer ordered
         changeStateManager.OrderServed = true;
     }
 }

@@ -4,8 +4,14 @@ using Random = UnityEngine.Random;
 [CreateAssetMenu(fileName = "Menu", menuName = "MenuData")]
 public class MenuData: ScriptableObject
 {
-    public List<FoodItem> menuItems;
-    
+    [SerializeField] protected List<FoodItem> menuItems;
+    void OnEnable()
+    {
+        foreach (var item in menuItems)
+        {
+            item.id = item.dishName.GetHashCode().ToString();
+        }
+    }
     public FoodItem SelectRandomMenuItem()
     {
         var randomIndex = Random.Range(0, menuItems.Count);

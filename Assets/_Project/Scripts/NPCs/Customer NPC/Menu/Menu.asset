@@ -12,3 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 507403333d9b434bb67d00417caafe58, type: 3}
   m_Name: Menu
   m_EditorClassIdentifier: Assembly-CSharp::MenuData
+  menuItems:
+  - dishName: Sushi
+    dishImage: {fileID: 21300000, guid: b7db33522cd9b6848836452d75a9f692, type: 3}
+    id: -38139740
+    price: 0.98

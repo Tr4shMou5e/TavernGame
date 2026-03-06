@@ -16,22 +16,31 @@ public class ChangeStateCustomerManager : MonoBehaviour
     private bool playerInRange;
     public bool PlayerInRange { get => playerInRange; set => playerInRange = value; }
     
+    // Checks if the order has been taken
     public bool OrderTaken()
     {
         return isOrderTaken;
     }
+    
+    // Checks if the line is full
     public bool LineFull()
     {
         return isLineFull;
     }
+    
+    // Checks if the order has been taken
     public bool HasOrder()
     {
         return hasOrderNode;
     }
+    
+    // Checks if the order has been served
     public bool HasOrderServed()
     {
         return orderServed;
     }
+    
+    // Checks if the customer has finished eating
     public bool FinishedEating()
     {
         return hasFinishedEating;

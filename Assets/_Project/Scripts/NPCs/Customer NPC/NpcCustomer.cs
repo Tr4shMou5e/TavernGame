@@ -6,18 +6,23 @@ public class NpcCustomer : AIEntitiy
 {
     [SerializeField] Animator animator;
     [SerializeField] NavMeshAgent agent;
+    [SerializeField] Transform player;
     [SerializeField] ChangeStateCustomerManager changeStateManager;
     [SerializeField] List<OrderNode> orderQueue;
     [SerializeField] MenuData menuData;
-    [SerializeField] float eatDuration = 10f;
+    [SerializeField] CustomerName customerName;
+    [SerializeField] Canvas canvas;
+    [SerializeField] private float eatDuration = 10f;
     private StateMachine stateMachine;
     void Start()
     {
         stateMachine = new StateMachine();
+        var customerNameObject = ScriptableObject.CreateInstance<CustomerName>();
+        customerNameObject.names = customerName.names;
         
-        var orderState = new NpcOrderState(this, animator, agent, changeStateManager, orderQueue, menuData);
+        var orderState = new NpcOrderState(this, animator, agent, player, changeStateManager, orderQueue, menuData, canvas, customerNameObject);
         var waitListState = new NpcWaitListState(this, animator, agent, changeStateManager, orderQueue);
-        var sitState = new NpcSitState(this, animator, agent, changeStateManager);
+        var sitState = new NpcSitState(this, animator, agent, changeStateManager, customerName);
         var eatState = new NpcEatState(this, animator, agent, changeStateManager, eatDuration);
         var exitState = new NpcExitState(this, animator, agent, changeStateManager);
         
