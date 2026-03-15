@@ -1,5 +1,7 @@
 using System;
 using UnityEngine;
+
+[Serializable]
 public class OrderNode : MonoBehaviour
 {
     public Vector3 position;

@@ -15,5 +15,14 @@ public class NpcExitState : NpcBaseState
     public override void OnEnter()
     {
         Debug.Log("Exiting entered state");
+        NpcCustomerSpawnerObjectPoolManager.Instance.ReleaseCustomer(entity.gameObject);
+        NpcCustomerSpawnerObjectPoolManager.Instance.activeCustomers.Remove(entity.gameObject);
+    }
+    public override void OnExit()
+    {
+        changeStateManager.IsOrderTaken = false;
+        changeStateManager.HasFinishedEating = false;
+        changeStateManager.OrderServed = false;
+        changeStateManager.HasOrderNode = false;
     }
 }

@@ -22,6 +22,7 @@ public class NpcOrderState : NpcBaseState
     private FoodItemInfoManager foodItemInfoManager;
     private string name;
     private int currentOrderIndex;
+    private bool isFoodSelected;
     public NpcOrderState(AIEntitiy entity, 
         Animator animator, 
         NavMeshAgent agent, 
@@ -39,12 +40,14 @@ public class NpcOrderState : NpcBaseState
         this.customerName = customerName;
         this.canvas = canvas;
         this.playerTransform = playerTransform;
+        isFoodSelected = false;
         foodItemInfoManager = FoodItemInfoManager.Instance;
     }
     public override void OnEnter()
     {
         Debug.Log("Order entered state");
         // Checking if the Line is full
+        Debug.Log(orderQueue.Count);
         for (int i = 0; i < orderQueue.Count; i++)
         {
             if (!orderQueue[i].isOccupied)
@@ -57,7 +60,8 @@ public class NpcOrderState : NpcBaseState
                 break;
             }
         }
-        
+        Debug.Log(currentOrderNode);
+        Debug.Log(targetPosition);
         // If the line is not full, the agent will move to the next order node
         if (!changeStateManager.LineFull() && currentOrderNode != null)
         {
@@ -107,7 +111,8 @@ public class NpcOrderState : NpcBaseState
     {
         if (currentOrderIndex == 0 && currentOrderNode != null)
         {
-            SelectFoodItem();
+            if(!isFoodSelected)
+                SelectFoodItem();
             ShowWorldGUI();
             FacePlayer();
         }
@@ -115,10 +120,17 @@ public class NpcOrderState : NpcBaseState
     private void SelectFoodItem()
     {   
         canvas.gameObject.SetActive(true);
-        
         selectedItem = menu.SelectRandomMenuItem();
+        var foodItem = new FoodItem
+        {
+            dishName = selectedItem.dishName,
+            dishImage = selectedItem.dishImage,
+            price = selectedItem.price,
+            id = selectedItem.id
+        };
         entity.gameObject.name = name;
-        foodItemInfoManager.foodItemDictionary[name] = selectedItem;
+        foodItemInfoManager.foodItemDictionary[entity.gameObject] = foodItem;
+        isFoodSelected = true;
     }
     private void ShowWorldGUI()
     {
@@ -129,7 +141,7 @@ public class NpcOrderState : NpcBaseState
     }
     private void FacePlayer()
     {
-        var targetRot = Quaternion.LookRotation(playerTransform.forward);
+        var targetRot = Quaternion.LookRotation(-playerTransform.forward);
         entity.transform.rotation = Quaternion.Slerp(entity.transform.rotation, targetRot, Time.deltaTime * 180f);
     }
     public override void OnExit()

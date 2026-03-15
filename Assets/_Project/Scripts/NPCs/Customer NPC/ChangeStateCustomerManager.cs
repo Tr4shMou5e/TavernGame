@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class ChangeStateCustomerManager : MonoBehaviour
 {
+    private bool releasedFromPool;
+    public bool ReleasedFromPool { set => releasedFromPool = value; }
     private bool isOrderTaken;
     public bool IsOrderTaken { set => isOrderTaken = value; }
     private bool isLineFull;
@@ -44,5 +46,10 @@ public class ChangeStateCustomerManager : MonoBehaviour
     public bool FinishedEating()
     {
         return hasFinishedEating;
+    }
+
+    public bool IsReleasedFromPool()
+    {
+        return releasedFromPool;
     }
 }

@@ -33,12 +33,12 @@ public class NpcWanderer : AIEntitiy
         stateMachine.Update();
         
         //This statement checks if the player is in range of the NPC, and if so, it will open the dialogue box
-        if (!isPlayerInRange)
+        if (!isPlayerInRange || !IsPlayerLookingAtMe())
         {
             changeStateManager.IsDialogueStateStarted = false;
             return;
         }
-        
+        Debug.Log(gameObject.name);
         if (InputManager.Instance.Interact())
         {
             changeStateManager.IsDialogueStateStarted = true;

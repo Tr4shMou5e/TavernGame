@@ -24,7 +24,7 @@ public class NpcSitState : NpcBaseState
         Debug.Log("Sitting entered state");
         
         agent.SetDestination(chairs[0].transform.position);
-        if(foodItemInfoManager.foodItemDictionary.TryGetValue(entity.gameObject.name, out var foodItem))
+        if(foodItemInfoManager.foodItemDictionary.TryGetValue(entity.gameObject, out var foodItem))
         {
             selectedItem = foodItem;
         }
@@ -33,7 +33,7 @@ public class NpcSitState : NpcBaseState
     public override void Update()
     {
         Debug.Log("Sitting update state");
-        if(foodItemInfoManager.foodItemDictionary.TryGetValue(entity.gameObject.name, out var foodItem))
+        if(foodItemInfoManager.foodItemDictionary.TryGetValue(entity.gameObject, out var foodItem))
         {
             selectedItem = foodItem;
         }

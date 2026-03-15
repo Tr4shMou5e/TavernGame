@@ -5,7 +5,7 @@ public class FoodItemInfoManager : SerializedMonoBehaviour
 {
     private static FoodItemInfoManager instance;
     public static FoodItemInfoManager Instance => instance;
-    public Dictionary<string, FoodItem> foodItemDictionary;
+    public Dictionary<GameObject, FoodItem> foodItemDictionary;
     void Awake()
     {
         if (instance != null && instance != this)
@@ -14,6 +14,6 @@ public class FoodItemInfoManager : SerializedMonoBehaviour
             return;
         }
         instance = this;
-        foodItemDictionary = new Dictionary<string, FoodItem>();
+        foodItemDictionary = new Dictionary<GameObject, FoodItem>();
     }
 }
