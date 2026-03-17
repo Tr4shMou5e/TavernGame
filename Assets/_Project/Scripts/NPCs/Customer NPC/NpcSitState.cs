@@ -1,6 +1,8 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-
+using Random = UnityEngine.Random;
+using System.Linq;
 public class NpcSitState : NpcBaseState
 {
     private NavMeshAgent agent;
@@ -10,6 +12,7 @@ public class NpcSitState : NpcBaseState
     //private GameObject heldItem;
     private FoodItemInfoManager foodItemInfoManager;
     private GameObject[] chairs;
+    private ChairData randomChair;
     public NpcSitState(AIEntitiy entity, Animator animator, NavMeshAgent agent, ChangeStateCustomerManager changeStateManager, CustomerName customerName) : base(entity, animator)
     {
         this.agent = agent;
@@ -23,7 +26,17 @@ public class NpcSitState : NpcBaseState
     {
         Debug.Log("Sitting entered state");
         
-        agent.SetDestination(chairs[0].transform.position);
+        var pickedChairs = chairs
+            .Select(chair => chair.GetComponent<ChairData>())
+            .Where(chairData => chairData != null && !chairData.isOccupied)
+            .ToList();
+        if (pickedChairs.Count > 0)
+        {
+            randomChair = pickedChairs[Random.Range(0, pickedChairs.Count)];
+        }
+        
+        agent.SetDestination(randomChair.position);
+        randomChair.isOccupied = true;
         if(foodItemInfoManager.foodItemDictionary.TryGetValue(entity.gameObject, out var foodItem))
         {
             selectedItem = foodItem;
@@ -50,5 +63,9 @@ public class NpcSitState : NpcBaseState
         //!Give Order (Implement Later)
         // Check if the player is holding the correct food item the customer ordered
         changeStateManager.OrderServed = true;
+    }
+    public override void OnExit()
+    {
+        randomChair.isOccupied = false;
     }
 }

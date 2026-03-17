@@ -28,7 +28,7 @@ public class NpcCustomerSpawner : MonoBehaviour
     {
         if (Time.time > timeSinceLastSpawn && maxAmount > 0)
         {
-            customerPool.GetCustomer();
+            customerPool?.GetCustomer();
             timeSinceLastSpawn = Time.time + spawnTime;
             maxAmount--;
         }

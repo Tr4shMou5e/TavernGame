@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -8,15 +9,38 @@ public class NpcWanderer : AIEntitiy
     [SerializeField] NavMeshAgent agent;
     [SerializeField] float wanderRadius;
     [SerializeField] ChangeStateWandererManager changeStateManager;
-    StateMachine stateMachine;
     
+    private StateMachine stateMachine;
+    private bool isNameSelected;
+    private string characterName;
+
+    void Awake()
+    {
+        mainCamera = Camera.main;
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+
+        SetUpCharacterCostume();
+    }
+
+    private void SetUpCharacterCostume()
+    {
+        var costumes = GetComponentsInChildren<SkinnedMeshRenderer>(true).ToList();
+        var currentActiveCostume = GetComponentInChildren<SkinnedMeshRenderer>();
+        currentActiveCostume.gameObject.SetActive(false);
+        
+        var randomCostume = costumes[Random.Range(0, costumes.Count)];
+        randomCostume.gameObject.SetActive(true);
+    }
+
     void Start()
     {
         stateMachine = new StateMachine();
         
+        SetCharacterName();
+
         var wanderState = new NpcWandererState(this, animator, agent, wanderRadius, DialogueManager.Instance);
         var shopState = new NpcShopState(this, animator, agent, changeStateManager);
-        var dialogueState = new NpcDialogueState(this, animator, agent);
+        var dialogueState = new NpcDialogueState(this, animator, agent, player);
         
         At(wanderState, shopState, new FuncPredicate(() => changeStateManager.ExitForShopState()));
         At(shopState, wanderState, new FuncPredicate(() => changeStateManager.ExitForWandererState()));
@@ -24,7 +48,18 @@ public class NpcWanderer : AIEntitiy
         Any(dialogueState, new FuncPredicate(() => changeStateManager.ExitForDialogueState() && !changeStateManager.DialogueIsDone()));
         stateMachine.SetState(wanderState);
     }
-    
+
+    private void SetCharacterName()
+    {
+        var customerNameObject = ScriptableObject.CreateInstance<CustomerName>();
+        customerNameObject.names = GetComponentInChildren<SkinnedMeshRenderer>().gameObject.CompareTag("Male") ? customerMaleNames.names : customerFemaleNames.names;
+        
+        if (dialogue == null || isNameSelected) return;
+        
+        characterName = customerNameObject.GetRandomName();
+        isNameSelected = true;
+    }
+
     private void At(IState from, IState to, IPredicate condition) => stateMachine.AddTransition(from, to, condition);
     private void Any(IState to, IPredicate condition) => stateMachine.AddAnyTransition(to, condition);
 
@@ -38,10 +73,11 @@ public class NpcWanderer : AIEntitiy
             changeStateManager.IsDialogueStateStarted = false;
             return;
         }
-        Debug.Log(gameObject.name);
+        
         if (InputManager.Instance.Interact())
         {
             changeStateManager.IsDialogueStateStarted = true;
+            dialogue.characterName = characterName;
             DialogueManager.Instance.EnterDialogueMode(dialogue.textAsset, dialogue.characterName, dialogue.characterImage);
         }
     } 

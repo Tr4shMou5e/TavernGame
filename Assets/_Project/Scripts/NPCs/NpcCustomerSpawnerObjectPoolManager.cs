@@ -1,9 +1,11 @@
 using System.Collections.Generic;
 using System.Linq;
+using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Pool;
 
+[RequireComponent(typeof(NpcCustomerSpawner))]
 public class NpcCustomerSpawnerObjectPoolManager : MonoBehaviour
 { 
     private IObjectPool<GameObject> customerPool;

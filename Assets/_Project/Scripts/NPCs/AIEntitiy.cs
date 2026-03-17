@@ -5,11 +5,18 @@ using Sirenix.OdinInspector;
 [RequireComponent(typeof(BoxCollider))]
 public abstract class AIEntitiy : SerializedMonoBehaviour
 {
-    public Dialogue dialogue;
-    protected Transform rayOrigin;
     [SerializeField] protected float interactDistance = 1f;
+    [SerializeField] protected Transform player;
+    [SerializeField] protected Camera mainCamera;
+    [SerializeField] protected CustomerName customerMaleNames;
+    [SerializeField] protected CustomerName customerFemaleNames;
+    
+    protected Transform rayOrigin;
     protected bool isPlayerInRange;
+    public Dialogue dialogue;
     public bool IsPlayerInRange => isPlayerInRange;
+    
+
     void OnTriggerEnter(Collider other)
     {
         if (!other.CompareTag("Player")) return;
@@ -24,7 +31,7 @@ public abstract class AIEntitiy : SerializedMonoBehaviour
     }
     protected bool IsPlayerLookingAtMe()
     {
-        if (Camera.main != null) rayOrigin = Camera.main.transform;
+        if (mainCamera != null) rayOrigin = mainCamera.transform;
         if (rayOrigin == null) return false;
 
         if (Physics.Raycast(rayOrigin.position, rayOrigin.forward, out var hitInfo, interactDistance))
@@ -36,7 +43,7 @@ public abstract class AIEntitiy : SerializedMonoBehaviour
         return false;
     }
 
-    private void OnDrawGizmosSelected()
+    private void OnDrawGizmos()
     {
         if (rayOrigin == null) return;
 

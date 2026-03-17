@@ -11,7 +11,7 @@ public class NpcShopState : NpcBaseState
     private GameObject[] shops;
     ChangeStateWandererManager changeStateManager;
     private bool isShoppingDone;
-    public NpcShopState(AIEntitiy entity, Animator animator, NavMeshAgent agent, ChangeStateWandererManager changeStateManager) : base(entity, animator)
+    public  NpcShopState(AIEntitiy entity, Animator animator, NavMeshAgent agent, ChangeStateWandererManager changeStateManager) : base(entity, animator)
     {
         this.agent = agent;
         this.changeStateManager = changeStateManager;

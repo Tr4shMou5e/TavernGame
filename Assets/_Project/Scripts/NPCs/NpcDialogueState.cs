@@ -4,11 +4,12 @@ using UnityEngine.AI;
 public class NpcDialogueState : NpcBaseState
 {
     private NavMeshAgent agent;
-    
-    public NpcDialogueState(AIEntitiy entity, Animator animator, NavMeshAgent agent) : base(entity, animator)
+    private Transform playerTransform;
+    public NpcDialogueState(AIEntitiy entity, Animator animator, NavMeshAgent agent, Transform playerTransform) : base(entity, animator)
     {
         this.agent = agent;
         this.entity = entity;
+        this.playerTransform = playerTransform;
     }
 
     public override void OnEnter()
@@ -18,5 +19,11 @@ public class NpcDialogueState : NpcBaseState
         {
             agent.isStopped = true;
         }
+        FacePlayer();
+    }
+    private void FacePlayer()
+    {
+        var targetRot = Quaternion.LookRotation(-playerTransform.forward);
+        entity.transform.rotation = Quaternion.Slerp(entity.transform.rotation, targetRot, Time.deltaTime * 180f);
     }
 }

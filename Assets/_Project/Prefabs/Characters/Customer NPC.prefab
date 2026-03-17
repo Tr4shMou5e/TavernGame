@@ -164,8 +164,12 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  dialogue: {fileID: 11400000, guid: 71fd0f5c4ad23e442b82e647f103c725, type: 2}
+  interactDistance: 1
   player: {fileID: 0}
+  mainCamera: {fileID: 0}
+  customerMaleNames: {fileID: 11400000, guid: 7a01d932a8a2de74282630f1e16c8b0e, type: 2}
+  customerFemaleNames: {fileID: 11400000, guid: ed0f8fec8778acd4e99a5b5025fd7e60, type: 2}
+  dialogue: {fileID: 0}
   animator: {fileID: 8158734582451572894}
   agent: {fileID: 364496525172374012}
   changeStateManager: {fileID: 1480910004843882553}
@@ -175,8 +179,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   menuData: {fileID: 11400000, guid: d72ca3be659b68b41a1b55e9fe21e3fc, type: 2}
-  customerMaleNames: {fileID: 11400000, guid: 7a01d932a8a2de74282630f1e16c8b0e, type: 2}
-  customerFemaleNames: {fileID: 11400000, guid: ed0f8fec8778acd4e99a5b5025fd7e60, type: 2}
   canvas: {fileID: 4247086545932444269}
   eatDuration: 10
 --- !u!114 &1480910004843882553

@@ -3,30 +3,30 @@ using UnityEngine;
 using UnityEngine.AI;
 using System.Linq;
 using System;
+
 public class NpcCustomer : AIEntitiy
 {
     [SerializeField] Animator animator;
     [SerializeField] NavMeshAgent agent;
     [SerializeField] ChangeStateCustomerManager changeStateManager;
-    [SerializeField] Transform player;
     [SerializeField] List<OrderNode> orderQueue;
     [SerializeField] MenuData menuData;
-    [SerializeField] CustomerName customerMaleNames;
-    [SerializeField] CustomerName customerFemaleNames;
     [SerializeField] Canvas canvas;
     [SerializeField] private float eatDuration = 10f;
     
     private StateMachine stateMachine;
     
-    void Awake()
+    private void Awake()
     {
+        mainCamera = Camera.main;
         player = GameObject.FindGameObjectWithTag("Player").transform;
         orderQueue = FindObjectsByType<OrderNode>(FindObjectsSortMode.None).ToList();
         orderQueue.Sort((a,b) => string.Compare(a.name, b.name, StringComparison.Ordinal));
     }
-    void Start()
+    private void Start()
     {
         stateMachine = new StateMachine();
+        
         var customerNameObject = ScriptableObject.CreateInstance<CustomerName>();
         customerNameObject.names = GetComponentInChildren<SkinnedMeshRenderer>().gameObject.CompareTag("Male") ? customerMaleNames.names : customerFemaleNames.names;
         
@@ -45,14 +45,14 @@ public class NpcCustomer : AIEntitiy
         
         stateMachine.SetState(waitListState);
     }
-    void At(IState from, IState to, IPredicate condition) => stateMachine.AddTransition(from, to, condition);
-    void Any(IState to, IPredicate condition) => stateMachine.AddAnyTransition(to, condition);
-    void Update()
+    private void At(IState from, IState to, IPredicate condition) => stateMachine.AddTransition(from, to, condition);
+    private void Any(IState to, IPredicate condition) => stateMachine.AddAnyTransition(to, condition);
+    private void Update()
     {
         stateMachine.Update();
         
         changeStateManager.PlayerInRange = isPlayerInRange;
-        if (!isPlayerInRange) return;
+        if (!isPlayerInRange || !IsPlayerLookingAtMe()) return;
         
         if (InputManager.Instance.Interact())
         {
@@ -60,7 +60,7 @@ public class NpcCustomer : AIEntitiy
         }
     }
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
         stateMachine.FixedUpdate();
     }
