@@ -5,20 +5,14 @@ TagManager:
   serializedVersion: 3
   tags:
   - Chair
-  - Shop
-  - Dialogue Text
-  - Character Text
-  - OrderLine
-  - Male
-  - Female
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - NPC
+  - Chair
   - Water
   - UI
-  - Chair
+  - 
   - 
   - 
   - 
