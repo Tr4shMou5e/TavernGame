@@ -5,7 +5,8 @@ using Sirenix.OdinInspector;
 [RequireComponent(typeof(BoxCollider))]
 public abstract class AIEntitiy : SerializedMonoBehaviour
 {
-    [SerializeField] protected float interactDistance = 1f;
+    [SerializeField] protected float interactDistance = 2.4f;
+    [SerializeField] protected float radius = 0.25f;
     [SerializeField] protected Transform player;
     [SerializeField] protected Camera mainCamera;
     [SerializeField] protected CustomerName customerMaleNames;
@@ -31,26 +32,34 @@ public abstract class AIEntitiy : SerializedMonoBehaviour
     }
     protected bool IsPlayerLookingAtMe()
     {
-        if (mainCamera != null) rayOrigin = mainCamera.transform;
-        if (rayOrigin == null) return false;
-
-        if (Physics.Raycast(rayOrigin.position, rayOrigin.forward, out var hitInfo, interactDistance))
-        {
-            AIEntitiy npc = hitInfo.collider.GetComponentInParent<AIEntitiy>();
-            return npc == this;
-        }
-
-        return false;
+        if (mainCamera == null) return false;
+        
+        Vector3 toNpc = (transform.position - mainCamera.transform.position).normalized;
+        float dot = Vector3.Dot(mainCamera.transform.forward, toNpc);
+        
+        return dot > 0.9f;
     }
 
     private void OnDrawGizmos()
     {
-        if (rayOrigin == null) return;
+        if (mainCamera == null) return;
 
+        Vector3 cameraPos = mainCamera.transform.position;
+        Vector3 cameraForward = mainCamera.transform.forward;
+        Vector3 toNpc = (transform.position - cameraPos).normalized;
+
+        float dot = Vector3.Dot(cameraForward, toNpc);
+        float drawDistance = interactDistance;
+
+        // Camera forward ray
         Gizmos.color = Color.red;
-        Gizmos.DrawLine(rayOrigin.position, rayOrigin.position + rayOrigin.forward * interactDistance);
+        Gizmos.DrawLine(cameraPos, cameraPos + cameraForward * drawDistance);
 
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawSphere(rayOrigin.position + rayOrigin.forward * interactDistance, 0.2f);
+        // Direction from camera to NPC
+        Gizmos.color = dot > 0.9f ? Color.green : Color.yellow;
+        Gizmos.DrawLine(cameraPos, transform.position);
+
+        // Small sphere at NPC target point
+        Gizmos.DrawSphere(transform.position, 0.15f);
     }
 }

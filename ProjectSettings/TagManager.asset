@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 3
   tags:
   - Chair
+  - Dialogue Text
+  - Character Text
+  - Male
+  - Female
   layers:
   - Default
   - TransparentFX
@@ -12,7 +16,7 @@ TagManager:
   - Chair
   - Water
   - UI
-  - 
+  - Cloth
   - 
   - 
   - 

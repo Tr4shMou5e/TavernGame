@@ -30,6 +30,7 @@ public class NpcSitState : NpcBaseState
             .Select(chair => chair.GetComponent<ChairData>())
             .Where(chairData => chairData != null && !chairData.isOccupied)
             .ToList();
+        Debug.Log(pickedChairs.Count);
         if (pickedChairs.Count > 0)
         {
             randomChair = pickedChairs[Random.Range(0, pickedChairs.Count)];

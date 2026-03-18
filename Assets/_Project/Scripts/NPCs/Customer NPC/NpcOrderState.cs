@@ -91,6 +91,7 @@ public class NpcOrderState : NpcBaseState
     private void UpdateOrderNode()
     {
         Debug.Log("Updating order node");
+        if(orderQueue.Count == 0) return;
         for(int i = currentOrderIndex; i >= currentOrderIndex - 1; i--)
         {
             if(i < 0) break;
