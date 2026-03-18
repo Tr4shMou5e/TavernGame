@@ -1,8 +1,10 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour, IBind<PlayerData>
 {
+    [field: SerializeField] public SerializableGuid Id { get; set; } = SerializableGuid.NewGuid();
+    [SerializeField] private PlayerData data;
     [SerializeField] float turnSpeed = 180f;
     private float playerSpeed = 5.0f;
     private float gravityValue = -9.81f;
@@ -26,6 +28,11 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
+        //This is to make the player data persistent
+        data.position = transform.position;
+        data.rotation = transform.rotation;
+        
+        //Actual movement code starts here
         groundedPlayer = controller.isGrounded;
 
         if (groundedPlayer && playerVelocity.y < 0f)
@@ -62,4 +69,20 @@ public class PlayerController : MonoBehaviour
 
         controller.Move(motion * Time.deltaTime);
     }
+    
+    public void Bind(PlayerData data)
+    {
+        this.data = data;
+        this.data.Id = Id;
+        transform.position = data.position;
+        transform.rotation = data.rotation;
+    }
+}
+
+[Serializable]
+public class PlayerData : ISaveable
+{
+    [field: SerializeField] public SerializableGuid Id { get; set; }
+    public Vector3 position;
+    public Quaternion rotation;
 }
