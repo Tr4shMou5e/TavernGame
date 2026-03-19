@@ -28,7 +28,7 @@ public class BookController : MonoBehaviour
     // currentPage values for each section's first spread
     private const int PAGE_OVERVIEW = 0;
     private const int PAGE_RECIPES  = 2;   // Food divider spread
-    private const int PAGE_SETTINGS = 18;  // adjust if your total pages differ
+    private const int PAGE_SETTINGS = 20;  // adjust if your total pages differ
 
     void Start()
     {
