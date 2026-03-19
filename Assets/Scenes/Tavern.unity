@@ -1129,9 +1129,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 000fc1b068761b449ad7468e35acd5be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PantryItemUI
-  itemName: Potato
+  foodItem: {fileID: 11400000, guid: 7590dca8a4548bd44bf3766eb7da234d, type: 2}
   highlight: {fileID: 317111594}
-  icon: {fileID: 1288872782}
 --- !u!1 &62968975
 GameObject:
   m_ObjectHideFlags: 0
@@ -1362,9 +1361,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 000fc1b068761b449ad7468e35acd5be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PantryItemUI
-  itemName: Herb
+  foodItem: {fileID: 11400000, guid: ad55b32164599064c99f8e407950a5de, type: 2}
   highlight: {fileID: 1193129821}
-  icon: {fileID: 866300109}
 --- !u!1001 &68966019
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3957,9 +3955,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 000fc1b068761b449ad7468e35acd5be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PantryItemUI
-  itemName: Beef
+  foodItem: {fileID: 11400000, guid: b27241742fd1e5a4f9c74e34e38fc72e, type: 2}
   highlight: {fileID: 1946505072}
-  icon: {fileID: 686921134}
 --- !u!1 &220681359
 GameObject:
   m_ObjectHideFlags: 0
@@ -5984,9 +5981,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 000fc1b068761b449ad7468e35acd5be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PantryItemUI
-  itemName: Butter
+  foodItem: {fileID: 11400000, guid: 3a38f685dae70f54a8b9c525e027e4c8, type: 2}
   highlight: {fileID: 954947444}
-  icon: {fileID: 1242996181}
 --- !u!1001 &330299820
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6697,9 +6693,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 000fc1b068761b449ad7468e35acd5be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PantryItemUI
-  itemName: Turkey
+  foodItem: {fileID: 11400000, guid: f69b250811ac79a439d7e8c34226aad8, type: 2}
   highlight: {fileID: 124198958}
-  icon: {fileID: 2131446042}
 --- !u!1001 &362819688
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11315,9 +11310,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 000fc1b068761b449ad7468e35acd5be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PantryItemUI
-  itemName: Pumpkin
+  foodItem: {fileID: 11400000, guid: 50be596c4d251414ba972860fc13c6a8, type: 2}
   highlight: {fileID: 2070576791}
-  icon: {fileID: 88279472}
 --- !u!1 &661108432
 GameObject:
   m_ObjectHideFlags: 0
@@ -13646,9 +13640,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 000fc1b068761b449ad7468e35acd5be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PantryItemUI
-  itemName: SweetPotato
+  foodItem: {fileID: 11400000, guid: 91200fb6b9d679447a9e003091ec64cf, type: 2}
   highlight: {fileID: 469776558}
-  icon: {fileID: 2027353517}
 --- !u!1001 &744901196
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16730,9 +16723,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 000fc1b068761b449ad7468e35acd5be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PantryItemUI
-  itemName: Lemon
+  foodItem: {fileID: 11400000, guid: f5607d4b1b609e744afa57c3206791c1, type: 2}
   highlight: {fileID: 1570828517}
-  icon: {fileID: 1908469127}
 --- !u!1001 &921031280
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17197,9 +17189,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 000fc1b068761b449ad7468e35acd5be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PantryItemUI
-  itemName: CurrySpices
+  foodItem: {fileID: 11400000, guid: 7eaeeb968fb731f49994a7b62c49885a, type: 2}
   highlight: {fileID: 1795163520}
-  icon: {fileID: 2103608671}
 --- !u!1001 &945154420
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18359,9 +18350,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 000fc1b068761b449ad7468e35acd5be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PantryItemUI
-  itemName: Sugar
+  foodItem: {fileID: 11400000, guid: 0aecceb7aa1d52243a39f3b19a7eed7e, type: 2}
   highlight: {fileID: 1171351296}
-  icon: {fileID: 304024616}
 --- !u!1001 &1014125709
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20302,9 +20292,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 000fc1b068761b449ad7468e35acd5be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PantryItemUI
-  itemName: Fish
+  foodItem: {fileID: 11400000, guid: 409fa4cb54902c5448e798f28aec532f, type: 2}
   highlight: {fileID: 1440233797}
-  icon: {fileID: 338413052}
 --- !u!1001 &1124121577
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21573,9 +21562,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 000fc1b068761b449ad7468e35acd5be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PantryItemUI
-  itemName: Carrot
+  foodItem: {fileID: 11400000, guid: 6d212cc8986cc234aa043634042d0889, type: 2}
   highlight: {fileID: 406495572}
-  icon: {fileID: 1555756616}
 --- !u!1 &1193129821
 GameObject:
   m_ObjectHideFlags: 0
@@ -21742,9 +21730,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 000fc1b068761b449ad7468e35acd5be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PantryItemUI
-  itemName: PieCrust
+  foodItem: {fileID: 11400000, guid: 7324437888f197b45942eb94627af05d, type: 2}
   highlight: {fileID: 1090024732}
-  icon: {fileID: 960484077}
 --- !u!1001 &1195226949
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22187,9 +22174,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 000fc1b068761b449ad7468e35acd5be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PantryItemUI
-  itemName: Cherries
+  foodItem: {fileID: 11400000, guid: fa700f2baebc5f942a55827d780d5b71, type: 2}
   highlight: {fileID: 1091865498}
-  icon: {fileID: 729884167}
 --- !u!1 &1224189963
 GameObject:
   m_ObjectHideFlags: 0
@@ -22281,9 +22267,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 000fc1b068761b449ad7468e35acd5be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PantryItemUI
-  itemName: Grapes
+  foodItem: {fileID: 11400000, guid: e5f686d858b4f8f44bfd6fc847207293, type: 2}
   highlight: {fileID: 468281306}
-  icon: {fileID: 1140067979}
 --- !u!1 &1232011006
 GameObject:
   m_ObjectHideFlags: 0
@@ -23189,9 +23174,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 000fc1b068761b449ad7468e35acd5be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PantryItemUI
-  itemName: CuredMeat
+  foodItem: {fileID: 11400000, guid: 92e383f35a9f8874780d88417d9d0e78, type: 2}
   highlight: {fileID: 752522811}
-  icon: {fileID: 1794628601}
 --- !u!1 &1288872782
 GameObject:
   m_ObjectHideFlags: 0
@@ -25143,9 +25127,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 000fc1b068761b449ad7468e35acd5be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PantryItemUI
-  itemName: Rice
+  foodItem: {fileID: 11400000, guid: 6a9f74a0d2530ee4ba4a8abe89782c6e, type: 2}
   highlight: {fileID: 461354061}
-  icon: {fileID: 2004105784}
 --- !u!1001 &1397321637
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25622,9 +25605,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 000fc1b068761b449ad7468e35acd5be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PantryItemUI
-  itemName: Salt
+  foodItem: {fileID: 11400000, guid: f228d3615b6a2da4bab7fd3a8bfb5c03, type: 2}
   highlight: {fileID: 899721567}
-  icon: {fileID: 1016960095}
 --- !u!1001 &1430884848
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33681,9 +33663,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 000fc1b068761b449ad7468e35acd5be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PantryItemUI
-  itemName: Cheese
+  foodItem: {fileID: 11400000, guid: b54f6f22b2d59044bb6466bd6bd73ef5, type: 2}
   highlight: {fileID: 2047347094}
-  icon: {fileID: 403720588}
 --- !u!1 &1871744518
 GameObject:
   m_ObjectHideFlags: 0
@@ -36363,7 +36344,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7ebfd836bb39c4846ac974209a1ac2d0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c329a95cc88bdcc4db561a3ad81f8198, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -37465,9 +37446,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 000fc1b068761b449ad7468e35acd5be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PantryItemUI
-  itemName: Apple
+  foodItem: {fileID: 11400000, guid: 0818f1a113529044e98eafed176114ce, type: 2}
   highlight: {fileID: 915882159}
-  icon: {fileID: 1871744518}
 --- !u!1001 &2090883715
 PrefabInstance:
   m_ObjectHideFlags: 0
