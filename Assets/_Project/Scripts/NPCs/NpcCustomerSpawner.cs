@@ -2,11 +2,13 @@
 using UnityEngine;
 using System.Collections;
 using Random = UnityEngine.Random;
-public class NpcCustomerSpawner : MonoBehaviour
+public class NpcCustomerSpawner : MonoBehaviour, IBind<CurrentDayData>
 {
     [SerializeField] float spawnTime = 5f;
     [SerializeField] CustomerAmountData maxCustomers;
     
+    [field: SerializeField] public SerializableGuid Id { get; set; } = SerializableGuid.NewGuid();
+    private CurrentDayData data;
     private int maxAmount;
     private Days currentDay;
     private NpcCustomerSpawnerObjectPoolManager customerPool;
@@ -21,6 +23,9 @@ public class NpcCustomerSpawner : MonoBehaviour
 
     void Update()
     {
+        //Updates the current day for the saving system
+        data.currentDay = currentDay;
+        
         SpawnCustomer();
     }
 
@@ -33,7 +38,13 @@ public class NpcCustomerSpawner : MonoBehaviour
             maxAmount--;
         }
     }
-    
+
+    public void Bind(CurrentDayData data)
+    {
+        this.data = data;
+        this.data.Id = Id;
+        currentDay = data.currentDay;
+    }
 }
 
 public enum Days
@@ -41,4 +52,10 @@ public enum Days
     Day1,
     Day2,
     Day3
+}
+[Serializable]
+public class CurrentDayData : ISaveable
+{
+    [field: SerializeField] public SerializableGuid Id { get; set; }
+    public Days currentDay;
 }

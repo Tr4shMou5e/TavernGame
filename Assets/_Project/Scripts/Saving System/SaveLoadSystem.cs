@@ -10,6 +10,8 @@ public class GameData
     public string Name;
     public string CurrentLevelName;
     public PlayerData PlayerData;
+    public CurrentDayData CurrentDayData;
+    public List<AIEntityData> AIEntities;
 }
 
 public interface ISaveable
@@ -25,6 +27,8 @@ public interface IBind<TData> where TData : ISaveable
 public class SaveLoadSystem : PersistentSingleton< SaveLoadSystem>
 {
     [SerializeField] public GameData gameData;
+    [SerializeField] private float saveInterval = 10f;
+    private float timeSinceLastSpawn;
     
     IDataService dataService;
     
@@ -44,15 +48,25 @@ public class SaveLoadSystem : PersistentSingleton< SaveLoadSystem>
         //     return;
         // }
         Bind<PlayerController, PlayerData>(gameData.PlayerData);
+        Bind<NpcCustomerSpawner, CurrentDayData>(gameData.CurrentDayData);
+        Bind<AIEntitiy, AIEntityData>(gameData.AIEntities);
     }
+    
+    
     
     void Start()
     {
-        Debug.Log(gameData);
         NewGame();
-        Debug.Log(gameData);
     }
-    
+
+    void Update()
+    {
+        if (Time.time > timeSinceLastSpawn)
+        {
+            SaveGame();
+            timeSinceLastSpawn = Time.time + saveInterval;
+        }
+    }
     void Bind<T, TData>(TData data) where T : MonoBehaviour, IBind<TData> where TData : ISaveable, new()
     {
         var entity = FindObjectsByType<T>(FindObjectsSortMode.None).FirstOrDefault();
@@ -68,6 +82,8 @@ public class SaveLoadSystem : PersistentSingleton< SaveLoadSystem>
     void Bind<T, TData>(List<TData> datas) where T : MonoBehaviour, IBind<TData> where TData : ISaveable, new()
     {
         var entities = FindObjectsByType<T>(FindObjectsSortMode.None);
+        Debug.Log(entities.Length);
+        if(entities.Length == 0) return;
         foreach (var entity in entities)
         {
             var data = datas.FirstOrDefault(d => d.Id == entity.Id);
@@ -78,6 +94,27 @@ public class SaveLoadSystem : PersistentSingleton< SaveLoadSystem>
             }
             entity.Bind(data);
         }
+    }
+    public void RegisterAIEntity(AIEntitiy entity)
+    {
+        if (gameData.AIEntities == null)
+            gameData.AIEntities = new List<AIEntityData>();
+
+        var existingData = gameData.AIEntities.FirstOrDefault(d => d.Id == entity.Id);
+
+        if (existingData == null)
+        {
+            existingData = new AIEntityData
+            {
+                Id = entity.Id,
+                position = entity.transform.position,
+                rotation = entity.transform.rotation
+            };
+
+            gameData.AIEntities.Add(existingData);
+        }
+
+        entity.Bind(existingData);
     }
     public void NewGame()
     {

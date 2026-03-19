@@ -3,7 +3,7 @@ using UnityEngine;
 using Sirenix.OdinInspector;
 
 [RequireComponent(typeof(BoxCollider))]
-public abstract class AIEntitiy : SerializedMonoBehaviour
+public abstract class AIEntitiy : SerializedMonoBehaviour, IBind<AIEntityData>
 {
     [SerializeField] protected float interactDistance = 2.4f;
     [SerializeField] protected float radius = 0.25f;
@@ -11,9 +11,11 @@ public abstract class AIEntitiy : SerializedMonoBehaviour
     [SerializeField] protected Camera mainCamera;
     [SerializeField] protected CustomerName customerMaleNames;
     [SerializeField] protected CustomerName customerFemaleNames;
-    
+
+    [field: SerializeField] public SerializableGuid Id { get; set; } = SerializableGuid.NewGuid();
     protected Transform rayOrigin;
     protected bool isPlayerInRange;
+    protected AIEntityData data;
     public Dialogue dialogue;
     public bool IsPlayerInRange => isPlayerInRange;
     
@@ -62,4 +64,28 @@ public abstract class AIEntitiy : SerializedMonoBehaviour
         // Small sphere at NPC target point
         Gizmos.DrawSphere(transform.position, 0.15f);
     }
+
+    
+    public virtual void Bind(AIEntityData data)
+    {
+        // noop
+    }
+}
+
+[Serializable]
+public class AIEntityData : ISaveable
+{
+    [field: SerializeField] public SerializableGuid Id { get; set; }
+    public CustomerStateType currentState;
+    public Vector3 position;
+    public Quaternion rotation;
+}
+
+public enum CustomerStateType
+{
+    WaitList,
+    Order,
+    Sit,
+    Eat,
+    Exit
 }

@@ -76,6 +76,7 @@ public class NpcCustomerSpawnerObjectPoolManager : MonoBehaviour
         var randomCostume = costumes[Random.Range(0, costumes.Count)];
         randomCostume.gameObject.SetActive(true);
         customer.SetActive(false);
+        SaveLoadSystem.Instance.RegisterAIEntity(customer.GetComponent<AIEntitiy>());
         return customer;
     }
     private void OnGetCustomer(GameObject customer)

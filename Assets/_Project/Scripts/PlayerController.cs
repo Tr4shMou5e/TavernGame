@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour, IBind<PlayerData>
@@ -77,12 +76,4 @@ public class PlayerController : MonoBehaviour, IBind<PlayerData>
         transform.position = data.position;
         transform.rotation = data.rotation;
     }
-}
-
-[Serializable]
-public class PlayerData : ISaveable
-{
-    [field: SerializeField] public SerializableGuid Id { get; set; }
-    public Vector3 position;
-    public Quaternion rotation;
-}
+} 

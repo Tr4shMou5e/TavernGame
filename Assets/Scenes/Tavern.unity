@@ -13017,6 +13017,14 @@ MonoBehaviour:
         Part4: 0
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 0}
+    CurrentDayData:
+      <Id>k__BackingField:
+        Part1: 0
+        Part2: 0
+        Part3: 0
+        Part4: 0
+      currentDay: 0
+    AIEntities: []
 --- !u!1001 &1135956772
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -78,7 +78,8 @@ public class StateMachine
 
         return node;
     }
-    class StateNode
+    public IState GetCurrentState() => current.State;
+    private class StateNode
     {
         public IState State { get; }
         public HashSet<ITransition> Transitions { get; }
