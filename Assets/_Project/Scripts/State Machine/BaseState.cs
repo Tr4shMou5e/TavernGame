@@ -37,4 +37,15 @@ public abstract class BaseState : IState
     {
         // noop
     }
+
+    public T Get<T>()
+    {
+        // noop
+        return default;
+    }
+
+    public void Set<T>(T component)
+    {
+        // noop
+    }
 }

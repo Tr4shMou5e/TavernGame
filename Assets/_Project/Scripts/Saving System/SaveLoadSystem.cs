@@ -11,7 +11,6 @@ public class GameData
     public string CurrentLevelName;
     public PlayerData PlayerData;
     public CurrentDayData CurrentDayData;
-    public List<AIEntityData> AIEntities;
 }
 
 public interface ISaveable
@@ -49,7 +48,7 @@ public class SaveLoadSystem : PersistentSingleton< SaveLoadSystem>
         // }
         Bind<PlayerController, PlayerData>(gameData.PlayerData);
         Bind<NpcCustomerSpawner, CurrentDayData>(gameData.CurrentDayData);
-        Bind<AIEntitiy, AIEntityData>(gameData.AIEntities);
+        
     }
     
     
@@ -95,27 +94,38 @@ public class SaveLoadSystem : PersistentSingleton< SaveLoadSystem>
             entity.Bind(data);
         }
     }
-    public void RegisterAIEntity(AIEntitiy entity)
-    {
-        if (gameData.AIEntities == null)
-            gameData.AIEntities = new List<AIEntityData>();
-
-        var existingData = gameData.AIEntities.FirstOrDefault(d => d.Id == entity.Id);
-
-        if (existingData == null)
-        {
-            existingData = new AIEntityData
-            {
-                Id = entity.Id,
-                position = entity.transform.position,
-                rotation = entity.transform.rotation
-            };
-
-            gameData.AIEntities.Add(existingData);
-        }
-
-        entity.Bind(existingData);
-    }
+    // public AIEntityData RegisterAIEntity(AIEntitiy entity)
+    // {
+    //     if (gameData.AIEntities == null)
+    //         gameData.AIEntities = new List<AIEntityData>();
+    //
+    //     var existingData = gameData.AIEntities.FirstOrDefault(d => d.Id == entity.Id);
+    //
+    //     if (existingData == null)
+    //     {
+    //         existingData = new AIEntityData
+    //         {
+    //             Id = entity.Id,
+    //             position = entity.transform.position,
+    //             rotation = entity.transform.rotation
+    //         };
+    //
+    //         gameData.AIEntities.Add(existingData);
+    //     }
+    //
+    //     entity.Bind(existingData);
+    //     return existingData;
+    // }
+    // public void UnregisterAIEntity(AIEntitiy entity)
+    // {
+    //     if (gameData?.AIEntities == null) return;
+    //
+    //     var existing = gameData.AIEntities.FirstOrDefault(d => d.Id == entity.Id);
+    //     if (existing != null)
+    //     {
+    //         gameData.AIEntities.Remove(existing);
+    //     }
+    // }
     public void NewGame()
     {
         gameData = new GameData

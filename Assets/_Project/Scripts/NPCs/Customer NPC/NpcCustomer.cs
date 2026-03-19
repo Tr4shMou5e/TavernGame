@@ -14,14 +14,13 @@ public class NpcCustomer : AIEntitiy
     [SerializeField] Canvas canvas;
     [SerializeField] private float eatDuration = 10f;
     
-    private bool hasPendingBind;
     private StateMachine stateMachine;
     
-    private IState orderState;
-    private IState waitListState;
-    private IState sitState;
-    private IState eatState;
-    private IState exitState;
+    private NpcOrderState orderState;
+    private NpcWaitListState waitListState;
+    private NpcSitState sitState;
+    private NpcEatState eatState;
+    private NpcExitState exitState;
     
     private void Awake()
     {
@@ -35,7 +34,9 @@ public class NpcCustomer : AIEntitiy
         stateMachine = new StateMachine();
         
         var customerNameObject = ScriptableObject.CreateInstance<CustomerName>();
-        customerNameObject.names = GetComponentInChildren<SkinnedMeshRenderer>().gameObject.CompareTag("Male") ? customerMaleNames.names : customerFemaleNames.names;
+        customerNameObject.names = GetComponentInChildren<SkinnedMeshRenderer>().gameObject.CompareTag("Male") 
+            ? customerMaleNames.names 
+            : customerFemaleNames.names;
         
         orderState = new NpcOrderState(this, animator, agent, player, changeStateManager, orderQueue, menuData, canvas, customerNameObject);
         waitListState = new NpcWaitListState(this, animator, agent, changeStateManager, orderQueue);
@@ -50,27 +51,13 @@ public class NpcCustomer : AIEntitiy
         At(eatState, exitState, new FuncPredicate(() => changeStateManager.FinishedEating()));
         At(exitState, waitListState, new FuncPredicate(() => changeStateManager.IsReleasedFromPool()));
         
-        
-        if (hasPendingBind && data != null)
-        {
-            RestoreSavedState();
-        }
-        else
-        {
-            stateMachine.SetState(waitListState);
-        }
+        stateMachine.SetState(waitListState);
     }
     private void At(IState from, IState to, IPredicate condition) => stateMachine.AddTransition(from, to, condition);
     private void Any(IState to, IPredicate condition) => stateMachine.AddAnyTransition(to, condition);
     private void Update()
     {
-        if (data != null)
-        {
-            data.position = transform.position;
-            data.rotation = transform.rotation;
-            data.currentState = GetCurrentStateType();
-        }
-        
+        if (stateMachine == null) return;
         stateMachine.Update();
         
         changeStateManager.PlayerInRange = isPlayerInRange;
@@ -84,52 +71,7 @@ public class NpcCustomer : AIEntitiy
 
     private void FixedUpdate()
     {
+        if (stateMachine == null) return;
         stateMachine.FixedUpdate();
-    }
-
-    public override void Bind(AIEntityData data)
-    {
-        this.data = data;
-        this.data.Id = Id;
-        
-        transform.position = data.position;
-        transform.rotation = data.rotation;
-        
-        hasPendingBind = true;
-    }
-    private CustomerStateType GetCurrentStateType()
-    {
-        var current = stateMachine.GetCurrentState();
-
-        if (current is NpcOrderState) return CustomerStateType.Order;
-        if (current is NpcWaitListState) return CustomerStateType.WaitList;
-        if (current is NpcSitState) return CustomerStateType.Sit;
-        if (current is NpcEatState) return CustomerStateType.Eat;
-        if (current is NpcExitState) return CustomerStateType.Exit;
-
-        return CustomerStateType.WaitList;
-    }
-    private void RestoreSavedState()
-    {
-        switch (data.currentState)
-        {
-            case CustomerStateType.Order:
-                stateMachine.SetState(orderState);
-                break;
-            case CustomerStateType.Sit:
-                stateMachine.SetState(sitState);
-                break;
-            case CustomerStateType.Eat:
-                stateMachine.SetState(eatState);
-                break;
-            case CustomerStateType.Exit:
-                stateMachine.SetState(exitState);
-                break;
-            default:
-                stateMachine.SetState(waitListState);
-                break;
-        }
-
-        hasPendingBind = false;
     }
 }

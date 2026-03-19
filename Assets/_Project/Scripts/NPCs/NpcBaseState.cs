@@ -28,4 +28,15 @@ public abstract class NpcBaseState : IState
     {
         // noop
     }
+
+    public virtual T Get<T>()
+    {
+        // noop
+        return default;
+    }
+
+    public virtual void Set<T>(T component)
+    {
+        // noop
+    }
 }

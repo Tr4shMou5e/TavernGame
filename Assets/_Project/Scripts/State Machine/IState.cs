@@ -6,4 +6,6 @@ public interface IState
     void Update();
     void FixedUpdate();
     void OnExit();
+    T Get<T>();
+    void Set<T>(T component);
 }

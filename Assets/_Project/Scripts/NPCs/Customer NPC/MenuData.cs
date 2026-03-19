@@ -17,5 +17,5 @@ public class MenuData: ScriptableObject
         var randomIndex = Random.Range(0, menuItems.Count);
         return menuItems[randomIndex];
     }
-    
+    public List<FoodItem> GetMenuItems() => menuItems;
 }

@@ -32,10 +32,6 @@ public class NpcCustomerSpawnerObjectPoolManager : MonoBehaviour
             return;
         }
         instance = this;
-    }
-    
-    private void Start()
-    {
         InitializePool();
     }
 
@@ -51,9 +47,9 @@ public class NpcCustomerSpawnerObjectPoolManager : MonoBehaviour
             maxSize: maxSize);
     }
 
-    public bool CanSpawnCustomer(GameObject customer)
+    public bool CanSpawnCustomer()
     {
-        return !Counts.TryGetValue(customer, out var count) || count < maxCustomerInstances;
+        return activeCustomers.Count < maxCustomerInstances;
     }
     public GameObject GetCustomer()
     {
@@ -69,24 +65,30 @@ public class NpcCustomerSpawnerObjectPoolManager : MonoBehaviour
     private GameObject SpawnCustomer()
     {
         var customer = Instantiate(customerPrefab, GetRandomPosition(), Quaternion.identity, customerParent);
+        
         costumes = customer.GetComponentsInChildren<SkinnedMeshRenderer>(true).ToList();
         var currentActiveCostume = customer.GetComponentInChildren<SkinnedMeshRenderer>();
-        currentActiveCostume.gameObject.SetActive(false);
+        if(currentActiveCostume != null)
+        {
+            currentActiveCostume.gameObject.SetActive(false);
+        }
         
         var randomCostume = costumes[Random.Range(0, costumes.Count)];
         randomCostume.gameObject.SetActive(true);
         customer.SetActive(false);
-        SaveLoadSystem.Instance.RegisterAIEntity(customer.GetComponent<AIEntitiy>());
         return customer;
     }
     private void OnGetCustomer(GameObject customer)
     {
         customer.SetActive(true);
         customer.transform.position = GetRandomPosition();
+        
+        customer.GetComponent<ChangeStateCustomerManager>().ReleasedFromPool = true;
         activeCustomers.Add(customer);
     }
     private void OnReleaseCustomer(GameObject customer)
     {
+        customer.GetComponent<ChangeStateCustomerManager>().ReleasedFromPool = false;
         customer.SetActive(false);
         activeCustomers.Remove(customer);
     }

@@ -69,4 +69,13 @@ public class NpcSitState : NpcBaseState
     {
         randomChair.isOccupied = false;
     }
+
+    public T Get<T>() where T : ChairData
+    {
+        return randomChair as T;
+    }
+    public void Set<T>(T component)
+    {
+        randomChair = component as ChairData;
+    }
 }
