@@ -858,7 +858,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1007772760}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: AutoFlip, Assembly-CSharp
         m_MethodName: FlipRightPage
         m_Mode: 1
         m_Arguments:
