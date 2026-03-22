@@ -836,7 +836,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1023713907}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dee5a11f2605a804bb370bc3e076fe3e, type: 3}
+  m_Script: {fileID: 11500000, guid: e65918728f1daee459d82fbf543fb910, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TitleScreenController
 --- !u!1 &1027427499
