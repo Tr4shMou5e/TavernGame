@@ -23,11 +23,11 @@ public interface IBind<TData> where TData : ISaveable
     SerializableGuid Id { get; set; }
     void Bind(TData data);
 }
-public class SaveLoadSystem : PersistentSingleton< SaveLoadSystem>
+public class SaveLoadSystem : PersistentSingleton<SaveLoadSystem>
 {
     [SerializeField] public GameData gameData;
     [SerializeField] private float saveInterval = 10f;
-    private float timeSinceLastSpawn;
+    private float timeSinceLastSave;
     
     IDataService dataService;
     
@@ -58,14 +58,14 @@ public class SaveLoadSystem : PersistentSingleton< SaveLoadSystem>
         NewGame();
     }
 
-    void Update()
-    {
-        if (Time.time > timeSinceLastSpawn)
-        {
-            SaveGame();
-            timeSinceLastSpawn = Time.time + saveInterval;
-        }
-    }
+    // void Update()
+    // {
+    //     if (Time.time > timeSinceLastSave)
+    //     {
+    //         SaveGame();
+    //         timeSinceLastSave = Time.time + saveInterval;
+    //     }
+    // }
     void Bind<T, TData>(TData data) where T : MonoBehaviour, IBind<TData> where TData : ISaveable, new()
     {
         var entity = FindObjectsByType<T>(FindObjectsSortMode.None).FirstOrDefault();
@@ -81,8 +81,6 @@ public class SaveLoadSystem : PersistentSingleton< SaveLoadSystem>
     void Bind<T, TData>(List<TData> datas) where T : MonoBehaviour, IBind<TData> where TData : ISaveable, new()
     {
         var entities = FindObjectsByType<T>(FindObjectsSortMode.None);
-        Debug.Log(entities.Length);
-        if(entities.Length == 0) return;
         foreach (var entity in entities)
         {
             var data = datas.FirstOrDefault(d => d.Id == entity.Id);
@@ -136,7 +134,11 @@ public class SaveLoadSystem : PersistentSingleton< SaveLoadSystem>
         SceneManager.LoadScene(gameData.CurrentLevelName);
     }
 
-    public void SaveGame() => dataService.Save(gameData);
+    public void SaveGame()
+    {
+        dataService.Save(gameData);
+        Debug.Log("Game saved");
+    } 
 
     public void LoadGame(string gameName)
     {

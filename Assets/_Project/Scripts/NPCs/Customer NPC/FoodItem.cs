@@ -8,4 +8,5 @@ public class FoodItem
     public Sprite dishImage;
     public string id;
     public float price;
+    public int score;
 }
