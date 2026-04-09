@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 7458076366585563120}
   - component: {fileID: 7827454218166032204}
   - component: {fileID: 3298993903590464823}
+  - component: {fileID: 1704377151743305242}
   m_Layer: 7
   m_Name: Mini Game Food Item Prefab
-  m_TagString: Untagged
+  m_TagString: Mini Game Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -166,3 +167,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1704377151743305242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4090989068846184255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5e77b8ebb349e2bd23a18f529b1234, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DespawnFood

@@ -1,5 +1,8 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.Pool;
+using Random = UnityEngine.Random;
+
 public class MiniGameFoodSpawnerObjectPoolManager : MonoBehaviour
 {
     
@@ -16,8 +19,7 @@ public class MiniGameFoodSpawnerObjectPoolManager : MonoBehaviour
     [SerializeField] private Transform spawnParent;
     [SerializeField] private bool collectionCheck = true;
     [SerializeField] private int defaultPoolSize = 10;
-    [SerializeField] private int maxSize = 50;
-    [SerializeField] private int maxCustomerInstances = 30;
+    [SerializeField] private int maxSize = 20;
     
     private IObjectPool<GameObject> foodPool;
     private static MiniGameFoodSpawnerObjectPoolManager instance;

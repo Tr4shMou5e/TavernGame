@@ -1,17 +1,23 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using ImprovedTimers;
 using UnityEngine;
 [RequireComponent(typeof(BoxCollider))]
 public class StoveInteractableMiniGame : InteractableObject
 {
     [SerializeField] private float spawnTime = 0.1f;
+    [SerializeField] private float maxMiniGameTime = 100f;
+    private CountdownTimer timer;
     private MiniGameFoodSpawnerObjectPoolManager miniGameFoodSpawner;
     private float timeSinceLastSpawn;
-    void Awake()
+    
+    public static event Action<GameObject> OnFoodSpawned;  
+    public override void Awake()
     {
+        base.Awake();
+        timer = new CountdownTimer(maxMiniGameTime);
         miniGameFoodSpawner = MiniGameFoodSpawnerObjectPoolManager.Instance;
-        inputManager = InputManager.Instance;
     }
     /// <summary>
     /// Figure out how to make a win condition.
@@ -22,32 +28,45 @@ public class StoveInteractableMiniGame : InteractableObject
     /// </summary>
     public override void Interact()
     {
+        if (miniGameRunning) return;
         base.Interact();
-        if (miniGameFoodSpawner == null) return;
-        if (Time.time > timeSinceLastSpawn)
-        {
-            miniGameFoodSpawner?.GetFood();
-            timeSinceLastSpawn = Time.time + spawnTime;
-        }
+        withCustomCursor = true;
     }
-
     private void Update()
     {
         Interact();
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        if (!other.CompareTag("Player")) return;
-        Debug.Log("Player entered");
-        StartStopMiniGame();
+        MiniGame();
     }
 
-    private void OnTriggerExit(Collider other)
+    void MiniGame()
     {
-        if (!other.CompareTag("Player")) return;
-        StartStopMiniGame();
-        //if(Game is done)
-        //StopComponents();
+        if (!miniGameRunning) return;
+        if (miniGameFoodSpawner is null) return;
+        
+        if (Time.time > timeSinceLastSpawn)
+        { 
+            var foodItem = miniGameFoodSpawner?.GetFood(); 
+            OnFoodSpawned?.Invoke(foodItem);
+            timeSinceLastSpawn = Time.time + spawnTime;
+        }
+        
+        if (!timer.IsFinished) return;
+        
+        EndMiniGame();
+        timer.Reset();
     }
-    
+    void StartTimer()
+    {
+        timer.Start();
+    }
+
+    private void OnEnable()
+    {
+        OnMiniGameStart += StartTimer;
+    }
+    private void OnDisable()
+    {
+        OnMiniGameStart -= StartTimer;
+    }
 }   
+

@@ -9,6 +9,7 @@ TagManager:
   - Character Text
   - Male
   - Female
+  - Mini Game Food
   layers:
   - Default
   - TransparentFX

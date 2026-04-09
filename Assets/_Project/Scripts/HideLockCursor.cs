@@ -7,6 +7,19 @@ public class HideLockCursor : MonoBehaviour
     public CursorLockMode LockState { set => lockState = value; }
     [SerializeField] bool isVisible; 
     public bool IsVisible { set => isVisible = value; }
+    
+    private static HideLockCursor instance;
+    public static HideLockCursor Instance => instance;
+
+    private void Awake()
+    {
+        if (instance != null && instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        instance = this;
+    }
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -26,5 +39,9 @@ public class HideLockCursor : MonoBehaviour
     public void SetVisibility(bool state)
     {
         isVisible = state;
+    }
+    public void ChangeCursorSprite(Texture2D sprite)
+    {
+        Cursor.SetCursor(sprite, Vector2.zero, CursorMode.Auto);
     }
 }
