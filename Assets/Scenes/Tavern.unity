@@ -10459,6 +10459,59 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4191502681665624, guid: d8c64f7492a26b9459ebe61ccaf38a2c, type: 3}
   m_PrefabInstance: {fileID: 635988522}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &637489528
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 637489530}
+  - component: {fileID: 637489529}
+  m_Layer: 0
+  m_Name: Camera Bounds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &637489529
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637489528}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 20.24061, y: 3.3750188, z: 19.899485}
+  m_Center: {x: -4.9511347, y: 1.187509, z: -3.0170374}
+--- !u!4 &637489530
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637489528}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.24038, y: -0.10873, z: 12.41515}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &638603887
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18839,6 +18892,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cinemachine Camera Settings
       objectReference: {fileID: 0}
+    - target: {fileID: 6928868986839628211, guid: 0ea8184d07444d8458b5f0d5abc7d354, type: 3}
+      propertyPath: BoundingVolume
+      value: 
+      objectReference: {fileID: 637489529}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25480,6 +25537,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7883493651014254285, guid: 1ae87c67129ef334bbf026ee4eadc50e, type: 3}
   m_PrefabInstance: {fileID: 1496095963}
   m_PrefabAsset: {fileID: 0}
+--- !u!20 &1498307868 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 7106642922349474509, guid: 227f840de1a98b9428704b3e61c74afa, type: 3}
+  m_PrefabInstance: {fileID: 1079861422704700023}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1507428046
 GameObject:
   m_ObjectHideFlags: 0
@@ -31669,6 +31731,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1849381965}
   m_CullTransparentMesh: 1
+--- !u!114 &1850548645 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3375005721322836177, guid: 227f840de1a98b9428704b3e61c74afa, type: 3}
+  m_PrefabInstance: {fileID: 1079861422704700023}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!114 &1856923326 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4473933961755088622, guid: 71e737aa6bb783a44bff0568743b5515, type: 3}
@@ -36282,9 +36355,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::StoveInteractableMiniGame
   player: {fileID: 212473835}
   miniGame: {fileID: 842827319}
+  miniGameCamera: {fileID: 1498307868}
   customCursor: {fileID: 2800000, guid: 17a0b029df476b64eae9ac8dd6d55c0a, type: 3}
   spawnTime: 1
   maxMiniGameTime: 100
+  scoreText: {fileID: 1850548645}
+  foodItemScore: {fileID: 11400000, guid: 9c71ab420376f5a4ba5415b9e9282c5e, type: 2}
 --- !u!1001 &2137358480
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36461,10 +36537,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1427832261814244481, guid: 227f840de1a98b9428704b3e61c74afa, type: 3}
-      propertyPath: m_IncludeLayers.m_Bits
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3402403341693215187, guid: 227f840de1a98b9428704b3e61c74afa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -36503,6 +36575,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3402403341693215187, guid: 227f840de1a98b9428704b3e61c74afa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7106642922349474509, guid: 227f840de1a98b9428704b3e61c74afa, type: 3}
+      propertyPath: near clip plane
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -36609,6 +36685,7 @@ SceneRoots:
   - {fileID: 151948513}
   - {fileID: 1441020997}
   - {fileID: 1927501777}
+  - {fileID: 637489530}
   - {fileID: 1486985675}
   - {fileID: 1268976664}
   - {fileID: 1079861422704700023}

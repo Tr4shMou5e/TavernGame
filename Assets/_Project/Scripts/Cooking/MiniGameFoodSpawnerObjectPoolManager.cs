@@ -59,12 +59,12 @@ public class MiniGameFoodSpawnerObjectPoolManager : MonoBehaviour
     private GameObject SpawnFood()
     {
         var food = Instantiate(foodItemPrefab, GetRandomSpawnPosition(), Quaternion.identity, spawnParent);
-        food.GetComponent<SpriteRenderer>().sprite = menu.SelectRandomMenuItem().dishImage;
-        
         return food;
     }
     private void OnGetFood(GameObject food)
     {
+        food.transform.localPosition = GetRandomSpawnPosition();
+        food.GetComponent<SpriteRenderer>().sprite = menu.SelectRandomMenuItem().dishImage;
         food.SetActive(true);
     }
     private void OnReleaseFood(GameObject food)

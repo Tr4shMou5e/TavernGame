@@ -60,20 +60,19 @@ public class NpcOrderState : NpcBaseState
                 break;
             }
         }
-        Debug.Log(currentOrderNode);
-        Debug.Log(targetPosition);
+        
         // If the line is not full, the agent will move to the next order node
         if (!changeStateManager.LineFull() && currentOrderNode != null)
         {
             agent.SetDestination(targetPosition);
         }
         // If the line is full, the agent will go to the waiting area
-        else if(currentOrderNode == null)
+        else if(currentOrderNode is null)
         {
             changeStateManager.HasOrderNode = false;
         }
-        if(selectedItemImage == null) selectedItemImage = canvas.gameObject.GetComponentInChildren<Image>();
-        if(customerNameText == null) customerNameText = canvas.gameObject.GetComponentInChildren<TextMeshProUGUI>();
+        if(selectedItemImage is null) selectedItemImage = canvas.gameObject.GetComponentInChildren<Image>();
+        if(customerNameText is null) customerNameText = canvas.gameObject.GetComponentInChildren<TextMeshProUGUI>();
         if(customerNameText != null) name = customerName.GetRandomName();
     }
     public override void Update()

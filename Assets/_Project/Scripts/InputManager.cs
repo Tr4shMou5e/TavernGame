@@ -33,6 +33,11 @@ public class InputManager : MonoBehaviour
     {
         return input.Player.Jump.triggered;
     }
+
+    public Vector2 GetMousePosition()
+    {
+        return Mouse.current.position.ReadValue();
+    }
     void OnEnable()
     {
         input.Enable();

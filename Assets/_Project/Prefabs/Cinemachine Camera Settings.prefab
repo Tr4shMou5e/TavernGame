@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5614085401785706211}
   - component: {fileID: 6165398080651904431}
   - component: {fileID: 336519906809684698}
+  - component: {fileID: 6928868986839628211}
   m_Layer: 0
   m_Name: Cinemachine Camera Settings
   m_TagString: Untagged
@@ -184,3 +185,17 @@ MonoBehaviour:
         DecelTime: 0.2
   PlayerIndex: -1
   AutoEnableInputs: 1
+--- !u!114 &6928868986839628211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6917175386956059184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d75924d76b05344aa410607bc57db98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineConfiner3D
+  BoundingVolume: {fileID: 0}
+  SlowingDistance: 0

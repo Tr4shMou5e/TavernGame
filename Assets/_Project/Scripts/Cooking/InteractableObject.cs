@@ -6,6 +6,7 @@ public abstract class InteractableObject : MonoBehaviour, IInteractable
 {
     [SerializeField] protected PlayerController player;
     [SerializeField] protected GameObject miniGame;
+    [SerializeField] protected Camera miniGameCamera;
     [Tooltip("If you don't want a custom cursor, you can leave this field empty it will not bring up an error")]
     [SerializeField] protected Texture2D customCursor;
     protected InputManager inputManager;
@@ -56,8 +57,8 @@ public abstract class InteractableObject : MonoBehaviour, IInteractable
         miniGame.SetActive(false);
         player.enabled = true;
         miniGameRunning = false;
-        cursor.IsVisible = true;
-        cursor.LockState = CursorLockMode.None;
+        cursor.IsVisible = false;
+        cursor.LockState = CursorLockMode.Locked;
         if (withCustomCursor)
         {
             cursor.ChangeCursorSprite(null);
@@ -98,4 +99,5 @@ public abstract class InteractableObject : MonoBehaviour, IInteractable
         if (!other.CompareTag("Player")) return;
         playerInRange = false;
     }
+    
 }

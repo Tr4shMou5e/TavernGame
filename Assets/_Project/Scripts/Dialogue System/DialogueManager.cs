@@ -7,7 +7,7 @@ using Unity.Cinemachine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Interactions;
-
+using Cysharp.Text;
 public class DialogueManager : MonoBehaviour
 {
     [SerializeField] GameObject dialogueTextPanel;
@@ -48,23 +48,8 @@ public class DialogueManager : MonoBehaviour
         inputActions = new InputSystem_Actions();
     }
     
-    void Update()
-    {
-        if (!dialogueIsPlaying)
-        {
-            Debug.Log("Not playing");
-            return;
-        }
-        
-        // if(Keyboard.current.spaceKey.wasPressedThisFrame)
-        // {
-        //     Debug.Log("Continue");
-        //     ContinueDialogue();
-        // }
-    }
     public void EnterDialogueMode(TextAsset inkJSON, string characterName, Sprite characterImage)
     {
-        Debug.Log("Entering Dialogue Mode");
         if(inkJSON == null) return;
         SetupStoryContext(inkJSON, characterName);
         SetupUIDialogue(characterImage);
@@ -178,18 +163,16 @@ public class DialogueManager : MonoBehaviour
         // This part makes it to where when you hold the space bar for 0.7s, it skips the dialogue
         isTypingLine = true;
         textComponent.text = string.Empty;
-        
-        for (var i = 0; i < text.Length; i++)
+        using (var sb = ZString.CreateStringBuilder())
         {
-            textComponent.text += text[i];
-            yield return new WaitForSeconds(typeSpeed);
-            //Wait for the last letter to be displayed, then enable the continue button
-            // if (i == text.Length - 1)
-            // {
-            //     continueButton.gameObject.SetActive(true);
-            //     countText.text = "Normal";
-            // }
+            foreach (var t in text)
+            {
+                sb.Append(t);
+                textComponent.SetText(sb.ToString());
+                yield return new WaitForSeconds(typeSpeed);
+            }
         }
+       
         continueButton.gameObject.SetActive(true);
         leaveButton.gameObject.SetActive(true);
         isTypingLine = false;
