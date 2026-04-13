@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Pool;
 using Random = UnityEngine.Random;
@@ -6,7 +7,7 @@ using Random = UnityEngine.Random;
 public class MiniGameFoodSpawnerObjectPoolManager : MonoBehaviour
 {
     
-    [SerializeField] MenuData menu;
+    [SerializeField] List<MenuData> menu;
     
     [Header("Bounds")] [Tooltip("The bounds of the spawn area")] 
     [SerializeField] private float minXPosition = -5f;
@@ -64,7 +65,9 @@ public class MiniGameFoodSpawnerObjectPoolManager : MonoBehaviour
     private void OnGetFood(GameObject food)
     {
         food.transform.localPosition = GetRandomSpawnPosition();
-        food.GetComponent<SpriteRenderer>().sprite = menu.SelectRandomMenuItem().dishImage;
+        var foodSprite = menu[Random.Range(0, menu.Count)].SelectRandomMenuItem().dishImage;
+        food.GetComponent<SpriteRenderer>().sprite = foodSprite;
+        food.GetComponent<PolygonCollider2D>().CreateFromSprite(foodSprite);
         food.SetActive(true);
     }
     private void OnReleaseFood(GameObject food)

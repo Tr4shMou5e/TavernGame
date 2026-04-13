@@ -35,7 +35,6 @@ public class StoveInteractableMiniGame : InteractableObject
     {
         if (miniGameRunning) return;
         base.Interact();
-        withCustomCursor = true;
     }
     private void Update()
     {
@@ -69,16 +68,21 @@ public class StoveInteractableMiniGame : InteractableObject
         
         var mouseWorldPos = miniGameCamera.ScreenToWorldPoint(inputManager.GetMousePosition());
         var mousePos2D = new Vector2(mouseWorldPos.x, mouseWorldPos.y);
-        var hit = Physics2D.OverlapPoint(mousePos2D);
-        if(hit is null) return;
+        var hit = Physics2D.Raycast(mousePos2D, Vector2.zero,0f);
+        if(hit.collider is null) return;
         
-        if (hit.gameObject.CompareTag("Mini Game Food") && hit.gameObject.TryGetComponent(out SpriteRenderer foodItem))
+        if (hit.collider.CompareTag("Mini Game Food") && hit.collider.TryGetComponent(out SpriteRenderer foodItem))
         {
             var score = foodItemScore.GetScoreForFoodItem(foodItem.sprite);
             totalScore += score;
+            if(totalScore < 0)
+            {
+                totalScore = 0;
+            }
+            
             scoreText.SetTextFormat("Score: {0}", totalScore);
             
-            miniGameFoodSpawner.ReleaseFood(hit.gameObject);
+            miniGameFoodSpawner.ReleaseFood(hit.collider.gameObject);
         }
     }
     void StartTimer()

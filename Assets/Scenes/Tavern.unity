@@ -12909,7 +12909,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1169633171087820, guid: 6536648527e932d4d8c8d6a5d116afb2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1386912006}
+    - targetCorrespondingSourceObject: {fileID: 1169633171087820, guid: 6536648527e932d4d8c8d6a5d116afb2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1386912005}
   m_SourcePrefab: {fileID: 100100000, guid: 6536648527e932d4d8c8d6a5d116afb2, type: 3}
 --- !u!4 &744901197 stripped
 Transform:
@@ -23369,6 +23375,53 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4414201535997828, guid: b99388af53bdb794c806ae94de553e71, type: 3}
   m_PrefabInstance: {fileID: 1384960698}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1386912001 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1169633171087820, guid: 6536648527e932d4d8c8d6a5d116afb2, type: 3}
+  m_PrefabInstance: {fileID: 744901196}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1386912005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386912001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1622859ef35943e40b9e711dc85e97af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StoveInteractableMiniGame
+  player: {fileID: 212473835}
+  miniGame: {fileID: 842827319}
+  miniGameCamera: {fileID: 1498307868}
+  customCursor: {fileID: 2800000, guid: 17a0b029df476b64eae9ac8dd6d55c0a, type: 3}
+  withCustomCursor: 1
+  spawnTime: 1
+  maxMiniGameTime: 100
+  scoreText: {fileID: 1850548645}
+  foodItemScore: {fileID: 11400000, guid: 9c71ab420376f5a4ba5415b9e9282c5e, type: 2}
+--- !u!65 &1386912006
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386912001}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6669102, y: 0.08290322, z: 0.88883144}
+  m_Center: {x: -0.5206597, y: 0.04145161, z: 0}
 --- !u!1001 &1389793083
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36357,6 +36410,7 @@ MonoBehaviour:
   miniGame: {fileID: 842827319}
   miniGameCamera: {fileID: 1498307868}
   customCursor: {fileID: 2800000, guid: 17a0b029df476b64eae9ac8dd6d55c0a, type: 3}
+  withCustomCursor: 0
   spawnTime: 1
   maxMiniGameTime: 100
   scoreText: {fileID: 1850548645}
@@ -36652,12 +36706,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5087776313891454843, guid: f12c5b848b2439945803b7884db46571, type: 3}
       propertyPath: minXPosition
-      value: -9
+      value: -8
       objectReference: {fileID: 0}
     - target: {fileID: 5087776313891454843, guid: f12c5b848b2439945803b7884db46571, type: 3}
       propertyPath: minYPosition
       value: 4.3
       objectReference: {fileID: 0}
+    - target: {fileID: 5087776313891454843, guid: f12c5b848b2439945803b7884db46571, type: 3}
+      propertyPath: menu.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5087776313891454843, guid: f12c5b848b2439945803b7884db46571, type: 3}
+      propertyPath: 'menu.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: fe4ed5ac230ab564faee599b90c529a9, type: 2}
+    - target: {fileID: 5087776313891454843, guid: f12c5b848b2439945803b7884db46571, type: 3}
+      propertyPath: 'menu.Array.data[1]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 39dc45e2dc179fb4fbf695e9bfecef25, type: 2}
     - target: {fileID: 8013998362948255801, guid: f12c5b848b2439945803b7884db46571, type: 3}
       propertyPath: m_Name
       value: Mini-Game Object Pool Manager

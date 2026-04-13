@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad378a86f89243e7b6ee21772e369f10, type: 3}
   m_Name: FoodItemScore
   m_EditorClassIdentifier: Assembly-CSharp::FoodItemScore
-  ingredients: {fileID: 11400000, guid: fe4ed5ac230ab564faee599b90c529a9, type: 2}
+  ingredients:
+  - {fileID: 11400000, guid: fe4ed5ac230ab564faee599b90c529a9, type: 2}
+  - {fileID: 11400000, guid: 39dc45e2dc179fb4fbf695e9bfecef25, type: 2}
