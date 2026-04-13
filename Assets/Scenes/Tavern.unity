@@ -12915,7 +12915,7 @@ PrefabInstance:
       addedObject: {fileID: 1386912006}
     - targetCorrespondingSourceObject: {fileID: 1169633171087820, guid: 6536648527e932d4d8c8d6a5d116afb2, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1386912005}
+      addedObject: {fileID: 1386912007}
   m_SourcePrefab: {fileID: 100100000, guid: 6536648527e932d4d8c8d6a5d116afb2, type: 3}
 --- !u!4 &744901197 stripped
 Transform:
@@ -13841,6 +13841,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4154922056732874, guid: 13457bba34e7e0f44b21467400fa6f00, type: 3}
   m_PrefabInstance: {fileID: 802576462}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &802764264 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7526111321782389266, guid: 227f840de1a98b9428704b3e61c74afa, type: 3}
+  m_PrefabInstance: {fileID: 1079861422704700023}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1001 &808731526
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23380,27 +23391,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1169633171087820, guid: 6536648527e932d4d8c8d6a5d116afb2, type: 3}
   m_PrefabInstance: {fileID: 744901196}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1386912005
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1386912001}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1622859ef35943e40b9e711dc85e97af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::StoveInteractableMiniGame
-  player: {fileID: 212473835}
-  miniGame: {fileID: 842827319}
-  miniGameCamera: {fileID: 1498307868}
-  customCursor: {fileID: 2800000, guid: 17a0b029df476b64eae9ac8dd6d55c0a, type: 3}
-  withCustomCursor: 1
-  spawnTime: 1
-  maxMiniGameTime: 100
-  scoreText: {fileID: 1850548645}
-  foodItemScore: {fileID: 11400000, guid: 9c71ab420376f5a4ba5415b9e9282c5e, type: 2}
 --- !u!65 &1386912006
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23422,6 +23412,27 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.6669102, y: 0.08290322, z: 0.88883144}
   m_Center: {x: -0.5206597, y: 0.04145161, z: 0}
+--- !u!114 &1386912007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386912001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1622859ef35943e40b9e711dc85e97af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StoveInteractableMiniGame
+  player: {fileID: 212473835}
+  miniGame: {fileID: 842827319}
+  miniGameCamera: {fileID: 1498307868}
+  customCursor: {fileID: 2800000, guid: 17a0b029df476b64eae9ac8dd6d55c0a, type: 3}
+  withCustomCursor: 1
+  spawnTime: 1
+  maxMiniGameTime: 100
+  scoreText: {fileID: 802764264}
+  foodItemScore: {fileID: 11400000, guid: 9c71ab420376f5a4ba5415b9e9282c5e, type: 2}
 --- !u!1001 &1389793083
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31784,17 +31795,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1849381965}
   m_CullTransparentMesh: 1
---- !u!114 &1850548645 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3375005721322836177, guid: 227f840de1a98b9428704b3e61c74afa, type: 3}
-  m_PrefabInstance: {fileID: 1079861422704700023}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!114 &1856923326 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4473933961755088622, guid: 71e737aa6bb783a44bff0568743b5515, type: 3}
@@ -32884,6 +32884,10 @@ PrefabInstance:
       value: SM_Prop_Stove_02
       objectReference: {fileID: 0}
     - target: {fileID: 1704398280693240, guid: 509c47f2c423820489a23bb7979370f4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1704398280693240, guid: 509c47f2c423820489a23bb7979370f4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -32946,13 +32950,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1704398280693240, guid: 509c47f2c423820489a23bb7979370f4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2131488756}
-    - targetCorrespondingSourceObject: {fileID: 1704398280693240, guid: 509c47f2c423820489a23bb7979370f4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2131488755}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 509c47f2c423820489a23bb7979370f4, type: 3}
 --- !u!4 &1956661184 stripped
 Transform:
@@ -36368,53 +36366,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2131446042}
   m_CullTransparentMesh: 1
---- !u!1 &2131488751 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1704398280693240, guid: 509c47f2c423820489a23bb7979370f4, type: 3}
-  m_PrefabInstance: {fileID: 1956661183}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &2131488755
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2131488751}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.7140192, y: 1.8229811, z: 2.458628}
-  m_Center: {x: 0.0392694, y: 0.91149056, z: 0.8086399}
---- !u!114 &2131488756
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2131488751}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1622859ef35943e40b9e711dc85e97af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::StoveInteractableMiniGame
-  player: {fileID: 212473835}
-  miniGame: {fileID: 842827319}
-  miniGameCamera: {fileID: 1498307868}
-  customCursor: {fileID: 2800000, guid: 17a0b029df476b64eae9ac8dd6d55c0a, type: 3}
-  withCustomCursor: 0
-  spawnTime: 1
-  maxMiniGameTime: 100
-  scoreText: {fileID: 1850548645}
-  foodItemScore: {fileID: 11400000, guid: 9c71ab420376f5a4ba5415b9e9282c5e, type: 2}
 --- !u!1001 &2137358480
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36629,10 +36580,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3402403341693215187, guid: 227f840de1a98b9428704b3e61c74afa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7106642922349474509, guid: 227f840de1a98b9428704b3e61c74afa, type: 3}
-      propertyPath: near clip plane
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
