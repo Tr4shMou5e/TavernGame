@@ -71,10 +71,6 @@ public abstract class InteractableObject : MonoBehaviour, IInteractable
     {
         player.enabled = true;
         SetupCursor(false, CursorLockMode.Locked, withCustomCursor, true);
-        if (withScoreCanvas)
-        {
-            scoreCanvas.gameObject.SetActive(false);
-        }
         
         if (inputAxisController is not null)
         {

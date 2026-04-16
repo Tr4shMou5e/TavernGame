@@ -18,33 +18,40 @@ MonoBehaviour:
     id: 1548124622
     price: 0
     score: 100
+    processes: []
   - dishName: Beef
     dishImage: {fileID: 21300000, guid: f257c1c15ec60c24783c7dc42ba56a52, type: 3}
     id: -1321543904
     price: 0
     score: 200
+    processes: []
   - dishName: Carrot
     dishImage: {fileID: 21300000, guid: cf3b419df78a7024993fc66f5722e60d, type: 3}
     id: 1209145989
     price: 0
     score: 50
+    processes: []
   - dishName: Butter
     dishImage: {fileID: 21300000, guid: 255791be51a301a4b8881a9b43d66072, type: 3}
     id: -688058012
     price: 0
     score: 80
+    processes: []
   - dishName: Cheese
     dishImage: {fileID: 21300000, guid: f092dc7acf7d07344a7a66598b204f11, type: 3}
     id: 1326298449
     price: 0
     score: 150
+    processes: []
   - dishName: Cherries
     dishImage: {fileID: 21300000, guid: e88f5d182b8573a4e834ca3e044a2570, type: 3}
     id: 2142925741
     price: 0
     score: 20
+    processes: []
   - dishName: Grapes
     dishImage: {fileID: 21300000, guid: c5bb2d138f3cfb340be8b2b43c414487, type: 3}
     id: -1799932054
     price: 0
     score: 80
+    processes: []

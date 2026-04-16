@@ -8,7 +8,7 @@ using Cysharp.Text;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(BoxCollider))]
-public class StoveInteractableMiniGame : InteractableObject
+public class CuttingBoardInteractableMiniGame : InteractableObject
 {
     [SerializeField] private float spawnTime = 0.1f;
     [SerializeField] private float maxMiniGameTime = 100f;
@@ -79,6 +79,11 @@ public class StoveInteractableMiniGame : InteractableObject
         endScoreCanvas.gameObject.SetActive(true);
         endScoreText.SetTextFormat("Your Score: {0}", totalScore);
         UpdateStarMeter(endStarMeters, true);
+        if (withScoreCanvas)
+        {
+            scoreCanvas.gameObject.SetActive(false);
+        }
+        // Setup the close button
         closeButton.onClick.AddListener(() =>
         {   
             EndMiniGame();
@@ -147,5 +152,4 @@ public class StoveInteractableMiniGame : InteractableObject
     {
         OnMiniGameStart -= StartTimer;
     }
-}   
-
+}

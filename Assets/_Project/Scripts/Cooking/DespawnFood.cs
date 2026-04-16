@@ -28,11 +28,11 @@ public class DespawnFood : MonoBehaviour
     }
     private void OnEnable()
     {
-        StoveInteractableMiniGame.OnFoodSpawned += StartDespawn;
+        CuttingBoardInteractableMiniGame.OnFoodSpawned += StartDespawn;
     }
 
     private void OnDisable()
     {
-        StoveInteractableMiniGame.OnFoodSpawned -= StartDespawn;
+        CuttingBoardInteractableMiniGame.OnFoodSpawned -= StartDespawn;
     }
 }
