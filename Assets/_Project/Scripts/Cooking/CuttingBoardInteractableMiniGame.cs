@@ -1,0 +1,155 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using ImprovedTimers;
+using UnityEngine;
+using TMPro;
+using Cysharp.Text;
+using UnityEngine.UI;
+
+[RequireComponent(typeof(BoxCollider))]
+public class CuttingBoardInteractableMiniGame : InteractableObject
+{
+    [SerializeField] private float spawnTime = 0.1f;
+    [SerializeField] private float maxMiniGameTime = 100f;
+    [SerializeField] private TextMeshProUGUI scoreText;
+    [SerializeField] private FoodItemScore foodItemScore;
+    [SerializeField] private List<GameObject> starMeters;
+    [SerializeField] private List<GameObject> endStarMeters;
+    [SerializeField] private TextMeshProUGUI endScoreText;
+    [SerializeField] private Canvas endScoreCanvas;
+    [SerializeField] private Button closeButton;
+    [SerializeField] private TextMeshProUGUI timerText;
+    private CountdownTimer timer;
+    private MiniGameFoodSpawnerObjectPoolManager miniGameFoodSpawner;
+    private float timeSinceLastSpawn;
+    private int totalScore;
+    private int starOneScore = 1000;
+    private int starTwoScore = 2500;
+    private int starThreeScore = 4000;
+    
+    public static event Action<GameObject> OnFoodSpawned;  
+    public override void Awake()
+    {
+        base.Awake();
+        timer = new CountdownTimer(maxMiniGameTime);
+        miniGameFoodSpawner = MiniGameFoodSpawnerObjectPoolManager.Instance;
+    }
+    /// <summary>
+    /// Make Cursor visible and make it as a basket to collect food.
+    /// Have to make rotten food for player to lose points.
+    /// Score depends on how much food is collected.
+    /// Depending on the score, the player will get a ranking.
+    /// </summary>
+    public override void Interact()
+    {
+        if (miniGameRunning) return;
+        base.Interact();
+    }
+    private void Update()
+    {
+        Interact();
+        MiniGame();
+    }
+
+    void MiniGame()
+    {
+        if (!miniGameRunning) return;
+        if (miniGameFoodSpawner is null) return;
+        
+        if (Time.time > timeSinceLastSpawn)
+        { 
+            var foodItem = miniGameFoodSpawner?.GetFood(); 
+            OnFoodSpawned?.Invoke(foodItem);
+            timeSinceLastSpawn = Time.time + spawnTime;
+        }
+        UpdateTimer();
+        UpdateStarMeter(starMeters);
+        MouseDetection();
+        if (!timer.IsFinished) return;
+        
+        ShowEndScoreScreen();
+        timer.Reset();
+    }
+
+    private void ShowEndScoreScreen()
+    {
+        miniGameRunning = false;
+        SetupCursor(true, CursorLockMode.None, withCustomCursor, true);
+        endScoreCanvas.gameObject.SetActive(true);
+        endScoreText.SetTextFormat("Your Score: {0}", totalScore);
+        UpdateStarMeter(endStarMeters, true);
+        if (withScoreCanvas)
+        {
+            scoreCanvas.gameObject.SetActive(false);
+        }
+        // Setup the close button
+        closeButton.onClick.AddListener(() =>
+        {   
+            EndMiniGame();
+            endScoreCanvas.gameObject.SetActive(false);
+            miniGame.SetActive(false);
+            UpdateStarMeter(starMeters, true);
+            UpdateStarMeter(endStarMeters);
+            totalScore = 0;
+        });
+    }
+
+    private void UpdateTimer()
+    {
+        timerText.SetTextFormat("Time: {0}", (float) Math.Round(timer.CurrentTime, 2));
+    }
+
+    private void UpdateStarMeter(List<GameObject> starMetersUI, bool active = false)
+    {
+        if(totalScore >= starOneScore && totalScore < starTwoScore)
+        {
+            starMetersUI[0].SetActive(active);
+        }
+        else if(totalScore >= starTwoScore && totalScore < starThreeScore)
+        {
+            starMetersUI[1].SetActive(active);
+        }
+        else if (totalScore >= starThreeScore)
+        {
+            starMetersUI[2].SetActive(active);
+        }
+    }
+
+    private void MouseDetection()
+    {
+        if (miniGameCamera is null) return;
+        
+        var mouseWorldPos = miniGameCamera.ScreenToWorldPoint(inputManager.GetMousePosition());
+        var mousePos2D = new Vector2(mouseWorldPos.x, mouseWorldPos.y);
+        var hit = Physics2D.Raycast(mousePos2D, Vector2.zero,0f);
+        if(hit.collider is null) return;
+        
+        if (hit.collider.CompareTag("Mini Game Food") && hit.collider.TryGetComponent(out SpriteRenderer foodItem))
+        {
+            var score = foodItemScore.GetScoreForFoodItem(foodItem.sprite);
+            totalScore += score;
+            if(totalScore < 0)
+            {
+                totalScore = 0;
+            }
+            
+            scoreText.SetTextFormat("Score: {0}", totalScore);
+            
+            miniGameFoodSpawner.ReleaseFood(hit.collider.gameObject);
+        }
+    }
+    void StartTimer()
+    {
+        timer.Start();
+    }
+
+    private void OnEnable()
+    {
+        OnMiniGameStart += StartTimer;
+    }
+    private void OnDisable()
+    {
+        OnMiniGameStart -= StartTimer;
+    }
+}

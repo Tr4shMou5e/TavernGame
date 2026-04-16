@@ -1,0 +1,85 @@
+OVDF v1.1
+NpcCustomer, Assembly-CSharp
+MetaGuid:b7cce2306b1942a6b8a7a443d2bb5ff0
+
+# $SbDuecPmmRPMfUKVR5ihGB
+Position: $PaFjbShuw1kbQbe8r7T8tL:0
++ [Sirenix.OdinInspector.BoxGroupAttribute]
+	GroupName = "AI Dependecies"
+
+# $4oweJMrXhJuqXVwREngskz
+Position: $DhateyjYXFkC9xb3thzV2g:0
++ [Sirenix.OdinInspector.BoxGroupAttribute]
+	GroupName = "Customer Data"
+	CenterLabel = False
+
+# $DhateyjYXFkC9xb3thzV2g
+Position: $root:9
++ [Sirenix.OdinInspector.TitleGroupAttribute]
+	GroupName = "Customer Data"
+	Alignment = Centered
+
+# $PaFjbShuw1kbQbe8r7T8tL
+Position: $root:8
++ [Sirenix.OdinInspector.TitleGroupAttribute]
+	GroupName = "AI Dependecies"
+	Indent = False
+	HorizontalLine = True
+	BoldTitle = True
+	Alignment = Centered
+
+# $3L5s7u3YfpbJBjhMUoWXXT
+Position: $root:33
++ [Sirenix.OdinInspector.TitleGroupAttribute]
+	GroupName = "Line Info"
+	Alignment = Centered
+
+# $Wb24AZoARJXmQKn4viPHpB
+Position: $3L5s7u3YfpbJBjhMUoWXXT:0
++ [Sirenix.OdinInspector.BoxGroupAttribute]
+	GroupName = "Line Info"
+
+# $Ea1sbd3Wj7VYXuNvF4HRxZ
+- [Sirenix.OdinInspector.BoxGroupAttribute]
+
+# $UztbdXtS1Z8snbYr6S5Bxq
+- [Sirenix.OdinInspector.HideIfGroupAttribute]
+
+# agent
+Position: $SbDuecPmmRPMfUKVR5ihGB:0
+
+# changeStateManager
+Position: $SbDuecPmmRPMfUKVR5ihGB:2
+
+# animator
+Position: $SbDuecPmmRPMfUKVR5ihGB:1
+
+# player
+Position: $SbDuecPmmRPMfUKVR5ihGB:3
+
+# menuData
+Position: $4oweJMrXhJuqXVwREngskz:0
+
+# customerMaleNames
+Position: $4oweJMrXhJuqXVwREngskz:2
+
+# customerFemaleNames
+Position: $4oweJMrXhJuqXVwREngskz:3
+
+# eatDuration
+Position: $4oweJMrXhJuqXVwREngskz:4
+
+# orderQueue
+Position: $Wb24AZoARJXmQKn4viPHpB:0
+
+# canvas
+Position: $Wb24AZoARJXmQKn4viPHpB:1
+
+# dialogue
+Position: $4oweJMrXhJuqXVwREngskz:1
+
+# interactDistance
+Visibility: Hidden
+
+# mainCamera
+Visibility: Hidden
