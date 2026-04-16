@@ -29,9 +29,9 @@ public class InputManager : MonoBehaviour
         return input.Player.Interact.WasPressedThisFrame();
     }
 
-    public bool PlayerIsJumping()
+    public bool PlayerPressedSpace()
     {
-        return input.Player.Jump.triggered;
+        return Keyboard.current.spaceKey.wasPressedThisFrame;
     }
 
     public Vector2 GetMousePosition()

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1855159360703426412}
   - component: {fileID: 2020719476687313431}
   - component: {fileID: 663257743142932386}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: Star Meter (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,7 +86,7 @@ GameObject:
   - component: {fileID: 6282929982761030801}
   - component: {fileID: 2201043723847208941}
   - component: {fileID: 3744167777718470130}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: Star Meter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -161,7 +161,7 @@ GameObject:
   - component: {fileID: 8683540844346473347}
   - component: {fileID: 5020109773458651080}
   - component: {fileID: 3242736997048345566}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: Win Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -298,7 +298,7 @@ GameObject:
   - component: {fileID: 1391757189061878624}
   - component: {fileID: 2692920535103016099}
   - component: {fileID: 7526111321782389266}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: Points
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -470,7 +470,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7223633896363113770}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: One Star Rating
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -508,7 +508,7 @@ GameObject:
   - component: {fileID: 8752868276067521767}
   - component: {fileID: 5284449539401462027}
   - component: {fileID: 2862282850874411626}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: Background Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -583,7 +583,7 @@ GameObject:
   - component: {fileID: 2141115559067299811}
   - component: {fileID: 5760172397301071814}
   - component: {fileID: 8760825147856463720}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: Star Meter (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -658,7 +658,7 @@ GameObject:
   - component: {fileID: 4164340156011911349}
   - component: {fileID: 335872823743475404}
   - component: {fileID: 5828604437791297475}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: Star Meter (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -731,7 +731,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2813923329008909333}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: Three Star Rating
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -771,7 +771,7 @@ GameObject:
   - component: {fileID: 2459161458522294350}
   - component: {fileID: 28096429438828498}
   - component: {fileID: 7475394550310290685}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: Star Meter (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -846,7 +846,7 @@ GameObject:
   - component: {fileID: 4750880413101167387}
   - component: {fileID: 3243972514094265730}
   - component: {fileID: 5100314901248966633}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -984,7 +984,7 @@ GameObject:
   - component: {fileID: 9117203044209008224}
   - component: {fileID: 6480755805892294415}
   - component: {fileID: 7958560097065151629}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: Background Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1222,7 +1222,7 @@ GameObject:
   - component: {fileID: 608223751748272388}
   - component: {fileID: 8020748339666206829}
   - component: {fileID: 911841046908240744}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: Final Score Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1359,7 +1359,7 @@ GameObject:
   - component: {fileID: 816269767742782270}
   - component: {fileID: 9191614094434672258}
   - component: {fileID: 5174598778435938016}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: Star Meter (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1432,7 +1432,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7082814485932941381}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: Three Star Rating (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1470,7 +1470,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2472021863114100561}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: Two Star Rating (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1509,7 +1509,7 @@ GameObject:
   - component: {fileID: 3981611455688290136}
   - component: {fileID: 4541273145593250397}
   - component: {fileID: 4923998508885409459}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: Star Meter (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1584,7 +1584,7 @@ GameObject:
   - component: {fileID: 2722276683805344462}
   - component: {fileID: 2184419777627836688}
   - component: {fileID: 5422603518198272831}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: Star Meter (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1659,7 +1659,7 @@ GameObject:
   - component: {fileID: 6303270074193063584}
   - component: {fileID: 1626779160307356963}
   - component: {fileID: 6950831641863989133}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: Star Meter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1734,7 +1734,7 @@ GameObject:
   - component: {fileID: 2083562763775810031}
   - component: {fileID: 7817484538022263940}
   - component: {fileID: 8332361244215167005}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1806,7 +1806,7 @@ GameObject:
   - component: {fileID: 8717859639560849326}
   - component: {fileID: 8449677993817890231}
   - component: {fileID: 8029620550943726381}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: Star Meter (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1879,7 +1879,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9204025667583828752}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: Three Star Rating Default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1917,7 +1917,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8096020767622798017}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: Two Star Rating Default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1956,7 +1956,7 @@ GameObject:
   - component: {fileID: 8098905850413916207}
   - component: {fileID: 3855504441793820092}
   - component: {fileID: 1409012660108778378}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: Star Meter (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2031,7 +2031,7 @@ GameObject:
   - component: {fileID: 6005488651398683568}
   - component: {fileID: 1122793713068862509}
   - component: {fileID: 790610337247189661}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: Star Meter (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2104,7 +2104,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 725252452616296415}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: Three Star Rating Default (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2144,7 +2144,7 @@ GameObject:
   - component: {fileID: 3946523026433383438}
   - component: {fileID: 7823664058668604930}
   - component: {fileID: 1356842472986284338}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: Star Meter (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2220,7 +2220,7 @@ GameObject:
   - component: {fileID: 7879108376464753811}
   - component: {fileID: 4805039552721503397}
   - component: {fileID: 8927431495038881878}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: Ok Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2340,7 +2340,7 @@ GameObject:
   - component: {fileID: 6233329871963780187}
   - component: {fileID: 7589225663951073179}
   - component: {fileID: 8298239292226502457}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: Star Meter (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2413,7 +2413,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1057511911242677718}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: One Star Rating (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2451,7 +2451,7 @@ GameObject:
   - component: {fileID: 175305611444973468}
   - component: {fileID: 4178959165656947507}
   - component: {fileID: 2575703505325982933}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: Star Meter (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2527,7 +2527,7 @@ GameObject:
   - component: {fileID: 3730219136060450285}
   - component: {fileID: 3479269076184375907}
   - component: {fileID: 7176603243573177139}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: Score Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2635,7 +2635,7 @@ GameObject:
   - component: {fileID: 5106015037517531973}
   - component: {fileID: 4534848704871402919}
   - component: {fileID: 8347327856165901417}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: Star Meter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2711,7 +2711,7 @@ GameObject:
   - component: {fileID: 7845956132011328068}
   - component: {fileID: 8577589574748800016}
   - component: {fileID: 5809256803434237821}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: End Score Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2819,7 +2819,7 @@ GameObject:
   - component: {fileID: 9160546773768112824}
   - component: {fileID: 4685891581853075849}
   - component: {fileID: 7018587922527213401}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: Timer Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2956,7 +2956,7 @@ GameObject:
   - component: {fileID: 7579643831480375935}
   - component: {fileID: 6827128480699763439}
   - component: {fileID: 1385964626515575494}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: Star Meter (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3085,7 +3085,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 60
   orthographic: 1
@@ -3093,7 +3093,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 160
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -3168,7 +3168,7 @@ GameObject:
   - component: {fileID: 6008572132325564775}
   - component: {fileID: 4933394486018295218}
   - component: {fileID: 6142283016732073605}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: Star Meter (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3243,7 +3243,7 @@ GameObject:
   - component: {fileID: 3603056858227458744}
   - component: {fileID: 6176288419118898326}
   - component: {fileID: 3805415989402579597}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: Star Meter (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3318,7 +3318,7 @@ GameObject:
   - component: {fileID: 4444607925817667748}
   - component: {fileID: 5100734023200776679}
   - component: {fileID: 8402530963941371139}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: Star Meter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3393,7 +3393,7 @@ GameObject:
   - component: {fileID: 741693964052779809}
   - component: {fileID: 3728022810501639178}
   - component: {fileID: 6065324773729271488}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: Star Meter (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3466,7 +3466,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3072746836315200695}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: Two Star Rating
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3503,7 +3503,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9164442539705270647}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: One Star Rating Default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
