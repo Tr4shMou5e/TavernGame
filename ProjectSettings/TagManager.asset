@@ -5,12 +5,6 @@ TagManager:
   serializedVersion: 3
   tags:
   - Chair
-  - Dialogue Text
-  - Character Text
-  - Male
-  - Female
-  - Mini Game Food
-  - Oscillator
   layers:
   - Default
   - TransparentFX
@@ -18,8 +12,8 @@ TagManager:
   - Chair
   - Water
   - UI
-  - Cloth
-  - Mini Game
+  - 
+  - 
   - 
   - 
   - 
