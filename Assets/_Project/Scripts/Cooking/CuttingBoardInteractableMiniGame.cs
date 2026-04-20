@@ -88,7 +88,7 @@ public class CuttingBoardInteractableMiniGame : InteractableObject
         {   
             EndMiniGame();
             endScoreCanvas.gameObject.SetActive(false);
-            miniGame.SetActive(false);
+            miniGameParentGameObject.SetActive(false);
             UpdateStarMeter(starMeters, true);
             UpdateStarMeter(endStarMeters);
             totalScore = 0;

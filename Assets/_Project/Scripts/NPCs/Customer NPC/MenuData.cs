@@ -18,4 +18,17 @@ public class MenuData: ScriptableObject
         return menuItems[randomIndex];
     }
     public List<FoodItem> GetMenuItems() => menuItems;
+    public FoodItem GetProcessFoodItem(FoodItem currentOrder) 
+    {
+        if (currentOrder == null)
+            return null;
+
+        foreach (var item in menuItems)
+        {
+            if (item.id == currentOrder.id)
+                return item;
+        }
+
+        return null;
+    }
 }

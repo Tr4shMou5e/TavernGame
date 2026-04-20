@@ -1,0 +1,53 @@
+OVDF v1.1
+InteractableObject, Assembly-CSharp
+MetaGuid:212ecbc567a64864acf06dfd53e69140
+
+# $8oQKFSjMe37YcA2shGQQtW
+Position: $root:18
++ [Sirenix.OdinInspector.TitleGroupAttribute]
+	GroupName = "Required Scripts"
+
+# $5w6Q7zifdddum97GmpWr7u
+Position: $root:19
++ [Sirenix.OdinInspector.BoxGroupAttribute]
+	GroupName = "Renderer  Components"
+	ShowLabel = True
+	CenterLabel = True
+
+# $5ENFTe1xXQTmSe6kbFZgU8
+Position: $5w6Q7zifdddum97GmpWr7u:2
++ [Sirenix.OdinInspector.FoldoutGroupAttribute]
+	GroupName = "Trigger Custom Cursor"
+
+# $W9B72XWLhPiLZCPA2CPgth
+Position: $root:20
++ [Sirenix.OdinInspector.BoxGroupAttribute]
+	GroupName = "Canvas Components"
+	ShowLabel = True
+	CenterLabel = True
+
+# $KEFtsejydiytCfkufLYWks
+Position: $W9B72XWLhPiLZCPA2CPgth:0
++ [Sirenix.OdinInspector.FoldoutGroupAttribute]
+	GroupName = "Trigger Score Canvas"
+
+# player
+Position: $8oQKFSjMe37YcA2shGQQtW:0
+
+# miniGameCamera
+Position: $5w6Q7zifdddum97GmpWr7u:0
+
+# miniGame
+Position: $5w6Q7zifdddum97GmpWr7u:1
+
+# customCursor
+Position: $5ENFTe1xXQTmSe6kbFZgU8:0
+
+# withCustomCursor
+Position: $5ENFTe1xXQTmSe6kbFZgU8:1
+
+# withScoreCanvas
+Position: $KEFtsejydiytCfkufLYWks:1
+
+# scoreCanvas
+Position: $KEFtsejydiytCfkufLYWks:0

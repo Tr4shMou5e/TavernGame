@@ -11,5 +11,5 @@ public class FoodItem
     public float price;
     public int score;
     [Tooltip("This is the list of what the food needs to be processed to be ready to eat.")]
-    public List<InteractableObject> processes;
+    public List<GameObject> processes;
 }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -23,6 +24,8 @@ public class NpcOrderState : NpcBaseState
     private string name;
     private int currentOrderIndex;
     private bool isFoodSelected;
+
+    public static event Action OnOrderTaken;
     public NpcOrderState(AIEntitiy entity, 
         Animator animator, 
         NavMeshAgent agent, 
@@ -117,6 +120,7 @@ public class NpcOrderState : NpcBaseState
             FacePlayer();
         }
     }
+    // ReSharper disable Unity.PerformanceAnalysis
     private void SelectFoodItem()
     {   
         canvas.gameObject.SetActive(true);
@@ -126,10 +130,21 @@ public class NpcOrderState : NpcBaseState
             dishName = selectedItem.dishName,
             dishImage = selectedItem.dishImage,
             price = selectedItem.price,
-            id = selectedItem.id
+            id = selectedItem.id,
+            processes = selectedItem.processes
         };
         entity.gameObject.name = name;
         foodItemInfoManager.foodItemDictionary[entity.gameObject] = foodItem;
+        
+        var order = new List<(InteractableObject, bool)>();
+        foreach (var item in foodItem.processes)
+        {
+            order.Add((item.GetComponent<InteractableObject>(), false));
+        }
+        
+        foodItemInfoManager.AddCustomerOrder(order, entity.gameObject, foodItem);
+        OnOrderTaken?.Invoke();
+        Debug.Log("Order taken");
         isFoodSelected = true;
     }
     private void ShowWorldGUI()

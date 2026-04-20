@@ -2807,7 +2807,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 255
+    m_Bits: 4294967295
 --- !u!1 &6733531043564279326
 GameObject:
   m_ObjectHideFlags: 0
@@ -3085,7 +3085,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.01
+  near clip plane: 0
   far clip plane: 1000
   field of view: 60
   orthographic: 1
