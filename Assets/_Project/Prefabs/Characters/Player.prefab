@@ -2659,6 +2659,7 @@ GameObject:
   - component: {fileID: 6067738009960452221}
   - component: {fileID: 3992982303913675940}
   - component: {fileID: 1767986315667671739}
+  - component: {fileID: 1101184202580617248}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2738,6 +2739,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23cdebfa4e19eaa40a63c1a104b585ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
+  <Id>k__BackingField:
+    Part1: 3489057576
+    Part2: 1265445142
+    Part3: 3499831210
+    Part4: 864880454
+  data:
+    <Id>k__BackingField:
+      Part1: 0
+      Part2: 0
+      Part3: 0
+      Part4: 0
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 0}
   turnSpeed: 180
 --- !u!143 &1767986315667671739
 CharacterController:
@@ -2758,12 +2772,39 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 3
   m_Height: 2
-  m_Radius: 0.5
+  m_Radius: 0.2
   m_SlopeLimit: 45
-  m_StepOffset: 1.5
+  m_StepOffset: 0.2
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1101184202580617248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5373805165513500745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f58629f2f934ff6959c1e14632b9394, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TicketQueue
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  ticketOrders:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  CustomerOrderPanel: {fileID: 0}
+  currentOrderGameObject: {fileID: 0}
 --- !u!1 &5491951237547634839
 GameObject:
   m_ObjectHideFlags: 0

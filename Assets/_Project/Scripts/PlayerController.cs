@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour, IBind<PlayerData>
@@ -5,9 +7,10 @@ public class PlayerController : MonoBehaviour, IBind<PlayerData>
     [field: SerializeField] public SerializableGuid Id { get; set; } = SerializableGuid.NewGuid();
     [SerializeField] private PlayerData data;
     [SerializeField] float turnSpeed = 180f;
+    [SerializeField] private float footstepInterval = 0.2f;
     private float playerSpeed = 5.0f;
     private float gravityValue = -9.81f;
-
+    private float timer = 0f;
     private CharacterController controller;
     private Vector3 playerVelocity;
     private Camera cam;
@@ -67,8 +70,18 @@ public class PlayerController : MonoBehaviour, IBind<PlayerData>
         motion.y = playerVelocity.y;
 
         controller.Move(motion * Time.deltaTime);
+        
+        if (moveDir.sqrMagnitude > 0.001f)
+        {
+            timer -= Time.deltaTime;
+            if (timer <= 0f) {
+                SoundManager.PlaySound(SoundType.Footstep);
+                timer = footstepInterval; 
+            }
+        }
     }
     
+
     public void Bind(PlayerData data)
     {
         this.data = data;
@@ -76,4 +89,4 @@ public class PlayerController : MonoBehaviour, IBind<PlayerData>
         transform.position = data.position;
         transform.rotation = data.rotation;
     }
-} 
+}

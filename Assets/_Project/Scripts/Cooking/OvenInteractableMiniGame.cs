@@ -71,10 +71,12 @@ public class OvenInteractableMiniGame : InteractableObject
         if (heatTimer.IsFinished)
         {
             ShowEndScoreScreen("You Lose!");
+            SoundManager.PlaySound(SoundType.LoseSound);
         }
         if (miniGameTimer.IsFinished)
         {
             ShowEndScoreScreen("You Win!");
+            SoundManager.PlaySound(SoundType.WinSound);
         }
     }
 

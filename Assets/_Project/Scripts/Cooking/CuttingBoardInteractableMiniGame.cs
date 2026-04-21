@@ -79,6 +79,10 @@ public class CuttingBoardInteractableMiniGame : InteractableObject
         endScoreCanvas.gameObject.SetActive(true);
         endScoreText.SetTextFormat("Your Score: {0}", totalScore);
         UpdateStarMeter(endStarMeters, true);
+        
+        // Play Win Sound
+        SoundManager.PlaySound(SoundType.WinSound);
+        
         if (withScoreCanvas)
         {
             scoreCanvas.gameObject.SetActive(false);

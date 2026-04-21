@@ -107,8 +107,12 @@ public class NpcOrderState : NpcBaseState
                 break;
             }
         }
-        if(!changeStateManager.LineFull() && currentOrderNode != null)
+
+        if (!changeStateManager.LineFull() && currentOrderNode != null)
+        {
             agent.SetDestination(currentOrderNode.position);
+        }
+            
     }
     private void DisplayOrder()
     {

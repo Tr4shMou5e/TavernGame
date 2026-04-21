@@ -13,7 +13,8 @@ public class NpcCustomer : AIEntitiy
     [SerializeField] MenuData menuData;
     [SerializeField] Canvas canvas;
     [SerializeField] private float eatDuration = 10f;
-    
+    [SerializeField] private float footstepInterval = 0.55f;
+    private float timer = 0f;
     private StateMachine stateMachine;
     
     private NpcOrderState orderState;
@@ -59,6 +60,15 @@ public class NpcCustomer : AIEntitiy
     {
         if (stateMachine == null) return;
         stateMachine.Update();
+        
+        if (agent.remainingDistance > 0.1f)
+        {
+            timer -= Time.deltaTime;
+            if (timer <= 0f) {
+                SoundManager.PlaySound(SoundType.Footstep, transform.position);
+                timer = footstepInterval; 
+            }
+        }
         
         changeStateManager.PlayerInRange = isPlayerInRange;
         if (!isPlayerInRange || !IsPlayerLookingAtMe()) return;

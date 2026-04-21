@@ -21,6 +21,7 @@ public class FlameControlTarget : MonoBehaviour
         {
             Debug.Log("Target Hit");
             OnFlameControlTarget?.Invoke();
+            SoundManager.PlaySound(SoundType.Oven);
         }
     }
 
