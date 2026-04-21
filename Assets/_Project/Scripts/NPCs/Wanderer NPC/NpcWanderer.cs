@@ -9,8 +9,10 @@ public class NpcWanderer : AIEntitiy
     [SerializeField] NavMeshAgent agent;
     [SerializeField] float wanderRadius;
     [SerializeField] ChangeStateWandererManager changeStateManager;
-    
+    [SerializeField] private float footstepInterval = 0.55f;
+
     private StateMachine stateMachine;
+    private float timer = 0f;
     private bool isNameSelected;
     private string characterName;
 
@@ -67,6 +69,14 @@ public class NpcWanderer : AIEntitiy
     {
         stateMachine.Update();
         
+        if (agent.remainingDistance > 0.1f)
+        {
+            timer -= Time.deltaTime;
+            if (timer <= 0f) {
+                SoundManager.PlaySound(SoundType.Footstep, transform.position);
+                timer = footstepInterval; 
+            }
+        }
         //This statement checks if the player is in range of the NPC, and if so, it will open the dialogue box
         if (!isPlayerInRange || !IsPlayerLookingAtMe())
         {

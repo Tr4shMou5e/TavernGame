@@ -58,4 +58,5 @@ public enum SoundType
     Oven,
     WinSound,
     LoseSound,
+    ScoreSound,
 }

@@ -141,6 +141,7 @@ public class OvenInteractableMiniGame : InteractableObject
         if (!miniGameRunning) return;
         totalScore += score;
         scoreText.SetTextFormat("Score: {0}", totalScore);
+        SoundManager.PlaySound(SoundType.ScoreSound, 0.3f);
         IncreaseDifficulty();
     }
 

@@ -36485,6 +36485,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cutting Board Mini-Game Objects
       objectReference: {fileID: 0}
+    - target: {fileID: 557424981624436282, guid: 227f840de1a98b9428704b3e61c74afa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3402403341693215187, guid: 227f840de1a98b9428704b3e61c74afa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -36603,6 +36607,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Customer Orders Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3118245594702012041, guid: 668f4008cee073c4b9b8ea52f7077052, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4579431259527048909, guid: 668f4008cee073c4b9b8ea52f7077052, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -36682,6 +36690,10 @@ PrefabInstance:
     - target: {fileID: 4579431259527048909, guid: 668f4008cee073c4b9b8ea52f7077052, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7803160907416612284, guid: 668f4008cee073c4b9b8ea52f7077052, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 443
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -36810,7 +36822,7 @@ PrefabInstance:
       objectReference: {fileID: 1718076306}
     - target: {fileID: 8380251494801397196, guid: 942eef330bca4884ba43286f4e32d12a, type: 3}
       propertyPath: soundList.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8380251494801397196, guid: 942eef330bca4884ba43286f4e32d12a, type: 3}
       propertyPath: soundList.Array.data[0].name
@@ -36826,7 +36838,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8380251494801397196, guid: 942eef330bca4884ba43286f4e32d12a, type: 3}
       propertyPath: soundList.Array.data[3].name
-      value: LoadSound
+      value: LoseSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 8380251494801397196, guid: 942eef330bca4884ba43286f4e32d12a, type: 3}
+      propertyPath: soundList.Array.data[4].name
+      value: ScoreSound
       objectReference: {fileID: 0}
     - target: {fileID: 8380251494801397196, guid: 942eef330bca4884ba43286f4e32d12a, type: 3}
       propertyPath: soundList.Array.data[0].sounds.Array.size
@@ -36838,11 +36854,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8380251494801397196, guid: 942eef330bca4884ba43286f4e32d12a, type: 3}
       propertyPath: soundList.Array.data[2].sounds.Array.size
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8380251494801397196, guid: 942eef330bca4884ba43286f4e32d12a, type: 3}
       propertyPath: soundList.Array.data[3].sounds.Array.size
-      value: 1
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8380251494801397196, guid: 942eef330bca4884ba43286f4e32d12a, type: 3}
+      propertyPath: soundList.Array.data[4].sounds.Array.size
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8380251494801397196, guid: 942eef330bca4884ba43286f4e32d12a, type: 3}
       propertyPath: 'soundList.Array.data[0].sounds.Array.data[0]'
@@ -36881,9 +36901,49 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: de170b8362b0dd64494da8468b64d460, type: 3}
     - target: {fileID: 8380251494801397196, guid: 942eef330bca4884ba43286f4e32d12a, type: 3}
+      propertyPath: 'soundList.Array.data[2].sounds.Array.data[2]'
+      value: 
+      objectReference: {fileID: 8300000, guid: d8a1eee13595b5b4486dfb8fa00a83db, type: 3}
+    - target: {fileID: 8380251494801397196, guid: 942eef330bca4884ba43286f4e32d12a, type: 3}
+      propertyPath: 'soundList.Array.data[2].sounds.Array.data[3]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 04f542692b624434a94c978866ef87bc, type: 3}
+    - target: {fileID: 8380251494801397196, guid: 942eef330bca4884ba43286f4e32d12a, type: 3}
       propertyPath: 'soundList.Array.data[3].sounds.Array.data[0]'
       value: 
       objectReference: {fileID: 8300000, guid: bd11891652aea814ebfa533e327cdc7b, type: 3}
+    - target: {fileID: 8380251494801397196, guid: 942eef330bca4884ba43286f4e32d12a, type: 3}
+      propertyPath: 'soundList.Array.data[3].sounds.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8300000, guid: d880ae99b3c44354cb34018c2e01e8c5, type: 3}
+    - target: {fileID: 8380251494801397196, guid: 942eef330bca4884ba43286f4e32d12a, type: 3}
+      propertyPath: 'soundList.Array.data[3].sounds.Array.data[2]'
+      value: 
+      objectReference: {fileID: 8300000, guid: bea17f8fdccb3c446bc6cf8703928682, type: 3}
+    - target: {fileID: 8380251494801397196, guid: 942eef330bca4884ba43286f4e32d12a, type: 3}
+      propertyPath: 'soundList.Array.data[3].sounds.Array.data[3]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 29035759c616d9b4884c45844307e5ca, type: 3}
+    - target: {fileID: 8380251494801397196, guid: 942eef330bca4884ba43286f4e32d12a, type: 3}
+      propertyPath: 'soundList.Array.data[4].sounds.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 1cab1450d560c1249b19e9cdb18458df, type: 3}
+    - target: {fileID: 8380251494801397196, guid: 942eef330bca4884ba43286f4e32d12a, type: 3}
+      propertyPath: 'soundList.Array.data[4].sounds.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 37d5cbc42b51e2547bd8a02bf3993a2f, type: 3}
+    - target: {fileID: 8380251494801397196, guid: 942eef330bca4884ba43286f4e32d12a, type: 3}
+      propertyPath: 'soundList.Array.data[4].sounds.Array.data[2]'
+      value: 
+      objectReference: {fileID: 8300000, guid: f33cb9c51b54eee4abd37e4dbebf695a, type: 3}
+    - target: {fileID: 8380251494801397196, guid: 942eef330bca4884ba43286f4e32d12a, type: 3}
+      propertyPath: 'soundList.Array.data[4].sounds.Array.data[3]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 278ccc52bae920d428ecf1e3aceaa323, type: 3}
+    - target: {fileID: 8380251494801397196, guid: 942eef330bca4884ba43286f4e32d12a, type: 3}
+      propertyPath: 'soundList.Array.data[4].sounds.Array.data[4]'
+      value: 
+      objectReference: {fileID: 8300000, guid: ae64b633581c4d14db3f350982ddffb2, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -141,6 +141,7 @@ public class CuttingBoardInteractableMiniGame : InteractableObject
             scoreText.SetTextFormat("Score: {0}", totalScore);
             
             miniGameFoodSpawner.ReleaseFood(hit.collider.gameObject);
+            SoundManager.PlaySound(SoundType.ScoreSound, 0.3f);
         }
     }
     void StartTimer()
