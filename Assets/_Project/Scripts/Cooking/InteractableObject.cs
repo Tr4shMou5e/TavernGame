@@ -29,6 +29,7 @@ public abstract class InteractableObject : MonoBehaviour, IInteractable
     private CinemachineInputAxisController inputAxisController;
     private HideLockCursor cursor;
     protected event Action OnMiniGameStart;
+    public static event Action<CustomerOrderKey> OnOrderDone;
     public static event Action OnOrderComplete;
     public static event Action OnMiniGameEnd;
     public virtual void Interact()
@@ -181,7 +182,8 @@ public abstract class InteractableObject : MonoBehaviour, IInteractable
         var completedProcesses = ordersList.Count(order => order.Item2);
 
         if (completedProcesses == ordersList.Count)
-        {
+        {   
+            OnOrderDone?.Invoke(customer);
             var removed = orders.customersOrderDictionary.Remove(customer);
             OnOrderComplete?.Invoke();
         }

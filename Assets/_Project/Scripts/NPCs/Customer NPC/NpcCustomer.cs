@@ -12,8 +12,10 @@ public class NpcCustomer : AIEntitiy
     [SerializeField] List<OrderNode> orderQueue;
     [SerializeField] MenuData menuData;
     [SerializeField] Canvas canvas;
+    [SerializeField] Transform parentTransform; 
     [SerializeField] private float eatDuration = 10f;
     [SerializeField] private float footstepInterval = 0.55f;
+    
     private float timer = 0f;
     private StateMachine stateMachine;
     
@@ -23,12 +25,14 @@ public class NpcCustomer : AIEntitiy
     private NpcEatState eatState;
     private NpcExitState exitState;
     
+    public static event Action<AIEntitiy> OnOrderTaken;
     private void Awake()
     {
         mainCamera = Camera.main;
         player = GameObject.FindGameObjectWithTag("Player").transform;
         orderQueue = FindObjectsByType<OrderNode>(FindObjectsSortMode.None).ToList();
         orderQueue.Sort((a,b) => string.Compare(a.name, b.name, StringComparison.Ordinal));
+        parentTransform = GameObject.Find("Parent Transform").transform;
     }
     private void Start()
     {
@@ -41,7 +45,7 @@ public class NpcCustomer : AIEntitiy
         
         orderState = new NpcOrderState(this, animator, agent, player, changeStateManager, orderQueue, menuData, canvas, customerNameObject);
         waitListState = new NpcWaitListState(this, animator, agent, changeStateManager, orderQueue);
-        sitState = new NpcSitState(this, animator, agent, changeStateManager, customerMaleNames);
+        sitState = new NpcSitState(this, animator, agent, changeStateManager, customerMaleNames, player, canvas, parentTransform);
         eatState = new NpcEatState(this, animator, agent, changeStateManager, eatDuration);
         exitState = new NpcExitState(this, animator, agent, changeStateManager);
         
@@ -75,7 +79,9 @@ public class NpcCustomer : AIEntitiy
         
         if (InputManager.Instance.Interact())
         {
+            OnOrderTaken?.Invoke(this);
             changeStateManager.IsOrderTaken = true;
+            SoundManager.PlaySound(SoundType.BuySound);
         }
     }
 

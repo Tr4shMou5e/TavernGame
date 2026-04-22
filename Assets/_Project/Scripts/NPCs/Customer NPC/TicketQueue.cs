@@ -22,6 +22,7 @@ public class TicketQueue : SerializedMonoBehaviour
     {
         orders = FoodItemInfoManager.Instance;
         SetupDictionary();
+        RefreshQueue();
     }
 
     private void SetupDictionary()
@@ -53,9 +54,7 @@ public class TicketQueue : SerializedMonoBehaviour
 
     private void UpdateAllCustomerOrderDisplay()
     {
-        Debug.Log("Updating all customer orders");
         var orderList = orders.GetCustomerOrderKeys();
-        Debug.Log(orderList.Count);
         for (int i = 0; i < ticketOrders.Count; i++)
         {
             int orderIndex = i + 1;
@@ -65,8 +64,6 @@ public class TicketQueue : SerializedMonoBehaviour
 
             if (!hasQueuedOrder)
                 continue;
-            Debug.Log("Populating ticket " + i);
-            Debug.Log(ticketOrders.Count);
             PopulateTicket(ticketOrders[i], orderList[orderIndex]);
         }
     }
@@ -76,7 +73,6 @@ public class TicketQueue : SerializedMonoBehaviour
         var textFields = ticketObject.GetComponentsInChildren<TextMeshProUGUI>(true);
         var dishImage = ticketObject.GetComponentInChildren<Image>(true);
         
-        Debug.Log("textFields.Length: " + textFields.Length);
         foreach (var textField in textFields)
         {
             switch (textField.gameObject.name)
@@ -103,7 +99,7 @@ public class TicketQueue : SerializedMonoBehaviour
     {
         var orderList = orders.GetCustomerOrderKeys();
 
-        if (orderList.Count == 0)
+        if (orderList == null || orderList.Count == 0)
         {
             currentOrderGameObject.SetActive(false);
             return;
@@ -114,7 +110,9 @@ public class TicketQueue : SerializedMonoBehaviour
         var processes = currentOrderGameObject.GetComponentsInChildren<Toggle>(true);
         var orderImage = currentOrderGameObject.GetComponentInChildren<Image>(true);
         var customerName = currentOrderGameObject.GetComponentInChildren<TextMeshProUGUI>(true);
-        var firstOrder = orderList[0].FoodItem.processes;
+
+        var currentOrder = orderList[0];
+        var firstOrder = currentOrder.FoodItem.processes;
 
         for (int i = 0; i < processes.Length; i++)
         {
@@ -143,10 +141,10 @@ public class TicketQueue : SerializedMonoBehaviour
         }
 
         if (orderImage != null)
-            orderImage.sprite = orderList[0].FoodItem.dishImage;
+            orderImage.sprite = currentOrder.FoodItem.dishImage;
 
         if (customerName != null)
-            customerName.SetTextFormat("{0}'s Order", orderList[0].Customer.name);
+            customerName.SetTextFormat("{0}'s Order", currentOrder.Customer.name);
     }
 
     private void UpdateCheckMark()
@@ -181,10 +179,12 @@ public class TicketQueue : SerializedMonoBehaviour
     {
         NpcOrderState.OnOrderTaken += RefreshQueue;
         InteractableObject.OnMiniGameEnd += RefreshQueue;
+        InteractableObject.OnOrderComplete += RefreshQueue;
     }
     void OnDisable()
     {
         NpcOrderState.OnOrderTaken -= RefreshQueue;
         InteractableObject.OnMiniGameEnd -= RefreshQueue;
+        InteractableObject.OnOrderComplete -= RefreshQueue;
     }
 }

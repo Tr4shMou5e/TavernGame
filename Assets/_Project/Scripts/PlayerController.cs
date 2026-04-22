@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour, IBind<PlayerData>
         
         //Actual movement code starts here
         groundedPlayer = controller.isGrounded;
-
+        
         if (groundedPlayer && playerVelocity.y < 0f)
             playerVelocity.y = -2f;
 
@@ -80,7 +80,6 @@ public class PlayerController : MonoBehaviour, IBind<PlayerData>
             }
         }
     }
-    
 
     public void Bind(PlayerData data)
     {

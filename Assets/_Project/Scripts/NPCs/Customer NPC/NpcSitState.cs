@@ -1,23 +1,35 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using Random = UnityEngine.Random;
 using System.Linq;
+using TMPro;
+
 public class NpcSitState : NpcBaseState
 {
     private NavMeshAgent agent;
     private ChangeStateCustomerManager changeStateManager;
     private FoodItem selectedItem;
     private CustomerName customerName;
-    //private GameObject heldItem;
+    private GameObject heldItem;
     private FoodItemInfoManager foodItemInfoManager;
     private GameObject[] chairs;
     private ChairData randomChair;
-    public NpcSitState(AIEntitiy entity, Animator animator, NavMeshAgent agent, ChangeStateCustomerManager changeStateManager, CustomerName customerName) : base(entity, animator)
+    private Canvas canvas;
+    private TextMeshProUGUI nameText;
+    private Transform playerTransform;
+    private Transform parentTransform;
+    
+    public static event Action<AIEntitiy> OnFoodGiven;
+    public NpcSitState(AIEntitiy entity, Animator animator, NavMeshAgent agent, ChangeStateCustomerManager changeStateManager, CustomerName customerName,Transform playerTransform, Canvas canvas, Transform parentTransform) : base(entity, animator)
     {
         this.agent = agent;
         this.changeStateManager = changeStateManager;
         this.customerName = customerName;
+        this.canvas = canvas;
+        this.playerTransform = playerTransform;
+        this.parentTransform = parentTransform;
         foodItemInfoManager = FoodItemInfoManager.Instance;
         chairs = GameObject.FindGameObjectsWithTag("Chair");
     }
@@ -25,12 +37,12 @@ public class NpcSitState : NpcBaseState
     public override void OnEnter()
     {
         Debug.Log("Sitting entered state");
-        
         var pickedChairs = chairs
             .Select(chair => chair.GetComponent<ChairData>())
             .Where(chairData => chairData != null && !chairData.isOccupied)
             .ToList();
-        Debug.Log(pickedChairs.Count);
+        
+        nameText = canvas.GetComponentInChildren<TextMeshProUGUI>();
         if (pickedChairs.Count > 0)
         {
             randomChair = pickedChairs[Random.Range(0, pickedChairs.Count)];
@@ -47,22 +59,35 @@ public class NpcSitState : NpcBaseState
     public override void Update()
     {
         Debug.Log("Sitting update state");
+        UpdateWorldUI();
         if(foodItemInfoManager.foodItemDictionary.TryGetValue(entity.gameObject, out var foodItem))
         {
             selectedItem = foodItem;
         }
         if (!changeStateManager.PlayerInRange) return;
-        Debug.Log("Player in range");
+        
         if (InputManager.Instance.Interact())
         {
             GiveFood();
         }
     }
 
+    private void UpdateWorldUI()
+    {
+        var targetRot = Quaternion.LookRotation(playerTransform.forward);
+        nameText.gameObject.transform.rotation = Quaternion.Slerp(nameText.gameObject.transform.rotation, targetRot, Time.deltaTime * 180f);
+        
+    }
+
     private void GiveFood()
     {
-        //!Give Order (Implement Later)
-        // Check if the player is holding the correct food item the customer ordered
+        heldItem = parentTransform.GetChild(0).gameObject;
+        
+        // Check if the player is holding the correct food item the customer ordered\
+        if (heldItem.name != selectedItem.dishName) return;
+        
+        // Notify the player that the food has been given, so the food can be destroyed in the background;
+        OnFoodGiven?.Invoke(entity); 
         changeStateManager.OrderServed = true;
     }
     public override void OnExit()

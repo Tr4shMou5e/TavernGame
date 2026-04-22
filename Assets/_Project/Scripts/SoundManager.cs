@@ -17,7 +17,16 @@ public class SoundManager : MonoBehaviour
         }
         instance = this;
     }
-
+    
+    public static void PlayMusic(SoundType sound, AudioSource source, float volume = 1f)
+    {
+        var clips = instance.soundList[(int)sound].Sounds;
+        var clip = clips[Random.Range(0, clips.Length)];
+        source.volume = volume;
+        source.clip = clip;
+        source.Play();
+    }
+    
     public static void PlaySound(SoundType sound, float volume = 1f)
     {
         var clips = instance.soundList[(int)sound].Sounds;
@@ -59,4 +68,6 @@ public enum SoundType
     WinSound,
     LoseSound,
     ScoreSound,
+    BackgroundMusic,
+    BuySound
 }

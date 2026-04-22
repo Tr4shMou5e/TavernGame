@@ -49,8 +49,8 @@ public class NpcOrderState : NpcBaseState
     public override void OnEnter()
     {
         Debug.Log("Order entered state");
+        NpcCustomer.OnOrderTaken += RegisterFoodItemOrder;
         // Checking if the Line is full
-        Debug.Log(orderQueue.Count);
         for (int i = 0; i < orderQueue.Count; i++)
         {
             if (!orderQueue[i].isOccupied)
@@ -65,7 +65,7 @@ public class NpcOrderState : NpcBaseState
         }
         
         // If the line is not full, the agent will move to the next order node
-        if (!changeStateManager.LineFull() && currentOrderNode != null)
+        if (!changeStateManager.LineFull() && currentOrderNode is not null)
         {
             agent.SetDestination(targetPosition);
         }
@@ -76,7 +76,7 @@ public class NpcOrderState : NpcBaseState
         }
         if(selectedItemImage is null) selectedItemImage = canvas.gameObject.GetComponentInChildren<Image>();
         if(customerNameText is null) customerNameText = canvas.gameObject.GetComponentInChildren<TextMeshProUGUI>();
-        if(customerNameText != null) name = customerName.GetRandomName();
+        if(customerNameText is not null) name = customerName.GetRandomName();
     }
     public override void Update()
     {
@@ -92,7 +92,6 @@ public class NpcOrderState : NpcBaseState
 
     private void UpdateOrderNode()
     {
-        Debug.Log("Updating order node");
         if(orderQueue.Count == 0) return;
         for(int i = currentOrderIndex; i >= currentOrderIndex - 1; i--)
         {
@@ -108,7 +107,7 @@ public class NpcOrderState : NpcBaseState
             }
         }
 
-        if (!changeStateManager.LineFull() && currentOrderNode != null)
+        if (!changeStateManager.LineFull() && currentOrderNode is not null)
         {
             agent.SetDestination(currentOrderNode.position);
         }
@@ -116,7 +115,7 @@ public class NpcOrderState : NpcBaseState
     }
     private void DisplayOrder()
     {
-        if (currentOrderIndex == 0 && currentOrderNode != null)
+        if (currentOrderIndex == 0 && currentOrderNode is not null)
         {
             if(!isFoodSelected)
                 SelectFoodItem();
@@ -124,7 +123,7 @@ public class NpcOrderState : NpcBaseState
             FacePlayer();
         }
     }
-    // ReSharper disable Unity.PerformanceAnalysis
+    
     private void SelectFoodItem()
     {   
         canvas.gameObject.SetActive(true);
@@ -138,19 +137,59 @@ public class NpcOrderState : NpcBaseState
             processes = selectedItem.processes
         };
         entity.gameObject.name = name;
-        foodItemInfoManager.foodItemDictionary[entity.gameObject] = foodItem;
-        
-        var order = new List<(InteractableObject, bool)>();
-        foreach (var item in foodItem.processes)
-        {
-            order.Add((item.GetComponent<InteractableObject>(), false));
-        }
-        
-        foodItemInfoManager.AddCustomerOrder(order, entity.gameObject, foodItem);
-        OnOrderTaken?.Invoke();
-        Debug.Log("Order taken");
+        selectedItem = foodItem;
         isFoodSelected = true;
     }
+
+    private void RegisterFoodItemOrder(AIEntitiy customer)
+    {
+        if (customer != entity)
+            return;
+        if (selectedItem == null)
+            SelectFoodItem();
+
+        if (selectedItem == null)
+        {
+            Debug.LogError("Selected item is still null after SelectFoodItem().");
+            return;
+        }
+
+        if (foodItemInfoManager == null || entity == null || entity.gameObject == null)
+        {
+            Debug.LogError("Missing required references in RegisterFoodItemOrder.");
+            return;
+        }
+
+        var key = new CustomerOrderKey(entity.gameObject, selectedItem);
+        if (foodItemInfoManager.customersOrderDictionary.ContainsKey(key))
+        {
+            Debug.LogWarning($"Order already registered for {entity.gameObject.name}");
+            return;
+        }
+
+        foodItemInfoManager.foodItemDictionary[entity.gameObject] = selectedItem;
+
+        var order = new List<(InteractableObject, bool)>();
+
+        foreach (var processObject in selectedItem.processes)
+        {
+            if (processObject == null) continue;
+
+            var interactable = processObject.GetComponent<InteractableObject>();
+            if (interactable != null)
+                order.Add((interactable, false));
+        }
+
+        if (order.Count == 0)
+        {
+            Debug.LogError($"No valid interactable processes found for {selectedItem.dishName}.");
+            return;
+        }
+
+        foodItemInfoManager.AddCustomerOrder(order, entity.gameObject, selectedItem);
+        OnOrderTaken?.Invoke();
+    }
+
     private void ShowWorldGUI()
     {
         if (selectedItem is null || name is null) return;
@@ -165,9 +204,8 @@ public class NpcOrderState : NpcBaseState
     }
     public override void OnExit()
     {
+        NpcCustomer.OnOrderTaken -= RegisterFoodItemOrder;
         if (currentOrderNode != null)
             currentOrderNode.isOccupied = false;
-        
-        canvas.gameObject.SetActive(false);
     }
 }

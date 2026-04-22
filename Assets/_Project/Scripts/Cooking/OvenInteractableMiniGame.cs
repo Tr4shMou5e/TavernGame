@@ -53,6 +53,10 @@ public class OvenInteractableMiniGame : InteractableObject
     {
         if (miniGameRunning) return;
         base.Interact();
+        
+        // Reset the heat duration when the player interacts with the oven
+        heatDuration = 10f;
+        
         RandomSpawner();
     }
     

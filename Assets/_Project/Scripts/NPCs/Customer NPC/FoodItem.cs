@@ -6,6 +6,7 @@ using UnityEngine;
 public class FoodItem
 {
     public string dishName;
+    public GameObject dishPrefab;
     public Sprite dishImage;
     public string id;
     public float price;
