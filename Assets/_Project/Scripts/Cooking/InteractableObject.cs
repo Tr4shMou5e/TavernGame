@@ -22,8 +22,9 @@ public abstract class InteractableObject : MonoBehaviour, IInteractable
     [SerializeField] protected MenuData menuSO; // Scriptable Object
     protected FoodItemInfoManager orders;
     protected InputManager inputManager;
-    private bool playerInRange;
     protected bool miniGameRunning;
+    protected bool isGameOver;
+    private bool playerInRange;
     private bool canPlayMiniGame;
     private bool miniGameHasBeenPlayed;
     private CinemachineInputAxisController inputAxisController;
@@ -32,6 +33,7 @@ public abstract class InteractableObject : MonoBehaviour, IInteractable
     public static event Action<CustomerOrderKey> OnOrderDone;
     public static event Action OnOrderComplete;
     public static event Action OnMiniGameEnd;
+    public static event Action<bool> OnGameLost;
     public virtual void Interact()
     {
         if (!playerInRange) return;
@@ -149,6 +151,7 @@ public abstract class InteractableObject : MonoBehaviour, IInteractable
 
     private void MiniGameComplete()
     {
+        
         var (customerOrder, myType) = GetCurrentOrderKey();
 
         if (!orders.customersOrderDictionary.TryGetValue(customerOrder, out var ordersList))
@@ -210,6 +213,7 @@ public abstract class InteractableObject : MonoBehaviour, IInteractable
             cursor.ChangeCursorSprite(null);
         }
     }
+    protected void ToggleHasWon(bool won) => OnGameLost?.Invoke(won);
     protected virtual void OnTriggerEnter(Collider other)
     {
         if (!other.CompareTag("Player")) return;

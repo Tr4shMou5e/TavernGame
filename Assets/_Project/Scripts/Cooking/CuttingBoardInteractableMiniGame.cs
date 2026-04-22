@@ -24,11 +24,12 @@ public class CuttingBoardInteractableMiniGame : InteractableObject
     private MiniGameFoodSpawnerObjectPoolManager miniGameFoodSpawner;
     private float timeSinceLastSpawn;
     private int totalScore;
-    private int starOneScore = 1000;
-    private int starTwoScore = 2500;
-    private int starThreeScore = 4000;
+    private int starOneScore = 500;
+    private int starTwoScore = 1000;
+    private int starThreeScore = 2000;
     
     public static event Action<GameObject> OnFoodSpawned;  
+    
     public override void Awake()
     {
         base.Awake();
@@ -45,13 +46,23 @@ public class CuttingBoardInteractableMiniGame : InteractableObject
     {
         if (miniGameRunning) return;
         base.Interact();
+        ResetStarMeter(starMeters, true);
+        ResetStarMeter(endStarMeters);
     }
+
+    private void ResetStarMeter(List<GameObject> starList, bool active = false)
+    {
+        foreach (var starMeter in starList)
+        {
+            starMeter.SetActive(active);
+        }
+    }
+
     private void Update()
     {
         Interact();
         MiniGame();
     }
-
     void MiniGame()
     {
         if (!miniGameRunning) return;
@@ -67,9 +78,15 @@ public class CuttingBoardInteractableMiniGame : InteractableObject
         UpdateStarMeter(starMeters);
         MouseDetection();
         if (!timer.IsFinished) return;
-        
+
+        TallyScore();
         ShowEndScoreScreen();
         timer.Reset();
+    }
+
+    private void TallyScore()
+    {
+        ToggleHasWon(totalScore >= starOneScore);
     }
 
     private void ShowEndScoreScreen()
@@ -126,7 +143,7 @@ public class CuttingBoardInteractableMiniGame : InteractableObject
         
         var mouseWorldPos = miniGameCamera.ScreenToWorldPoint(inputManager.GetMousePosition());
         var mousePos2D = new Vector2(mouseWorldPos.x, mouseWorldPos.y);
-        var hit = Physics2D.Raycast(mousePos2D, Vector2.zero,0f);
+        var hit = Physics2D.CircleCast(mousePos2D, 0.5f, Vector2.zero);
         if(hit.collider is null) return;
         
         if (hit.collider.CompareTag("Mini Game Food") && hit.collider.TryGetComponent(out SpriteRenderer foodItem))

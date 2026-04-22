@@ -34,13 +34,15 @@ public class OvenInteractableMiniGame : InteractableObject
     private const float MinXPosition = -4.8f;
     
     // Increase difficulty by decreasing the heat duration at certain total score threshold
-    private int pointsToIncreaseDifficulty = 1000;
-    private int pointsToIncreaseDifficulty2 = 2000;
-    private int pointsToIncreaseDifficulty3 = 3000;
-    private int pointsToIncreaseDifficulty4 = 4000;
-    private int pointsToIncreaseDifficulty5 = 5000;
+    private int pointsToIncreaseDifficulty = 400;
+    private int pointsToIncreaseDifficulty2 = 1000;
+    private int pointsToIncreaseDifficulty3 = 1400;
+    private int pointsToIncreaseDifficulty4 = 2400;
+    private int pointsToIncreaseDifficulty5 = 3000;
 
-    private float decrementTime = 1.5f;
+    private float decrementTime = 1.6f;
+
+    
     public override void Awake()
     {
         base.Awake();
@@ -56,7 +58,7 @@ public class OvenInteractableMiniGame : InteractableObject
         
         // Reset the heat duration when the player interacts with the oven
         heatDuration = 10f;
-        
+        //heatTimer = new CountdownTimer(heatDuration);
         RandomSpawner();
     }
     
@@ -74,11 +76,13 @@ public class OvenInteractableMiniGame : InteractableObject
         if(!miniGameRunning) return;
         if (heatTimer.IsFinished)
         {
+            ToggleHasWon(false);
             ShowEndScoreScreen("You Lose!");
             SoundManager.PlaySound(SoundType.LoseSound);
         }
         if (miniGameTimer.IsFinished)
         {
+            ToggleHasWon(true);
             ShowEndScoreScreen("You Win!");
             SoundManager.PlaySound(SoundType.WinSound);
         }

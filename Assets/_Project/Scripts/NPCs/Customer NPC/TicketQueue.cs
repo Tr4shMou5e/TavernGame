@@ -17,6 +17,7 @@ public class TicketQueue : SerializedMonoBehaviour
     [SerializeField] private GameObject currentOrderGameObject;
     private Dictionary<Type, RequiredProcess> processTranslation;
     private FoodItemInfoManager orders;
+    private bool hasWonGame = true;
     
     void Awake()
     {
@@ -149,6 +150,11 @@ public class TicketQueue : SerializedMonoBehaviour
 
     private void UpdateCheckMark()
     {
+        if (!hasWonGame)
+        {
+            hasWonGame = true;
+            return;
+        }
         var orderList = orders.GetCustomerOrderKeys();
         if (orderList == null || orderList.Count == 0)
             return;
@@ -169,6 +175,11 @@ public class TicketQueue : SerializedMonoBehaviour
             processes[i].isOn = processComplete[i].Item2;
     }
 
+    private void HasLostGame(bool hasWon)
+    {
+        hasWonGame = hasWon;
+    }
+
     private enum RequiredProcess
     {
         CuttingBoard,
@@ -180,11 +191,13 @@ public class TicketQueue : SerializedMonoBehaviour
         NpcOrderState.OnOrderTaken += RefreshQueue;
         InteractableObject.OnMiniGameEnd += RefreshQueue;
         InteractableObject.OnOrderComplete += RefreshQueue;
+        InteractableObject.OnGameLost += HasLostGame;
     }
     void OnDisable()
     {
         NpcOrderState.OnOrderTaken -= RefreshQueue;
         InteractableObject.OnMiniGameEnd -= RefreshQueue;
         InteractableObject.OnOrderComplete -= RefreshQueue;
+        InteractableObject.OnGameLost -= HasLostGame;
     }
 }
