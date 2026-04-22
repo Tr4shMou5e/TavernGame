@@ -3,7 +3,7 @@ using UnityEngine.EventSystems;
 
 public class PantryItemUI : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
-    public FoodItems foodItem;
+    public IngredientsItems ingredient;
     public GameObject highlight;
 
     private bool taken = false;
@@ -12,16 +12,15 @@ public class PantryItemUI : MonoBehaviour, IPointerClickHandler, IPointerEnterHa
     {
         if (taken)
         {
-            Debug.Log("Already took " + foodItem.itemName);
+            Debug.Log("Already took " + ingredient.itemName);
             return;
         }
 
         taken = true;
 
-        Debug.Log("Took: " + foodItem.itemName);
+        Debug.Log("Took: " + ingredient.itemName);
 
         // TODO: Add to inventory later
-
     }
 
     public void OnPointerEnter(PointerEventData eventData)
