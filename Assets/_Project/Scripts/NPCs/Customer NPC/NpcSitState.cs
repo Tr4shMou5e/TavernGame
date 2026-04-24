@@ -82,9 +82,10 @@ public class NpcSitState : NpcBaseState
     private void GiveFood()
     {
         heldItem = parentTransform.GetChild(0).gameObject;
-        
-        // Check if the player is holding the correct food item the customer ordered\
-        if (heldItem.name != selectedItem.dishName) return;
+        var order = foodItemInfoManager.GetCustomerOrderKeys()[0];
+        // Check if the player is holding the correct food item the customer ordered and if the customer is the one who ordered it
+        if (heldItem.name != selectedItem.dishName && 
+            order.Customer.name != entity.gameObject.name) return;
         
         // Notify the player that the food has been given, so the food can be destroyed in the background;
         OnFoodGiven?.Invoke(entity); 

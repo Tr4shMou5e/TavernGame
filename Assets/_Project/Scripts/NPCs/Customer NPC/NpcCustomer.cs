@@ -65,7 +65,7 @@ public class NpcCustomer : AIEntitiy
         if (stateMachine == null) return;
         stateMachine.Update();
         
-        if (agent.remainingDistance > 0.1f)
+        if (agent.velocity.magnitude > 0.1f)
         {
             timer -= Time.deltaTime;
             if (timer <= 0f) {

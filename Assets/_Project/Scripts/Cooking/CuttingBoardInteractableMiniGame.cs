@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using ImprovedTimers;
 using UnityEngine;
 using TMPro;
@@ -23,6 +24,9 @@ public class CuttingBoardInteractableMiniGame : InteractableObject
     private CountdownTimer timer;
     private MiniGameFoodSpawnerObjectPoolManager miniGameFoodSpawner;
     private float timeSinceLastSpawn;
+    
+    private bool isStarMeterReset = false;
+    
     private int totalScore;
     private int starOneScore = 500;
     private int starTwoScore = 1000;
@@ -46,8 +50,12 @@ public class CuttingBoardInteractableMiniGame : InteractableObject
     {
         if (miniGameRunning) return;
         base.Interact();
+
+        if (!isStarMeterReset) return;
+        
         ResetStarMeter(starMeters, true);
         ResetStarMeter(endStarMeters);
+        isStarMeterReset = true;
     }
 
     private void ResetStarMeter(List<GameObject> starList, bool active = false)
@@ -95,6 +103,7 @@ public class CuttingBoardInteractableMiniGame : InteractableObject
         SetupCursor(true, CursorLockMode.None, withCustomCursor, true);
         endScoreCanvas.gameObject.SetActive(true);
         endScoreText.SetTextFormat("Your Score: {0}", totalScore);
+        Debug.Log(endStarMeters.Count);
         UpdateStarMeter(endStarMeters, true);
         
         // Play Win Sound
@@ -104,16 +113,17 @@ public class CuttingBoardInteractableMiniGame : InteractableObject
         {
             scoreCanvas.gameObject.SetActive(false);
         }
-        // Setup the close button
-        closeButton.onClick.AddListener(() =>
-        {   
-            EndMiniGame();
-            endScoreCanvas.gameObject.SetActive(false);
-            miniGameParentGameObject.SetActive(false);
-            UpdateStarMeter(starMeters, true);
-            UpdateStarMeter(endStarMeters);
-            totalScore = 0;
-        });
+    }
+
+    private void CloseEndScoreScreen()
+    {
+        EndMiniGame();
+        endScoreCanvas.gameObject.SetActive(false);
+        miniGameParentGameObject.SetActive(false);
+        UpdateStarMeter(starMeters, true);
+        UpdateStarMeter(endStarMeters);
+        isStarMeterReset = false;
+        totalScore = 0;
     }
 
     private void UpdateTimer()
@@ -169,9 +179,11 @@ public class CuttingBoardInteractableMiniGame : InteractableObject
     private void OnEnable()
     {
         OnMiniGameStart += StartTimer;
+        closeButton.onClick.AddListener(CloseEndScoreScreen);
     }
     private void OnDisable()
     {
         OnMiniGameStart -= StartTimer;
+        closeButton.onClick.RemoveListener(CloseEndScoreScreen);
     }
 }

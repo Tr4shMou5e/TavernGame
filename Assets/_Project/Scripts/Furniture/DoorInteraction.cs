@@ -10,11 +10,14 @@ public class DoorInteraction : MonoBehaviour
    private void OnTriggerEnter(Collider other)
    {
       if (!other.CompareTag("Player")) return;
+      
+      SoundManager.PlaySound(SoundType.DoorOpen, transform.position);
       animator.CrossFade(doorOpenHash, crossFadeDuration);
    }
    private void OnTriggerExit(Collider other)
    {
       if (!other.CompareTag("Player")) return;
+      SoundManager.PlaySound(SoundType.DoorClose, transform.position);
       animator.CrossFade(doorCloseHash, crossFadeDuration); 
    }
 }

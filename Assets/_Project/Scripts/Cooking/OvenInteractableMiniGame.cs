@@ -100,15 +100,17 @@ public class OvenInteractableMiniGame : InteractableObject
         {
             scoreCanvas.gameObject.SetActive(false);
         }
-        closeButton.onClick.AddListener(() =>
-        {
-            EndMiniGame();
-            endScoreCanvas.gameObject.SetActive(false);
-            miniGameParentGameObject.SetActive(false);
-            UpdateStarMeter(endStarMeters);
-            totalScore = 0;
-        });
     }
+
+    private void CloseEndScoreScreen()
+    {
+        EndMiniGame();
+        endScoreCanvas.gameObject.SetActive(false);
+        miniGameParentGameObject.SetActive(false);
+        UpdateStarMeter(endStarMeters);
+        totalScore = 0;
+    }
+
     private void IncreaseDifficulty()
     {
         if (totalScore == pointsToIncreaseDifficulty && totalScore < pointsToIncreaseDifficulty2 || 
@@ -200,6 +202,7 @@ public class OvenInteractableMiniGame : InteractableObject
         OnMiniGameStart += StartMiniGameTimer;
         FlameControlTarget.OnFlameControlTarget += MiniGame;
         FlameControlTarget.OnFlameControlTarget += ResetHeatTimer;
+        closeButton.onClick.AddListener(CloseEndScoreScreen);
     }
     void OnDisable()
     {
@@ -207,5 +210,6 @@ public class OvenInteractableMiniGame : InteractableObject
         OnMiniGameStart -= StartMiniGameTimer;
         FlameControlTarget.OnFlameControlTarget -= MiniGame;
         FlameControlTarget.OnFlameControlTarget -= ResetHeatTimer;
+        closeButton.onClick.RemoveListener(CloseEndScoreScreen);
     }
 }

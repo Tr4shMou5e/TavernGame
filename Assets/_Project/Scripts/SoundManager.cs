@@ -69,5 +69,7 @@ public enum SoundType
     LoseSound,
     ScoreSound,
     BackgroundMusic,
-    BuySound
+    BuySound,
+    DoorOpen,
+    DoorClose
 }

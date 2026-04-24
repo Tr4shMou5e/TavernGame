@@ -159,7 +159,8 @@ public abstract class InteractableObject : MonoBehaviour, IInteractable
         for (int i = 0; i < ordersList.Count; i++)
         {
             var entry = ordersList[i];
-            if (entry.Item1 is not null && entry.Item1.GetType() == myType)
+            if (entry.Item1 is not null && entry.Item1.GetType() == myType && 
+                orders.GetCustomer(customerOrder.FoodItem).name == orders.GetCustomer(orders.GetFoodItemFromCustomer()).name)
             {
                 entry.Item2 = true;
                 ordersList[i] = entry;
