@@ -16,6 +16,9 @@ public class CatchGame : MonoBehaviour
     public TextMeshProUGUI timerText;
     public TextMeshProUGUI scoreText;
 
+    int correctClicks = 0;
+    int wrongClicks = 0;
+
     [Header("Slots")]
     public Image[] slotImages;
     public Button[] slotButtons;
@@ -85,6 +88,9 @@ public class CatchGame : MonoBehaviour
         if (timer <= 0f)
         {
             isPlaying = false;
+
+            CalculateScore();
+
             manager.NextStep();
         }
     }
@@ -144,13 +150,13 @@ public class CatchGame : MonoBehaviour
         if (clicked == currentCorrect)
         {
             score++;
-            Debug.Log("Correct!");
+            correctClicks++;
             slotImages[index].color = Color.green;
         }
         else
         {
             score--;
-            Debug.Log("Wrong!");
+            wrongClicks++;
             slotImages[index].color = Color.red;
         }
 
@@ -170,4 +176,24 @@ public class CatchGame : MonoBehaviour
     {
         scoreText.text = "Score: " + score;
     }
+
+    void CalculateScore()
+    {
+        int totalClicks = correctClicks + wrongClicks;
+
+        if (totalClicks == 0)
+        {
+            manager.AddScore(0);
+            return;
+        }
+
+        float accuracy = (float)correctClicks / totalClicks;
+
+        int score = Mathf.RoundToInt(accuracy * 1500);
+
+        Debug.Log("Catch Score: " + score);
+
+        manager.AddScore(score);
+    }
 }
+

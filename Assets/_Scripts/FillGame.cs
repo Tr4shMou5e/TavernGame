@@ -103,21 +103,25 @@ public class FillGame : MonoBehaviour
 
     void CheckResult()
     {
+        float center = (targetMin + targetMax) / 2f;
+        float distance = Mathf.Abs(fillAmount - center);
+
+        int score;
+
         if (hitTargetZone)
         {
-            Debug.Log("Perfect Fill!");
-
-            if (manager != null)
-                manager.NextStep();
-        }
-        else if (fillAmount < targetMin)
-        {
-            Debug.Log("Too Little!");
+            score = 1250;
         }
         else
         {
-            Debug.Log("Overfilled!");
+            float normalized = Mathf.Clamp01(1f - (distance / 0.2f));
+            score = Mathf.RoundToInt(normalized * 1000);
         }
+
+        Debug.Log("Fill Score: " + score);
+
+        manager.AddScore(score);
+        manager.NextStep();
     }
 
     void ResetFill()

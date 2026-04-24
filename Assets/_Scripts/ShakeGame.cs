@@ -55,7 +55,7 @@ public class ShakeGame : MonoBehaviour
 
             Debug.Log(fillAmount >= 1f ? "Shake Success!" : "Shake Failed!");
 
-            manager.NextStep();
+            FinishGame();
         }
     }
 
@@ -74,7 +74,7 @@ public class ShakeGame : MonoBehaviour
         {
             isPlaying = false;
             Debug.Log("Shake Complete!");
-            manager.NextStep();
+            FinishGame();
         }
     }
 
@@ -105,5 +105,26 @@ public class ShakeGame : MonoBehaviour
     {
         if (fillBar != null)
             fillBar.fillAmount = fillAmount;
+    }
+
+
+    void FinishGame()
+    {
+        int score;
+
+        if (fillAmount >= 1f)
+        {
+            float speedFactor = timer / gameTime;
+            score = Mathf.RoundToInt(900 + (speedFactor * 350)); // up to 1250
+        }
+        else
+        {
+            score = Mathf.RoundToInt(fillAmount * 600);
+        }
+
+        Debug.Log("Shake Score: " + score);
+
+        manager.AddScore(score);
+        manager.NextStep();
     }
 }
