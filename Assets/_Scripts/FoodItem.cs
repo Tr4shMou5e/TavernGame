@@ -6,18 +6,11 @@ using UnityEngine;
 public class FoodItem
 {
     public string dishName;
+    public GameObject dishPrefab;
     public Sprite dishImage;
     public string id;
     public float price;
     public int score;
     [Tooltip("This is the list of what the food needs to be processed to be ready to eat.")]
-    public enum ProcessType
-    {
-        Catch,
-        Fill,
-        Shake
-    }
-
-    public List<IngredientsItems> ingredients;
-    public List<ProcessType> processes;
+    public List<GameObject> processes;
 }
