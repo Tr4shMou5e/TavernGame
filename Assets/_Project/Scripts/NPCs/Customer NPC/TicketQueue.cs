@@ -113,7 +113,7 @@ public class TicketQueue : SerializedMonoBehaviour
         var customerName = currentOrderGameObject.GetComponentInChildren<TextMeshProUGUI>(true);
 
         var currentOrder = orderList[0];
-        var firstOrder = currentOrder.FoodItem.processes;
+        var firstOrder = currentOrder.FoodItem.processesRequired;
 
         for (int i = 0; i < processes.Length; i++)
         {

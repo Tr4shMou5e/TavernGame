@@ -376,11 +376,17 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  interactDistance: 2.35
+  interactDistance: 2
+  radius: 0.25
   player: {fileID: 0}
   mainCamera: {fileID: 0}
   customerMaleNames: {fileID: 11400000, guid: 7a01d932a8a2de74282630f1e16c8b0e, type: 2}
   customerFemaleNames: {fileID: 11400000, guid: ed0f8fec8778acd4e99a5b5025fd7e60, type: 2}
+  <Id>k__BackingField:
+    Part1: 3301585013
+    Part2: 1081095839
+    Part3: 1888743081
+    Part4: 2441761920
   dialogue: {fileID: 0}
   animator: {fileID: 8078950468003718059}
   agent: {fileID: 3498705521870953328}
@@ -392,7 +398,9 @@ MonoBehaviour:
   - {fileID: 0}
   menuData: {fileID: 11400000, guid: d72ca3be659b68b41a1b55e9fe21e3fc, type: 2}
   canvas: {fileID: 5876295842734309191}
+  parentTransform: {fileID: 0}
   eatDuration: 10
+  footstepInterval: 0.55
 --- !u!114 &922672066348231913
 MonoBehaviour:
   m_ObjectHideFlags: 0

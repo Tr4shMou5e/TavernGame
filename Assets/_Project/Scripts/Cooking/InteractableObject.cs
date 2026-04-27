@@ -73,13 +73,13 @@ public abstract class InteractableObject : MonoBehaviour, IInteractable
             return false;
         
         Debug.Log($"I've made it passed menuOrder: {currentOrder.dishName}");
-        if (currentOrder.processes == null || currentOrder.processes.Count == 0)
+        if (currentOrder.processesRequired == null || currentOrder.processesRequired.Count == 0)
             return false;
 
         var myType = GetType();
         
         Debug.Log($"I've made it passed myType: {myType}");
-        foreach (var process in currentOrder.processes)
+        foreach (var process in currentOrder.processesRequired)
         {
             if (process == null)
                 continue;

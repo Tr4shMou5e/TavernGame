@@ -6,7 +6,6 @@ using Sirenix.OdinInspector;
 public abstract class AIEntitiy : SerializedMonoBehaviour
 {
     [SerializeField] protected float interactDistance = 2.4f;
-    [SerializeField] protected float radius = 0.25f;
     [SerializeField] protected Transform player;
     [SerializeField] protected Camera mainCamera;
     [SerializeField] protected CustomerName customerMaleNames;
@@ -31,7 +30,7 @@ public abstract class AIEntitiy : SerializedMonoBehaviour
         if (!other.CompareTag("Player")) return;
         isPlayerInRange = false;
     }
-    protected bool IsPlayerLookingAtMe()
+    protected internal bool IsPlayerLookingAtMe()
     {
         if (mainCamera == null) return false;
         

@@ -45,7 +45,7 @@ public class NpcCustomer : AIEntitiy
         
         orderState = new NpcOrderState(this, animator, agent, player, changeStateManager, orderQueue, menuData, canvas, customerNameObject);
         waitListState = new NpcWaitListState(this, animator, agent, changeStateManager, orderQueue);
-        sitState = new NpcSitState(this, animator, agent, changeStateManager, customerMaleNames, player, canvas, parentTransform);
+        sitState = new NpcSitState(this, animator, agent, changeStateManager, customerMaleNames, player, canvas, parentTransform, IsPlayerLookingAtMe());
         eatState = new NpcEatState(this, animator, agent, changeStateManager, eatDuration);
         exitState = new NpcExitState(this, animator, agent, changeStateManager);
         

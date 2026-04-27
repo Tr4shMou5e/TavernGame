@@ -134,7 +134,7 @@ public class NpcOrderState : NpcBaseState
             dishImage = selectedItem.dishImage,
             price = selectedItem.price,
             id = selectedItem.id,
-            processes = selectedItem.processes
+            processesRequired = selectedItem.processesRequired
         };
         entity.gameObject.name = name;
         selectedItem = foodItem;
@@ -171,7 +171,7 @@ public class NpcOrderState : NpcBaseState
 
         var order = new List<(InteractableObject, bool)>();
 
-        foreach (var processObject in selectedItem.processes)
+        foreach (var processObject in selectedItem.processesRequired)
         {
             if (processObject == null) continue;
 

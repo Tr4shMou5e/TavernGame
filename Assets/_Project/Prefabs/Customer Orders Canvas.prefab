@@ -348,7 +348,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 18.097656, y: 0}
-  m_SizeDelta: {x: 420.1858, y: 379.0155}
+  m_SizeDelta: {x: 443, y: 379.0155}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &1487127954789253234
 CanvasRenderer:
@@ -455,8 +455,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Steven's Order
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b85d8f6c4cf3b9f4b97d26ffb4fdb40f, type: 2}
+  m_sharedMaterial: {fileID: -8589025778678322078, guid: b85d8f6c4cf3b9f4b97d26ffb4fdb40f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -592,8 +592,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Tenders
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b85d8f6c4cf3b9f4b97d26ffb4fdb40f, type: 2}
+  m_sharedMaterial: {fileID: -8589025778678322078, guid: b85d8f6c4cf3b9f4b97d26ffb4fdb40f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -869,7 +869,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4579431259527048909
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1024,8 +1024,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Tenders
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b85d8f6c4cf3b9f4b97d26ffb4fdb40f, type: 2}
+  m_sharedMaterial: {fileID: -8589025778678322078, guid: b85d8f6c4cf3b9f4b97d26ffb4fdb40f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1247,8 +1247,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: $20 Tovens
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b85d8f6c4cf3b9f4b97d26ffb4fdb40f, type: 2}
+  m_sharedMaterial: {fileID: -8589025778678322078, guid: b85d8f6c4cf3b9f4b97d26ffb4fdb40f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1384,8 +1384,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Steven's Order
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b85d8f6c4cf3b9f4b97d26ffb4fdb40f, type: 2}
+  m_sharedMaterial: {fileID: -8589025778678322078, guid: b85d8f6c4cf3b9f4b97d26ffb4fdb40f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1520,7 +1520,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f4eec857a4fdf2f43be0e9f3d1a984e7, type: 3}
+    m_Font: {fileID: 12800000, guid: ef23b53bafa7ae54a87947099f3852f0, type: 3}
     m_FontSize: 30
     m_FontStyle: 1
     m_BestFit: 0
@@ -1600,8 +1600,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: $20 Tovens
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b85d8f6c4cf3b9f4b97d26ffb4fdb40f, type: 2}
+  m_sharedMaterial: {fileID: -8589025778678322078, guid: b85d8f6c4cf3b9f4b97d26ffb4fdb40f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1737,8 +1737,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Lune's Order
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b85d8f6c4cf3b9f4b97d26ffb4fdb40f, type: 2}
+  m_sharedMaterial: {fileID: -8589025778678322078, guid: b85d8f6c4cf3b9f4b97d26ffb4fdb40f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2176,8 +2176,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: $20 Tovens
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b85d8f6c4cf3b9f4b97d26ffb4fdb40f, type: 2}
+  m_sharedMaterial: {fileID: -8589025778678322078, guid: b85d8f6c4cf3b9f4b97d26ffb4fdb40f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2370,7 +2370,7 @@ GameObject:
   m_Component:
   - component: {fileID: 175226386981901136}
   m_Layer: 5
-  m_Name: Current Order InProgess
+  m_Name: Current Order InProgress
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2466,7 +2466,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f4eec857a4fdf2f43be0e9f3d1a984e7, type: 3}
+    m_Font: {fileID: 12800000, guid: ef23b53bafa7ae54a87947099f3852f0, type: 3}
     m_FontSize: 30
     m_FontStyle: 1
     m_BestFit: 0
@@ -2546,8 +2546,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Tenders
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b85d8f6c4cf3b9f4b97d26ffb4fdb40f, type: 2}
+  m_sharedMaterial: {fileID: -8589025778678322078, guid: b85d8f6c4cf3b9f4b97d26ffb4fdb40f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2844,7 +2844,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f4eec857a4fdf2f43be0e9f3d1a984e7, type: 3}
+    m_Font: {fileID: 12800000, guid: ef23b53bafa7ae54a87947099f3852f0, type: 3}
     m_FontSize: 30
     m_FontStyle: 1
     m_BestFit: 0
@@ -2924,8 +2924,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Current Order
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b85d8f6c4cf3b9f4b97d26ffb4fdb40f, type: 2}
+  m_sharedMaterial: {fileID: -8589025778678322078, guid: b85d8f6c4cf3b9f4b97d26ffb4fdb40f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3061,8 +3061,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Steven's Order
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b85d8f6c4cf3b9f4b97d26ffb4fdb40f, type: 2}
+  m_sharedMaterial: {fileID: -8589025778678322078, guid: b85d8f6c4cf3b9f4b97d26ffb4fdb40f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

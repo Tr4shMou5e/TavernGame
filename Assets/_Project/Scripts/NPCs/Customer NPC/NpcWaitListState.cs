@@ -15,7 +15,7 @@ public class NpcWaitListState : NpcBaseState
     }
     public override void OnEnter()
     {
-        Debug.Log("Waitlist entered state");
+        
     }
     public override void Update()
     {

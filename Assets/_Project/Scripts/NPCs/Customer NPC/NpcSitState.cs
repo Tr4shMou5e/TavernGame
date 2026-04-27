@@ -20,9 +20,18 @@ public class NpcSitState : NpcBaseState
     private TextMeshProUGUI nameText;
     private Transform playerTransform;
     private Transform parentTransform;
+    private bool isPlayerLookingAtMe;
     
     public static event Action<AIEntitiy> OnFoodGiven;
-    public NpcSitState(AIEntitiy entity, Animator animator, NavMeshAgent agent, ChangeStateCustomerManager changeStateManager, CustomerName customerName,Transform playerTransform, Canvas canvas, Transform parentTransform) : base(entity, animator)
+    public NpcSitState(AIEntitiy entity, 
+        Animator animator, 
+        NavMeshAgent agent, 
+        ChangeStateCustomerManager changeStateManager, 
+        CustomerName customerName,
+        Transform playerTransform, 
+        Canvas canvas, 
+        Transform parentTransform, 
+        bool isPlayerLookingAtMe) : base(entity, animator)
     {
         this.agent = agent;
         this.changeStateManager = changeStateManager;
@@ -32,11 +41,11 @@ public class NpcSitState : NpcBaseState
         this.parentTransform = parentTransform;
         foodItemInfoManager = FoodItemInfoManager.Instance;
         chairs = GameObject.FindGameObjectsWithTag("Chair");
+        this.isPlayerLookingAtMe = isPlayerLookingAtMe;
     }
 
     public override void OnEnter()
     {
-        Debug.Log("Sitting entered state");
         var pickedChairs = chairs
             .Select(chair => chair.GetComponent<ChairData>())
             .Where(chairData => chairData != null && !chairData.isOccupied)
@@ -58,13 +67,12 @@ public class NpcSitState : NpcBaseState
 
     public override void Update()
     {
-        Debug.Log("Sitting update state");
         UpdateWorldUI();
         if(foodItemInfoManager.foodItemDictionary.TryGetValue(entity.gameObject, out var foodItem))
         {
             selectedItem = foodItem;
         }
-        if (!changeStateManager.PlayerInRange) return;
+        if (!changeStateManager.PlayerInRange || !entity.IsPlayerLookingAtMe()) return;
         
         if (InputManager.Instance.Interact())
         {
@@ -86,7 +94,7 @@ public class NpcSitState : NpcBaseState
         // Check if the player is holding the correct food item the customer ordered and if the customer is the one who ordered it
         if (heldItem.name != selectedItem.dishName && 
             order.Customer.name != entity.gameObject.name) return;
-        
+                
         // Notify the player that the food has been given, so the food can be destroyed in the background;
         OnFoodGiven?.Invoke(entity); 
         changeStateManager.OrderServed = true;

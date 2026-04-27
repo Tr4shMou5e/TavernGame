@@ -16,14 +16,12 @@ public class NpcEatState : NpcBaseState
     
     public override void OnEnter()
     {
-        Debug.Log("Eating entered state");
         eatTimer.Reset();
         eatTimer.Start();
     }
     public override void Update()
     {
         if (!eatTimer.IsFinished) return;
-        Debug.Log("Eating finished");
         changeStateManager.HasFinishedEating = true;
     }
 }

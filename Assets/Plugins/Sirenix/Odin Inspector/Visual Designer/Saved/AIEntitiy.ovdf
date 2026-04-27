@@ -8,14 +8,14 @@ Position: $Ea1sbd3Wj7VYXuNvF4HRxZ:0
 	GroupName = ""
 
 # $Ea1sbd3Wj7VYXuNvF4HRxZ
-Position: $root:17
+Position: $root:18
 + [Sirenix.OdinInspector.BoxGroupAttribute]
 
 # interactDistance
-Position: $UztbdXtS1Z8snbYr6S5Bxq:0
+Position: $root:17
 
 # mainCamera
-Position: $UztbdXtS1Z8snbYr6S5Bxq:1
+Position: $UztbdXtS1Z8snbYr6S5Bxq:0
 
 # dialogue
-Position: $root:19
+Position: $root:20
