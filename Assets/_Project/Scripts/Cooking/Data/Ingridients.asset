@@ -14,44 +14,65 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MenuData
   menuItems:
   - dishName: Apple
-    dishImage: {fileID: 21300000, guid: 762995c2612002b4bb037afa3bff5f54, type: 3}
+    dishPrefab: {fileID: 0}
+    dishImage: {fileID: 21300000, guid: d87055ff374ac914abcae61f89706b59, type: 3}
     id: 1548124622
     price: 0
     score: 100
-    processes: []
+    processesRequired: []
+    ingredients: []
+    processes: 
   - dishName: Beef
-    dishImage: {fileID: 21300000, guid: f257c1c15ec60c24783c7dc42ba56a52, type: 3}
+    dishPrefab: {fileID: 0}
+    dishImage: {fileID: 21300000, guid: 6224c7fc2700185459a22b59fcb33716, type: 3}
     id: -1321543904
     price: 0
     score: 200
-    processes: []
+    processesRequired: []
+    ingredients: []
+    processes: 
   - dishName: Carrot
-    dishImage: {fileID: 21300000, guid: cf3b419df78a7024993fc66f5722e60d, type: 3}
+    dishPrefab: {fileID: 0}
+    dishImage: {fileID: 21300000, guid: 2fd58405516969444a15f8c69daa45ae, type: 3}
     id: 1209145989
     price: 0
     score: 50
-    processes: []
+    processesRequired: []
+    ingredients: []
+    processes: 
   - dishName: Butter
-    dishImage: {fileID: 21300000, guid: 255791be51a301a4b8881a9b43d66072, type: 3}
+    dishPrefab: {fileID: 0}
+    dishImage: {fileID: 21300000, guid: dd4eaa659a553e14fa0048c8884d7457, type: 3}
     id: -688058012
     price: 0
     score: 80
-    processes: []
+    processesRequired: []
+    ingredients: []
+    processes: 
   - dishName: Cheese
-    dishImage: {fileID: 21300000, guid: f092dc7acf7d07344a7a66598b204f11, type: 3}
+    dishPrefab: {fileID: 0}
+    dishImage: {fileID: 21300000, guid: 440f2948bc4d79c408fea3305963c2fe, type: 3}
     id: 1326298449
     price: 0
     score: 150
-    processes: []
+    processesRequired: []
+    ingredients: []
+    processes: 
   - dishName: Cherries
-    dishImage: {fileID: 21300000, guid: e88f5d182b8573a4e834ca3e044a2570, type: 3}
+    dishPrefab: {fileID: 0}
+    dishImage: {fileID: 21300000, guid: 58e91b762d926e142980e84b3b3a5074, type: 3}
     id: 2142925741
     price: 0
     score: 20
-    processes: []
+    processesRequired: []
+    ingredients: []
+    processes: 
   - dishName: Grapes
-    dishImage: {fileID: 21300000, guid: c5bb2d138f3cfb340be8b2b43c414487, type: 3}
+    dishPrefab: {fileID: 0}
+    dishImage: {fileID: 21300000, guid: dc2757812e075ee4f8dc9b5cf0c8fa02, type: 3}
     id: -1799932054
     price: 0
     score: 80
-    processes: []
+    processesRequired: []
+    ingredients: []
+    processes: 
