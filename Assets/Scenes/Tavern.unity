@@ -6423,6 +6423,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 980714210}
+  - component: {fileID: 980714211}
   m_Layer: 0
   m_Name: KeyboardInputManager
   m_TagString: Untagged
@@ -6445,6 +6446,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &980714211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980714209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 764344d59adf9124ba1c9cc50bcc2b85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyboardInputHandler
+  cookbookButton: {fileID: 2023256085}
 --- !u!1001 &990135799
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13494,6 +13508,17 @@ RectTransform:
   m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2023256085 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6125459192775954477, guid: de8cc6bed9ece5542ba2f2c78e484de6, type: 3}
+  m_PrefabInstance: {fileID: 211591038946596281}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
 --- !u!1001 &2025257994
 PrefabInstance:
   m_ObjectHideFlags: 0
