@@ -1,24 +1,4 @@
-<Solution>
+﻿<Solution>
   <Project Path="Assembly-CSharp.csproj" />
   <Project Path="Assembly-CSharp-Editor.csproj" />
-</Solution>
-<Solution>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  <Project Path="Assembly-CSharp.csproj" />
-  <Project Path="Assembly-CSharp-Editor.csproj" />
-=======
-  <Project Path="Assembly-CSharp-Editor-firstpass.csproj" />
-  <Project Path="Ink-Libraries.csproj" />
-  <Project Path="Assembly-CSharp-firstpass.csproj" />
-  <Project Path="InkEditor.csproj" />
-  <Project Path="Assembly-CSharp-Editor.csproj" />
-  <Project Path="Assembly-CSharp.csproj" />
-  <Project Path="Wingman.csproj" />
-  <Project Path="Sirenix.OdinInspector.Modules.UnityMathematics.csproj" />
->>>>>>> Stashed changes
-=======
-  <Project Path="Assembly-CSharp.csproj" />
-  <Project Path="Assembly-CSharp-Editor.csproj" />
->>>>>>> Stashed changes
 </Solution>
