@@ -1,0 +1,82 @@
+OVDF v1.1
+OvenInteractableMiniGame, Assembly-CSharp
+MetaGuid:4294ef43ec674ad690d9ca7966e3401e
+
+# $14gFbnr7EYkNv2tJQKp9Pn
+Position: $root:50
++ [Sirenix.OdinInspector.BoxGroupAttribute]
+	GroupName = "Timer Variables"
+	CenterLabel = True
+	ShowLabel = True
+
+# $8oQKFSjMe37YcA2shGQQtW
+Position: $root:47
+
+# $5w6Q7zifdddum97GmpWr7u
+Position: $root:48
+
+# $W9B72XWLhPiLZCPA2CPgth
+Position: $root:51
+
+# scoreText
+Position: $KEFtsejydiytCfkufLYWks:0
+
+# timerText
+Position: $W9B72XWLhPiLZCPA2CPgth:2
+
+# winLoseText
+Position: $W9B72XWLhPiLZCPA2CPgth:3
+
+# endScoreText
+Position: $W9B72XWLhPiLZCPA2CPgth:4
+
+# endScoreCanvas
+Position: $W9B72XWLhPiLZCPA2CPgth:1
+
+# closeButton
+Position: $W9B72XWLhPiLZCPA2CPgth:5
+
+# scoreCanvas
+Position: $W9B72XWLhPiLZCPA2CPgth:0
+
+# miniGame
+Position: $5w6Q7zifdddum97GmpWr7u:1
+
+# miniGameCamera
+Position: $5w6Q7zifdddum97GmpWr7u:0
+
+# flameControlTarget
+Position: $5w6Q7zifdddum97GmpWr7u:2
+
+# flamePointer
+Position: $5w6Q7zifdddum97GmpWr7u:3
+
+# flameVisual
+Position: $5w6Q7zifdddum97GmpWr7u:4
+
+# withCustomCursor
+Position: $5ENFTe1xXQTmSe6kbFZgU8:1
+
+# withScoreCanvas
+Position: $KEFtsejydiytCfkufLYWks:1
+
+# flameControlGradient
+Position: $5w6Q7zifdddum97GmpWr7u:5
+
+# heatDuration
+Position: $14gFbnr7EYkNv2tJQKp9Pn:0
+
+# miniGameTime
+Position: $14gFbnr7EYkNv2tJQKp9Pn:1
+
+# score
+Position: $14gFbnr7EYkNv2tJQKp9Pn:2
+
+# customCursor
+Position: $5ENFTe1xXQTmSe6kbFZgU8:0
+
+# endStarMeters
+Position: $W9B72XWLhPiLZCPA2CPgth:6
+
+# player
+Position: $8oQKFSjMe37YcA2shGQQtW:0

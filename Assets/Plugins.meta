@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Plugins.meta
 guid: 23fbccbbd04d237448ab116323a6dbc7
+========
+guid: 64e1378fe38a02244902b7ab4abbafc0
+>>>>>>>> Dialogue-System:Assets/Assets/Book-Page Curl.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

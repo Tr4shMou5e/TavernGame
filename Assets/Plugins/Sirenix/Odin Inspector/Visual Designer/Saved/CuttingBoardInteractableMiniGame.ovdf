@@ -1,0 +1,43 @@
+OVDF v1.1
+CuttingBoardInteractableMiniGame, Assembly-CSharp
+MetaGuid:1622859ef35943e40b9e711dc85e97af
+
+# $8oQKFSjMe37YcA2shGQQtW
+Position: $root:7
+
+# $TxdwotNnf8kLGJTTDEt6X4
+Position: $root:10
++ [Sirenix.OdinInspector.BoxGroupAttribute]
+	GroupName = "Timer Variables"
+	ShowLabel = True
+	CenterLabel = True
+
+# timerText
+Position: $W9B72XWLhPiLZCPA2CPgth:4
+
+# closeButton
+Position: $W9B72XWLhPiLZCPA2CPgth:1
+
+# endScoreCanvas
+Position: $W9B72XWLhPiLZCPA2CPgth:0
+
+# endScoreText
+Position: $W9B72XWLhPiLZCPA2CPgth:3
+
+# endStarMeters
+Position: $W9B72XWLhPiLZCPA2CPgth:6
+
+# starMeters
+Position: $W9B72XWLhPiLZCPA2CPgth:5
+
+# scoreText
+Position: $W9B72XWLhPiLZCPA2CPgth:2
+
+# spawnTime
+Position: $TxdwotNnf8kLGJTTDEt6X4:0
+
+# maxMiniGameTime
+Position: $TxdwotNnf8kLGJTTDEt6X4:1
+
+# foodItemScore
+Position: $TxdwotNnf8kLGJTTDEt6X4:2

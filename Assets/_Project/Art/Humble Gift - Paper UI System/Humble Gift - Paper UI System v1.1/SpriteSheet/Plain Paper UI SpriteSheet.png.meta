@@ -1,0 +1,5894 @@
+fileFormatVersion: 2
+guid: 93088f5b83df96641aeacc8ff8f463d1
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 3738
+        width: 385
+        height: 417
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3ef5e8784a7f59469817ba11fca6f73
+      internalID: -694395796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 4015
+        width: 394
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a194a99240fca3241aa8df988086747e
+      internalID: -290037006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 3953
+        width: 638
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87570ad6bebaf9d4eacabe47511ab399
+      internalID: -1939119707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 3903
+        width: 247
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae0885c51bed5e3489da7a4a90251f14
+      internalID: -1182093387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 3794
+        width: 247
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9105696a00f4c7549a84a68de86583f2
+      internalID: 395133267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 3718
+        width: 182
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9aa59162b54a794e895e9363dc19b41
+      internalID: -1306743074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 1496
+        y: 3780
+        width: 239
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36f35659e4f8d064d886bc5365459322
+      internalID: 2018001654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 3503
+        width: 395
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22445a5961a7a154e88c64868dcf6728
+      internalID: 393887501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 3648
+        width: 567
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5428990a18f30434c90b7a9b15200d16
+      internalID: 2130309318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 2938
+        width: 627
+        height: 507
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f56654fdbc168e6468191b364e659f23
+      internalID: -1037471386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 3421
+        width: 580
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a34aea0db156e54d9409114c72a8c9f
+      internalID: -2018072025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 3326
+        width: 70
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ef4805fd30b6f345849f1f697470b12
+      internalID: -1798100181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 1566
+        y: 3326
+        width: 68
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad677b485cf1f074885e96f7e3fa8683
+      internalID: -1257229303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 3198
+        width: 420
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82959b53d58003c43b262bddf158ea06
+      internalID: -1723403945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 3101
+        width: 70
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6601f278a3b1e784e9cf8acfc2e9fa18
+      internalID: 943439112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 1566
+        y: 3101
+        width: 68
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de20eaa57e27161459d55abef407de3f
+      internalID: 1560200389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 3023
+        width: 420
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1120911a4337464f863ab15f25dd02c
+      internalID: -1082605950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 3006
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee6c065ed11153e4da1487a34b65f632
+      internalID: -1897099841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 2191
+        y: 3006
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4962477a125aed418e84599391a3c07
+      internalID: -663481690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 2226
+        y: 3006
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71751a039071cd44fa9053060e511993
+      internalID: 1576787753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 2257
+        y: 3006
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6312ef3d23fb5b447aeb663679abc5e2
+      internalID: -357300728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 2290
+        y: 3000
+        width: 14
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23f6051f0fd82df4b894c3c6239cdc68
+      internalID: 1688166785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 2321
+        y: 3000
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6913bb65831f8c747b53b58b82cf6ab4
+      internalID: 386216171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 2354
+        y: 3008
+        width: 23
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adb81b099bd617a47aacfd2b0b486442
+      internalID: -2048920881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 2391
+        y: 3000
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1d8d4683999705419c6bbea16754f38
+      internalID: -532598794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 2996
+        width: 84
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 031110bf1758d2a48b455dccec10d9b9
+      internalID: -118321023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 1581
+        y: 2996
+        width: 84
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd5480d471673e343bc53746f8b9b049
+      internalID: -1950872759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 1694
+        y: 2996
+        width: 85
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75c07509a49a0d24fb5e8425c69d6790
+      internalID: -1733216528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 1805
+        y: 2996
+        width: 85
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba4fd8e2a13051e489e3d412691bbeca
+      internalID: 1349308622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 2996
+        width: 84
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0bde401a1a518540866c1d30d2eb4d6
+      internalID: -1928256020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 2996
+        width: 85
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91664ca9c7fb0b046903e6344c9fded0
+      internalID: 709508696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 2893
+        width: 420
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6381e08a4ad1cbe4aa73b522f67a5c8a
+      internalID: -334724688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 2963
+        width: 84
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5108a2e64a0dd941a52d4e9778401b7
+      internalID: -240282474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 1581
+        y: 2963
+        width: 84
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2060f84f74d16143b50e158faf4d359
+      internalID: 1153560907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 1694
+        y: 2963
+        width: 85
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3d9e27998ed7c7469d6dc46b586a435
+      internalID: 429737966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 1805
+        y: 2963
+        width: 85
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e23cb5e79fe653d45925ff3a5c09b8a1
+      internalID: -2112043184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 2963
+        width: 84
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39cade76057397344a3a0d24474e0a66
+      internalID: -2144570443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 2963
+        width: 85
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38fe40dbf77aea847a7cef9167d61484
+      internalID: 1787196457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 2959
+        width: 18
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e2b0848f9d07d24d8174de4079d73d2
+      internalID: 976144950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_39
+      rect:
+        serializedVersion: 2
+        x: 2191
+        y: 2957
+        width: 19
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 857e5a22e006bd34090d6f48421dba0c
+      internalID: -132823573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_40
+      rect:
+        serializedVersion: 2
+        x: 2224
+        y: 2967
+        width: 64
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5160e63730dc45e45a1c367413cb5d7c
+      internalID: -1800265652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_41
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 2959
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8efcc330450afa44ac58c2e9f88aee3
+      internalID: -1734769789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_42
+      rect:
+        serializedVersion: 2
+        x: 2335
+        y: 2959
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93c24fb9a16e64942a15d9d1b453aea6
+      internalID: -1224086585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_43
+      rect:
+        serializedVersion: 2
+        x: 2370
+        y: 2963
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cd28de276426e847a00ba3b0b25b5a6
+      internalID: -37309867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_44
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 2915
+        width: 84
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fe3c86bac51a474f84d10caa694c1eb
+      internalID: 1021318394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_45
+      rect:
+        serializedVersion: 2
+        x: 1581
+        y: 2915
+        width: 84
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 328989f9d58d2a04ba0a67cac66e51b1
+      internalID: 717183856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_46
+      rect:
+        serializedVersion: 2
+        x: 1694
+        y: 2915
+        width: 85
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ec7782a8155b9f449c82acb38562bbf
+      internalID: 1092917966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_47
+      rect:
+        serializedVersion: 2
+        x: 1805
+        y: 2915
+        width: 85
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55ff2fc8435abc744a243bec60622c96
+      internalID: -1343093041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_48
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 2915
+        width: 84
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b06bb177c25e4c42af7d6ec87a8d126
+      internalID: -333353186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_49
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 2915
+        width: 85
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d104cebe56908545af2cd3f8345c3a3
+      internalID: 618515566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_50
+      rect:
+        serializedVersion: 2
+        x: 2162
+        y: 2915
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7124ecd55d0dcdf469e04fc89a2037df
+      internalID: -1514005089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_51
+      rect:
+        serializedVersion: 2
+        x: 2195
+        y: 2913
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aee23ce44be203408664f1e6e397ae3
+      internalID: -847594764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_52
+      rect:
+        serializedVersion: 2
+        x: 2226
+        y: 2913
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd2384426fb176c4eaca53b865073af0
+      internalID: -416056809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_53
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 2882
+        width: 84
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a30e941ca25553244ba80a2c69fa7c78
+      internalID: 1428572091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_54
+      rect:
+        serializedVersion: 2
+        x: 1581
+        y: 2882
+        width: 84
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd526a8b4c92ff24ba0fb3a798f9fa48
+      internalID: -2080356669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_55
+      rect:
+        serializedVersion: 2
+        x: 1694
+        y: 2882
+        width: 85
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4908a3ac01c8e0d42b367bdc5ead2c68
+      internalID: -899035990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_56
+      rect:
+        serializedVersion: 2
+        x: 1805
+        y: 2882
+        width: 85
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 610e167bf4f7c0c4fba8410c7ad64137
+      internalID: -1750230211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_57
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 2882
+        width: 84
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0c3ce761b8788445a27aeb6982f9015
+      internalID: -729949149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_58
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 2882
+        width: 85
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c07cbf8b6f407542ae90e02ab20a625
+      internalID: 1412278519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_59
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 2705
+        width: 56
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a78e788bcba5bd64492ae81d6ec0a03a
+      internalID: -1864693004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_60
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 2705
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a59438f25046b04ca21da94aed55094
+      internalID: -1908221641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_61
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 2757
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3997479754214614db2b5adf8b6e3197
+      internalID: 62427298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_62
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 2763
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7695196361bc0204ba5450fa7915620a
+      internalID: 1128033016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_63
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 2757
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67fdab445dc22dd448d55947dfeaca97
+      internalID: 829661232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_64
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 2686
+        width: 53
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf4efc48799d7f449aa74168ee1b290c
+      internalID: 1214656275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_65
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 2691
+        width: 56
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfdc1bb2bc21dac4c8586b3a512b8a50
+      internalID: -2006437498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_66
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 2697
+        width: 54
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03c4af2e462dd1c49b4fe20d05f99636
+      internalID: -912431420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_67
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 2701
+        width: 55
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f36a02b155992742abceeb1e6cdbe30
+      internalID: 1140996471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_68
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 2703
+        width: 54
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0443c46bde21b1f44bcebb9137935d3d
+      internalID: 1609822019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_69
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 2705
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb82eb550f091e94ca2cce3389da95d8
+      internalID: 1837740468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_70
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 2738
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8e8caf5648bd684681ff5a9eb46305f
+      internalID: -945722156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_71
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 2705
+        width: 51
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4ada35bd9308d74b8d5680609a4b42f
+      internalID: -368169513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_72
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 2705
+        width: 52
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b66e4140609ef84c89ba055b31ec2bb
+      internalID: -175708514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_73
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 2705
+        width: 53
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41a50045c33443046bea1ea65b5847f7
+      internalID: -914632101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_74
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 2705
+        width: 53
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13e756c5e3d05f14896558f4a3da899f
+      internalID: -632635903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_75
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 2705
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddb6301bc55e5dc40a5cfcb4067b1e40
+      internalID: 810323399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_76
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 2703
+        width: 53
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 687cf6e7c3523f74da950a0e3aa9dc46
+      internalID: 475827514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_77
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 2701
+        width: 54
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e754c45b2654f5b499e9f76adf2cf70c
+      internalID: -360753696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_78
+      rect:
+        serializedVersion: 2
+        x: 1436
+        y: 2697
+        width: 56
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b73d0dd7a5a5c44cae088db0f8a7987
+      internalID: -1907820380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_79
+      rect:
+        serializedVersion: 2
+        x: 1511
+        y: 2691
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27b39c80223afb541a3fc617f7332903
+      internalID: -694697831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_80
+      rect:
+        serializedVersion: 2
+        x: 1587
+        y: 2686
+        width: 53
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c34d1f3727ca21546bc5475d3bbcf3ba
+      internalID: -1720210656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_81
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 2686
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fa4d880d1a069a46bf6ff51189950ee
+      internalID: 800072125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_82
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 2680
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c26e72b8cb545346b9411cb7136edb2
+      internalID: 245143101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_83
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 2719
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86159b13f9dfa8a4e9e331f9e52b5810
+      internalID: -668592252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_84
+      rect:
+        serializedVersion: 2
+        x: 1659
+        y: 2680
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a1d4d9e72410284f85e850e9619d8f0
+      internalID: -1694987262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_85
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 1998
+        width: 773
+        height: 565
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce9a76499e5c9d74499f0510359e3d61
+      internalID: 334421315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_86
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 1998
+        width: 774
+        height: 565
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b30251e8b1f3bb74fbe13a8e6158aa8f
+      internalID: -737052915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_87
+      rect:
+        serializedVersion: 2
+        x: 1694
+        y: 1998
+        width: 773
+        height: 565
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a2d03c272e5d7249bba221baaf6b1c9
+      internalID: -1351118845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_88
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 1375
+        width: 773
+        height: 563
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 790f172e2d723b9469d79fd7410f1703
+      internalID: -330119401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_89
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 1375
+        width: 774
+        height: 563
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8badc67aaa7edde4682d6c26913bcba7
+      internalID: -1177781484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_90
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 750
+        width: 773
+        height: 565
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 642e5a98b1ed5224aade6b56c13a8578
+      internalID: -494602529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_91
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 750
+        width: 774
+        height: 565
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 691492e759b2c1b4495337305ee8fad7
+      internalID: -278858284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_92
+      rect:
+        serializedVersion: 2
+        x: 3003
+        y: 805
+        width: 299
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df6ccf4eefc713e4dbe577d070fa4370
+      internalID: -1912602145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_93
+      rect:
+        serializedVersion: 2
+        x: 3055
+        y: 622
+        width: 579
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36f8e2ea967580148a62188b4dafbb68
+      internalID: -865740125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_94
+      rect:
+        serializedVersion: 2
+        x: 3725
+        y: 638
+        width: 70
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ca53eb8dde44804e98a259851aa7526
+      internalID: 1202477523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_95
+      rect:
+        serializedVersion: 2
+        x: 3853
+        y: 638
+        width: 70
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 581887f388ed069469aff131e456f3bc
+      internalID: 1955477838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_96
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 597
+        width: 295
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f45931282f034b543ac9ed382f49e52c
+      internalID: 918210879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_97
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 597
+        width: 214
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4782f6fbe6681ef42b5a144382cf8748
+      internalID: 1762132020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_98
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 597
+        width: 193
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20117995ea8bf5e46b48646c61fd76a8
+      internalID: 1403604553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_99
+      rect:
+        serializedVersion: 2
+        x: 1867
+        y: 597
+        width: 279
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5554f1d519daf4e4f88877775dca097d
+      internalID: -177237892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_100
+      rect:
+        serializedVersion: 2
+        x: 2634
+        y: 597
+        width: 89
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 611c33d6619a21b438fe623fa48c104e
+      internalID: -179312694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_101
+      rect:
+        serializedVersion: 2
+        x: 3725
+        y: 558
+        width: 70
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf0b8019eea1ce444b6d8f7a265ae0ad
+      internalID: -407527983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_102
+      rect:
+        serializedVersion: 2
+        x: 3853
+        y: 558
+        width: 70
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dcbe2521565e334dbca68059c5c8dfb
+      internalID: -1388174946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_103
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 360
+        width: 216
+        height: 214
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b9e627cc478a894a9cc5e4c2559bc44
+      internalID: 674688661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_104
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 558
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d15e60f3e8564f64eaa05d82fc9af0d7
+      internalID: -1249318534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_105
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 558
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aecb6632a4c22e3449aa7343420315d0
+      internalID: 760349763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_106
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 560
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36c9bfbd5b6c5824692130323db91cd2
+      internalID: -1080538122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_107
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 558
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1744a095a34ec494dbf117b2ec375dba
+      internalID: -1153604856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_108
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 558
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21f931625ff403c4590ba3c9c89fb31d
+      internalID: 1784791058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_109
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 556
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4938315cdab9b934c87ccf85fc21154c
+      internalID: 1274535864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_110
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 527
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a8dfea3f86333f4f85df9f49280c71e
+      internalID: -1934547773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_111
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 477
+        width: 489
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abb3ca790cc6cb642b656ccecf4a54f8
+      internalID: 1118433135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_112
+      rect:
+        serializedVersion: 2
+        x: 1888
+        y: 525
+        width: 80
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 528644d8866930e48a1a4660999319db
+      internalID: 592231561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_113
+      rect:
+        serializedVersion: 2
+        x: 2007
+        y: 525
+        width: 64
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b3de7dac07e232438339c2e33c9e137
+      internalID: 1934656051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_114
+      rect:
+        serializedVersion: 2
+        x: 2104
+        y: 525
+        width: 62
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1ff0ed594fdda4498da1c26b1b03736
+      internalID: -904643422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_115
+      rect:
+        serializedVersion: 2
+        x: 2199
+        y: 525
+        width: 64
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4857898e986262848bc4a9646d7c8baa
+      internalID: 455329739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_116
+      rect:
+        serializedVersion: 2
+        x: 2296
+        y: 525
+        width: 64
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26edde7963d56a047819402fb383c6a0
+      internalID: 1337188171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_117
+      rect:
+        serializedVersion: 2
+        x: 2391
+        y: 525
+        width: 64
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a32a309ba4e10a499faeacaaedbe38e
+      internalID: -2094580856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_118
+      rect:
+        serializedVersion: 2
+        x: 2653
+        y: 477
+        width: 101
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fa910c8e8275a84a914c71e63ff72db
+      internalID: 1203208192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_119
+      rect:
+        serializedVersion: 2
+        x: 2787
+        y: 484
+        width: 89
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3651d8ef780f3c47853e32c5d1c0337
+      internalID: -1464822637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_120
+      rect:
+        serializedVersion: 2
+        x: 3117
+        y: 447
+        width: 421
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7713a9ffcca10e4b965f27cf7312751
+      internalID: 865802630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_121
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 436
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4285f42578a865f469bbc1d2adc9d18c
+      internalID: -1293581243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_122
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 525
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff8c78e6afed82043a7c1318d50d10bd
+      internalID: -1181911116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_123
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 525
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6518f4b98fcd1554a80e742711271b24
+      internalID: 2091325291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_124
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 525
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e6f044f55832e746a071b49d5cfcb0c
+      internalID: 638422568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_125
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 525
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5f356a597edc6e4489f018c43f80a44
+      internalID: 1581597337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_126
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 525
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbe0b0e8c402c974780d8b2c80208b96
+      internalID: -1461411412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_127
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 527
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c03ddb2f357677349bc6c3b58b39c1b5
+      internalID: -1863005573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_128
+      rect:
+        serializedVersion: 2
+        x: 3725
+        y: 477
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b740b8b516b841945bf52ce96ec6a6c0
+      internalID: 1502655662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_129
+      rect:
+        serializedVersion: 2
+        x: 3853
+        y: 477
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 162fb2029e7d2894b89bba42b48f7ea6
+      internalID: 174393161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_130
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 494
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a786a2b755970a44a046f152200c717
+      internalID: -1664971461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_131
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 494
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10f02ac5157d34a41ad453e4dd714f7f
+      internalID: 132387659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_132
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 494
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12b0511c12e09d245b733335f056fdc0
+      internalID: 1020838626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_133
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 449
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90783e65de86f3944a509a0237ddf26a
+      internalID: -820642764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_134
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 447
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bb28fb8a9835244b9ffb58c46d67927
+      internalID: -142822023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_135
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 447
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7e3ff3a313a19a47bdd95a24488141a
+      internalID: -168172663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_136
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 447
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb598f6f746c7fd4a9f63cf33eb1f253
+      internalID: -1604923445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_137
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 447
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0137fbff87a25794faf7a3946c520375
+      internalID: -342760335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_138
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 447
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5611d51b4f63f4408554af5d4f3f9a5
+      internalID: -1012662046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_139
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 366
+        width: 489
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d20a96944c1b184b8ac9af3368b81cc
+      internalID: -967130506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_140
+      rect:
+        serializedVersion: 2
+        x: 2026
+        y: 455
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e92db72161c516440afff0b19af4baac
+      internalID: 2078610633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_141
+      rect:
+        serializedVersion: 2
+        x: 2117
+        y: 449
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ce147cd69249a042b3f98ffbdf3f1a7
+      internalID: -336313924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_142
+      rect:
+        serializedVersion: 2
+        x: 2218
+        y: 455
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e6aef83796ce1549aa38674448e69fa
+      internalID: -484841738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_143
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 453
+        width: 38
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ddc4f8d0c535454086c4c37be35d7d9
+      internalID: -1638867736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_144
+      rect:
+        serializedVersion: 2
+        x: 2339
+        y: 453
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac4ca8b8d1eceea42bf306e751c6a592
+      internalID: 434282229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_145
+      rect:
+        serializedVersion: 2
+        x: 2410
+        y: 455
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cc8d70dde68f0543867fb78602f6263
+      internalID: 340889162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_146
+      rect:
+        serializedVersion: 2
+        x: 2653
+        y: 366
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49d51eb4451440d45bc4448b4a8cbc8d
+      internalID: -844820934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_147
+      rect:
+        serializedVersion: 2
+        x: 2787
+        y: 371
+        width: 89
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd3be1d60688838429a4e76a47194d50
+      internalID: -510474584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_148
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 319
+        width: 79
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93a6de311f41a9040891b75d48297c84
+      internalID: 84273029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_149
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 383
+        width: 37
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 008ed65c4db05e84a9e006141d9b2b5c
+      internalID: 1373508205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_150
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 383
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42be73dc086b2c84fb80bc4aa874b3c2
+      internalID: 508592126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_151
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 383
+        width: 37
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8c5cb131968499428425822e20db715
+      internalID: 2003093419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_152
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 339
+        width: 62
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dade8b60b25a4714b973e6d7cb070bd7
+      internalID: 1464606943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_153
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 319
+        width: 69
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1a636e2d729d324397f36a9e18b02ca
+      internalID: 1516752813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_154
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 319
+        width: 68
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51917626a66cda846b6b7147d4dcb854
+      internalID: 1309272531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_155
+      rect:
+        serializedVersion: 2
+        x: 2005
+        y: 385
+        width: 68
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 359d3f2db649f074ebfd23dedf75e7e2
+      internalID: 1156884267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_156
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 385
+        width: 68
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee1629f866330e84f86ea29c6c04497f
+      internalID: 200293476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_157
+      rect:
+        serializedVersion: 2
+        x: 2197
+        y: 385
+        width: 68
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e66020c9145c7624ca5ae6ee858dca82
+      internalID: -1917026869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_158
+      rect:
+        serializedVersion: 2
+        x: 2292
+        y: 385
+        width: 70
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e992fa2667f2905439fb069ecebd388a
+      internalID: 1875142639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_159
+      rect:
+        serializedVersion: 2
+        x: 2389
+        y: 385
+        width: 68
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce66aba841bc38844800bc21c881635d
+      internalID: 1880988679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_160
+      rect:
+        serializedVersion: 2
+        x: 3486
+        y: 308
+        width: 85
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcf9de623e3c93040aecd327b1161768
+      internalID: -768050051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_161
+      rect:
+        serializedVersion: 2
+        x: 3725
+        y: 383
+        width: 70
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5a115d290e47e24bb60aec307cd9406
+      internalID: -144006707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_162
+      rect:
+        serializedVersion: 2
+        x: 3853
+        y: 383
+        width: 70
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24ea461232d50a54fabe2bc1e007ed73
+      internalID: 1522192975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_163
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 292
+        width: 54
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b92f64a15688471449c30aefd23860db
+      internalID: 817844119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_164
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 333
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a08ff2f685aaa04a8622fe6cbc623f1
+      internalID: 552306197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_165
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 333
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53988183f6459ba41b9820a280ff79cd
+      internalID: -1513626990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_166
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 253
+        width: 489
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eacd8b0b3a7d704499cb4f2f7a7f8299
+      internalID: 1083085162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_167
+      rect:
+        serializedVersion: 2
+        x: 2874
+        y: 310
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5f58572e1962c94d84b7d8c465d6a69
+      internalID: 1010922480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_168
+      rect:
+        serializedVersion: 2
+        x: 3117
+        y: 238
+        width: 117
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf1ebac42cbdf084b9319693f53ce4fa
+      internalID: -1128621619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_169
+      rect:
+        serializedVersion: 2
+        x: 3245
+        y: 308
+        width: 230
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0842ad788c4031a47bb45ace21babe98
+      internalID: 98313571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_170
+      rect:
+        serializedVersion: 2
+        x: 3725
+        y: 302
+        width: 70
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08c1b6a8bef99c649934d24ff138c08c
+      internalID: -1052140351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_171
+      rect:
+        serializedVersion: 2
+        x: 3853
+        y: 302
+        width: 70
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc0aedee4faafc748b15ceb60457cf8d
+      internalID: -2119898824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_172
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 292
+        width: 37
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc09dd690a71900438893a09fc125394
+      internalID: 1199609216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_173
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 292
+        width: 37
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 573871ac9adf810499aaf37184c62627
+      internalID: -706479816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_174
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 292
+        width: 35
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f4c798159861e842b4c6288ad9dabe5
+      internalID: 2085495513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_175
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 306
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5689fb806eba20845a4b6dae6b4fad82
+      internalID: -1880553939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_176
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 306
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dd19be4d9092eb44ae95f602723c1c3
+      internalID: -317218949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_177
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 302
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbfe1668b8a3d474186978d96450bb3c
+      internalID: -1511717129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_178
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 302
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7472c58f99a0c2742a5eaeaf9fb9bab6
+      internalID: -2019665470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_179
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 302
+        width: 47
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 480886005dfc1e142895bc67d2b61180
+      internalID: 459846830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_180
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 224
+        width: 101
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f94744901d1390a4d98dfdf8bacda01b
+      internalID: 1666749781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_181
+      rect:
+        serializedVersion: 2
+        x: 2647
+        y: 312
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8026cf033cb7694d99a42994aad6745
+      internalID: -364777114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_182
+      rect:
+        serializedVersion: 2
+        x: 2678
+        y: 312
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93615251197a609448a6015647fb7e59
+      internalID: 1216499165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_183
+      rect:
+        serializedVersion: 2
+        x: 2713
+        y: 313
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7be815ad30cc5694b83c55b908a11220
+      internalID: -1660670089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_184
+      rect:
+        serializedVersion: 2
+        x: 2744
+        y: 313
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78981633a9397c94ca70d25b1706fa7a
+      internalID: 1766641909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_185
+      rect:
+        serializedVersion: 2
+        x: 2777
+        y: 306
+        width: 14
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b29ff927e261a4142aaf11a4b734dd70
+      internalID: -1287040150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_186
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 306
+        width: 14
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d13fc78b4953a246b52154b17947017
+      internalID: 1512503585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_187
+      rect:
+        serializedVersion: 2
+        x: 2836
+        y: 315
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaad1fee35704cc40ac1d81b7da2245c
+      internalID: 808567104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_188
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 259
+        width: 37
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d09ded8d55230240bbe9735260a47ac
+      internalID: -1555025929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_189
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 259
+        width: 37
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 633b3c66fec753845851f5e0e5d2e1fd
+      internalID: 1265357055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_190
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 259
+        width: 35
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47c46e8f446e9e1459c68dd71b59932a
+      internalID: -1702441125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_191
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 269
+        width: 54
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d802dfbfe2e7b94fa1f5b85e65f49fe
+      internalID: 751039819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_192
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 269
+        width: 53
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc8b5a45b77c2d249b15aa579305d6be
+      internalID: -952707407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_193
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 230
+        width: 60
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15d16d37e4137674abf4e9f433e4b00d
+      internalID: 161660716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_194
+      rect:
+        serializedVersion: 2
+        x: 2645
+        y: 242
+        width: 22
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af60ddd80450341448862498548a5078
+      internalID: -1679439802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_195
+      rect:
+        serializedVersion: 2
+        x: 2676
+        y: 242
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 669b591f0cfc4844cbfcdf01e23a5485
+      internalID: -1326526874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_196
+      rect:
+        serializedVersion: 2
+        x: 2703
+        y: 278
+        width: 65
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f0a132e1df8bc3479de19db402a4e96
+      internalID: 1572708648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_197
+      rect:
+        serializedVersion: 2
+        x: 2777
+        y: 271
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cba147fddfcfd847b358d07eae4a4db
+      internalID: 1240140021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_198
+      rect:
+        serializedVersion: 2
+        x: 2808
+        y: 271
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a144a720d477c54687e0fc35f842049
+      internalID: -1134515386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_199
+      rect:
+        serializedVersion: 2
+        x: 2834
+        y: 275
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8b9aaddecdd82f4187745d469e20d90
+      internalID: -712627235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_200
+      rect:
+        serializedVersion: 2
+        x: 2867
+        y: 275
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0ff16ce5758c7a4ebda81e8ac957637
+      internalID: 333369707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_201
+      rect:
+        serializedVersion: 2
+        x: 3725
+        y: 222
+        width: 70
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfd8cb102b666a744a801e6ebd9c739a
+      internalID: 330037588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_202
+      rect:
+        serializedVersion: 2
+        x: 3853
+        y: 222
+        width: 70
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14fd4752b41705c46b842f8804da56ac
+      internalID: -337340982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_203
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 238
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e177eb4212a49cc4c87f5034e6e5a5de
+      internalID: -969769161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_204
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 238
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 434a709c82330d546964b305426aba43
+      internalID: -1003296781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_205
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 238
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78e14fbe957a7d64c9b7a0dea5923ba3
+      internalID: -1332522098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_206
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 226
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a23ea065f27e3b4a80cac192fbad7cb
+      internalID: 1125325241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_207
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 230
+        width: 55
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 644660c0946bced4d95d4db4efdedab5
+      internalID: 1876928746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_208
+      rect:
+        serializedVersion: 2
+        x: 1867
+        y: 244
+        width: 211
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 787aab6a01391474ea00127c057ef472
+      internalID: 1990673818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_209
+      rect:
+        serializedVersion: 2
+        x: 2721
+        y: 242
+        width: 31
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af66c122605b1c34cb4e6a81fdfe9ba3
+      internalID: -1029796065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_210
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 211
+        width: 37
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eb3a66138962bd47810a264f95ee25e
+      internalID: -1665595405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_211
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 211
+        width: 37
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcfa483e489b04e4dafb83194def12cf
+      internalID: -605198550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_212
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 211
+        width: 35
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab10493bf74fc344ba2b2130a32e8c18
+      internalID: 2083896541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_213
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 205
+        width: 9
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d79e41c53281664fa7be47ad6ffa859
+      internalID: -96735828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_214
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 193
+        width: 10
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5628ee90fc121cf47a01ee40b13eb4a6
+      internalID: 1199386221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_215
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 207
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ce27c836ebafb34fb04dcc63a0b33dd
+      internalID: -246763897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_216
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 207
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90a874b59e8ebbd46a56d49e8d58a70d
+      internalID: 2000669588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_217
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 207
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69eff40abae5d1743b3d04cc83feb069
+      internalID: -2123786936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_218
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 141
+        width: 489
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b1222f26b0b35649b7a01f6725e7d7f
+      internalID: -1282210845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_219
+      rect:
+        serializedVersion: 2
+        x: 1886
+        y: 209
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8019c79c4ba4acc479b0d4b7606e2517
+      internalID: -462377168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_220
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 209
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: febb842fada3cc44d83a2e09b91b6042
+      internalID: 655525274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_221
+      rect:
+        serializedVersion: 2
+        x: 1950
+        y: 209
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d8f5434fbf5e84409d45211522fced2
+      internalID: -1476363091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_222
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 178
+        width: 37
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34780a00a21cfe247bab9a1573387eca
+      internalID: 724507587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_223
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 178
+        width: 37
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07da72c607f2f7e4ba06a6abab5f76e6
+      internalID: -778348964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_224
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 178
+        width: 35
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52ed50074126b2e438c12826cfc89c96
+      internalID: 1302810690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_225
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 174
+        width: 9
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04f995a0d4c15ce45b4bbd5b35d23764
+      internalID: -1019797024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_226
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 183
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63a0571f44a5f0847bb12315e3e1ee65
+      internalID: -1088507673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_227
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 183
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7782e3f5ca65354f860eed43701eb87
+      internalID: -909559304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_228
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 174
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0176c97f8dbc76346a1da4e56dabda8a
+      internalID: -235910402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_229
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 193
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6d1b9d0b1b07804983e80ecfe6b8b2b
+      internalID: -581870994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_230
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 193
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c645070ca1fed349baa539fb6f001ad
+      internalID: 1273731217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_231
+      rect:
+        serializedVersion: 2
+        x: 1886
+        y: 193
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fe6f783983cb0048988b0b8410d71cb
+      internalID: -37001123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_232
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 193
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7d21d838bb0002418ea8e34f486555e
+      internalID: 1572314708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_233
+      rect:
+        serializedVersion: 2
+        x: 1950
+        y: 193
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b985acdda342f23428a5463467f929e8
+      internalID: -473195883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_234
+      rect:
+        serializedVersion: 2
+        x: 3117
+        y: 125
+        width: 117
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80d0a05f32ed1614ab8f47123ab2678a
+      internalID: 1105236803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_235
+      rect:
+        serializedVersion: 2
+        x: 3245
+        y: 141
+        width: 198
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1807ffc413586154e848dce61028e3fe
+      internalID: -1885862884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_236
+      rect:
+        serializedVersion: 2
+        x: 3453
+        y: 125
+        width: 118
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 040b075ea0d0d554e85b031413ea1ebb
+      internalID: 1381157979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_237
+      rect:
+        serializedVersion: 2
+        x: 1886
+        y: 178
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33c614ff697baab418c24cb81a7807a1
+      internalID: 1952626079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_238
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 178
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 194001143f14aad4d8ef2e472e15157b
+      internalID: -1593251241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_239
+      rect:
+        serializedVersion: 2
+        x: 1950
+        y: 178
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46583159428ed8147bc91b4feb9a79b7
+      internalID: -1350234486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_240
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 141
+        width: 9
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddf8dea70eb906c4c82207f6e670f689
+      internalID: 75449465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_241
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 162
+        width: 52
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa8aef7d0d875894a9f830679948602a
+      internalID: 1717166129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_242
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 131
+        width: 37
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0395f1d56a9839540a2a4a2e3f557be1
+      internalID: 536693214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_243
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 131
+        width: 37
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 048a69b213237274eaede07da31fe686
+      internalID: -286862540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_244
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 131
+        width: 35
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e45a7034a74d28644b86475f4adfe368
+      internalID: -2083448020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_245
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 148
+        width: 50
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd3f9389fff782546a46c6843664f561
+      internalID: -478491029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_246
+      rect:
+        serializedVersion: 2
+        x: 1888
+        y: 147
+        width: 47
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91e7e9458e226d54ca7ee773890de1a4
+      internalID: 482654265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_247
+      rect:
+        serializedVersion: 2
+        x: 1888
+        y: 131
+        width: 47
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1623382e92bd503488203859dadc0ec7
+      internalID: 531096929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_248
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 98
+        width: 37
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b755d5c5edff8947bc4622bc1e6e1d0
+      internalID: -1531895093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_249
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 98
+        width: 37
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da2666a8790224e46892d6be555bf78b
+      internalID: -469567083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plain Paper UI SpriteSheet_250
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 98
+        width: 35
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb2fa1c05b842b44591fedef41813ce1
+      internalID: 1858462987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d9b97abc57e994f4fa63a5ef75460246
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":512.0,"y":512.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+      - key: SpriteEditor.SliceOnImport
+        value: False
+    nameFileIdTable:
+      Plain Paper UI SpriteSheet_0: -694395796
+      Plain Paper UI SpriteSheet_1: -290037006
+      Plain Paper UI SpriteSheet_10: -2018072025
+      Plain Paper UI SpriteSheet_100: -179312694
+      Plain Paper UI SpriteSheet_101: -407527983
+      Plain Paper UI SpriteSheet_102: -1388174946
+      Plain Paper UI SpriteSheet_103: 674688661
+      Plain Paper UI SpriteSheet_104: -1249318534
+      Plain Paper UI SpriteSheet_105: 760349763
+      Plain Paper UI SpriteSheet_106: -1080538122
+      Plain Paper UI SpriteSheet_107: -1153604856
+      Plain Paper UI SpriteSheet_108: 1784791058
+      Plain Paper UI SpriteSheet_109: 1274535864
+      Plain Paper UI SpriteSheet_11: -1798100181
+      Plain Paper UI SpriteSheet_110: -1934547773
+      Plain Paper UI SpriteSheet_111: 1118433135
+      Plain Paper UI SpriteSheet_112: 592231561
+      Plain Paper UI SpriteSheet_113: 1934656051
+      Plain Paper UI SpriteSheet_114: -904643422
+      Plain Paper UI SpriteSheet_115: 455329739
+      Plain Paper UI SpriteSheet_116: 1337188171
+      Plain Paper UI SpriteSheet_117: -2094580856
+      Plain Paper UI SpriteSheet_118: 1203208192
+      Plain Paper UI SpriteSheet_119: -1464822637
+      Plain Paper UI SpriteSheet_12: -1257229303
+      Plain Paper UI SpriteSheet_120: 865802630
+      Plain Paper UI SpriteSheet_121: -1293581243
+      Plain Paper UI SpriteSheet_122: -1181911116
+      Plain Paper UI SpriteSheet_123: 2091325291
+      Plain Paper UI SpriteSheet_124: 638422568
+      Plain Paper UI SpriteSheet_125: 1581597337
+      Plain Paper UI SpriteSheet_126: -1461411412
+      Plain Paper UI SpriteSheet_127: -1863005573
+      Plain Paper UI SpriteSheet_128: 1502655662
+      Plain Paper UI SpriteSheet_129: 174393161
+      Plain Paper UI SpriteSheet_13: -1723403945
+      Plain Paper UI SpriteSheet_130: -1664971461
+      Plain Paper UI SpriteSheet_131: 132387659
+      Plain Paper UI SpriteSheet_132: 1020838626
+      Plain Paper UI SpriteSheet_133: -820642764
+      Plain Paper UI SpriteSheet_134: -142822023
+      Plain Paper UI SpriteSheet_135: -168172663
+      Plain Paper UI SpriteSheet_136: -1604923445
+      Plain Paper UI SpriteSheet_137: -342760335
+      Plain Paper UI SpriteSheet_138: -1012662046
+      Plain Paper UI SpriteSheet_139: -967130506
+      Plain Paper UI SpriteSheet_14: 943439112
+      Plain Paper UI SpriteSheet_140: 2078610633
+      Plain Paper UI SpriteSheet_141: -336313924
+      Plain Paper UI SpriteSheet_142: -484841738
+      Plain Paper UI SpriteSheet_143: -1638867736
+      Plain Paper UI SpriteSheet_144: 434282229
+      Plain Paper UI SpriteSheet_145: 340889162
+      Plain Paper UI SpriteSheet_146: -844820934
+      Plain Paper UI SpriteSheet_147: -510474584
+      Plain Paper UI SpriteSheet_148: 84273029
+      Plain Paper UI SpriteSheet_149: 1373508205
+      Plain Paper UI SpriteSheet_15: 1560200389
+      Plain Paper UI SpriteSheet_150: 508592126
+      Plain Paper UI SpriteSheet_151: 2003093419
+      Plain Paper UI SpriteSheet_152: 1464606943
+      Plain Paper UI SpriteSheet_153: 1516752813
+      Plain Paper UI SpriteSheet_154: 1309272531
+      Plain Paper UI SpriteSheet_155: 1156884267
+      Plain Paper UI SpriteSheet_156: 200293476
+      Plain Paper UI SpriteSheet_157: -1917026869
+      Plain Paper UI SpriteSheet_158: 1875142639
+      Plain Paper UI SpriteSheet_159: 1880988679
+      Plain Paper UI SpriteSheet_16: -1082605950
+      Plain Paper UI SpriteSheet_160: -768050051
+      Plain Paper UI SpriteSheet_161: -144006707
+      Plain Paper UI SpriteSheet_162: 1522192975
+      Plain Paper UI SpriteSheet_163: 817844119
+      Plain Paper UI SpriteSheet_164: 552306197
+      Plain Paper UI SpriteSheet_165: -1513626990
+      Plain Paper UI SpriteSheet_166: 1083085162
+      Plain Paper UI SpriteSheet_167: 1010922480
+      Plain Paper UI SpriteSheet_168: -1128621619
+      Plain Paper UI SpriteSheet_169: 98313571
+      Plain Paper UI SpriteSheet_17: -1897099841
+      Plain Paper UI SpriteSheet_170: -1052140351
+      Plain Paper UI SpriteSheet_171: -2119898824
+      Plain Paper UI SpriteSheet_172: 1199609216
+      Plain Paper UI SpriteSheet_173: -706479816
+      Plain Paper UI SpriteSheet_174: 2085495513
+      Plain Paper UI SpriteSheet_175: -1880553939
+      Plain Paper UI SpriteSheet_176: -317218949
+      Plain Paper UI SpriteSheet_177: -1511717129
+      Plain Paper UI SpriteSheet_178: -2019665470
+      Plain Paper UI SpriteSheet_179: 459846830
+      Plain Paper UI SpriteSheet_18: -663481690
+      Plain Paper UI SpriteSheet_180: 1666749781
+      Plain Paper UI SpriteSheet_181: -364777114
+      Plain Paper UI SpriteSheet_182: 1216499165
+      Plain Paper UI SpriteSheet_183: -1660670089
+      Plain Paper UI SpriteSheet_184: 1766641909
+      Plain Paper UI SpriteSheet_185: -1287040150
+      Plain Paper UI SpriteSheet_186: 1512503585
+      Plain Paper UI SpriteSheet_187: 808567104
+      Plain Paper UI SpriteSheet_188: -1555025929
+      Plain Paper UI SpriteSheet_189: 1265357055
+      Plain Paper UI SpriteSheet_19: 1576787753
+      Plain Paper UI SpriteSheet_190: -1702441125
+      Plain Paper UI SpriteSheet_191: 751039819
+      Plain Paper UI SpriteSheet_192: -952707407
+      Plain Paper UI SpriteSheet_193: 161660716
+      Plain Paper UI SpriteSheet_194: -1679439802
+      Plain Paper UI SpriteSheet_195: -1326526874
+      Plain Paper UI SpriteSheet_196: 1572708648
+      Plain Paper UI SpriteSheet_197: 1240140021
+      Plain Paper UI SpriteSheet_198: -1134515386
+      Plain Paper UI SpriteSheet_199: -712627235
+      Plain Paper UI SpriteSheet_2: -1939119707
+      Plain Paper UI SpriteSheet_20: -357300728
+      Plain Paper UI SpriteSheet_200: 333369707
+      Plain Paper UI SpriteSheet_201: 330037588
+      Plain Paper UI SpriteSheet_202: -337340982
+      Plain Paper UI SpriteSheet_203: -969769161
+      Plain Paper UI SpriteSheet_204: -1003296781
+      Plain Paper UI SpriteSheet_205: -1332522098
+      Plain Paper UI SpriteSheet_206: 1125325241
+      Plain Paper UI SpriteSheet_207: 1876928746
+      Plain Paper UI SpriteSheet_208: 1990673818
+      Plain Paper UI SpriteSheet_209: -1029796065
+      Plain Paper UI SpriteSheet_21: 1688166785
+      Plain Paper UI SpriteSheet_210: -1665595405
+      Plain Paper UI SpriteSheet_211: -605198550
+      Plain Paper UI SpriteSheet_212: 2083896541
+      Plain Paper UI SpriteSheet_213: -96735828
+      Plain Paper UI SpriteSheet_214: 1199386221
+      Plain Paper UI SpriteSheet_215: -246763897
+      Plain Paper UI SpriteSheet_216: 2000669588
+      Plain Paper UI SpriteSheet_217: -2123786936
+      Plain Paper UI SpriteSheet_218: -1282210845
+      Plain Paper UI SpriteSheet_219: -462377168
+      Plain Paper UI SpriteSheet_22: 386216171
+      Plain Paper UI SpriteSheet_220: 655525274
+      Plain Paper UI SpriteSheet_221: -1476363091
+      Plain Paper UI SpriteSheet_222: 724507587
+      Plain Paper UI SpriteSheet_223: -778348964
+      Plain Paper UI SpriteSheet_224: 1302810690
+      Plain Paper UI SpriteSheet_225: -1019797024
+      Plain Paper UI SpriteSheet_226: -1088507673
+      Plain Paper UI SpriteSheet_227: -909559304
+      Plain Paper UI SpriteSheet_228: -235910402
+      Plain Paper UI SpriteSheet_229: -581870994
+      Plain Paper UI SpriteSheet_23: -2048920881
+      Plain Paper UI SpriteSheet_230: 1273731217
+      Plain Paper UI SpriteSheet_231: -37001123
+      Plain Paper UI SpriteSheet_232: 1572314708
+      Plain Paper UI SpriteSheet_233: -473195883
+      Plain Paper UI SpriteSheet_234: 1105236803
+      Plain Paper UI SpriteSheet_235: -1885862884
+      Plain Paper UI SpriteSheet_236: 1381157979
+      Plain Paper UI SpriteSheet_237: 1952626079
+      Plain Paper UI SpriteSheet_238: -1593251241
+      Plain Paper UI SpriteSheet_239: -1350234486
+      Plain Paper UI SpriteSheet_24: -532598794
+      Plain Paper UI SpriteSheet_240: 75449465
+      Plain Paper UI SpriteSheet_241: 1717166129
+      Plain Paper UI SpriteSheet_242: 536693214
+      Plain Paper UI SpriteSheet_243: -286862540
+      Plain Paper UI SpriteSheet_244: -2083448020
+      Plain Paper UI SpriteSheet_245: -478491029
+      Plain Paper UI SpriteSheet_246: 482654265
+      Plain Paper UI SpriteSheet_247: 531096929
+      Plain Paper UI SpriteSheet_248: -1531895093
+      Plain Paper UI SpriteSheet_249: -469567083
+      Plain Paper UI SpriteSheet_25: -118321023
+      Plain Paper UI SpriteSheet_250: 1858462987
+      Plain Paper UI SpriteSheet_26: -1950872759
+      Plain Paper UI SpriteSheet_27: -1733216528
+      Plain Paper UI SpriteSheet_28: 1349308622
+      Plain Paper UI SpriteSheet_29: -1928256020
+      Plain Paper UI SpriteSheet_3: -1182093387
+      Plain Paper UI SpriteSheet_30: 709508696
+      Plain Paper UI SpriteSheet_31: -334724688
+      Plain Paper UI SpriteSheet_32: -240282474
+      Plain Paper UI SpriteSheet_33: 1153560907
+      Plain Paper UI SpriteSheet_34: 429737966
+      Plain Paper UI SpriteSheet_35: -2112043184
+      Plain Paper UI SpriteSheet_36: -2144570443
+      Plain Paper UI SpriteSheet_37: 1787196457
+      Plain Paper UI SpriteSheet_38: 976144950
+      Plain Paper UI SpriteSheet_39: -132823573
+      Plain Paper UI SpriteSheet_4: 395133267
+      Plain Paper UI SpriteSheet_40: -1800265652
+      Plain Paper UI SpriteSheet_41: -1734769789
+      Plain Paper UI SpriteSheet_42: -1224086585
+      Plain Paper UI SpriteSheet_43: -37309867
+      Plain Paper UI SpriteSheet_44: 1021318394
+      Plain Paper UI SpriteSheet_45: 717183856
+      Plain Paper UI SpriteSheet_46: 1092917966
+      Plain Paper UI SpriteSheet_47: -1343093041
+      Plain Paper UI SpriteSheet_48: -333353186
+      Plain Paper UI SpriteSheet_49: 618515566
+      Plain Paper UI SpriteSheet_5: -1306743074
+      Plain Paper UI SpriteSheet_50: -1514005089
+      Plain Paper UI SpriteSheet_51: -847594764
+      Plain Paper UI SpriteSheet_52: -416056809
+      Plain Paper UI SpriteSheet_53: 1428572091
+      Plain Paper UI SpriteSheet_54: -2080356669
+      Plain Paper UI SpriteSheet_55: -899035990
+      Plain Paper UI SpriteSheet_56: -1750230211
+      Plain Paper UI SpriteSheet_57: -729949149
+      Plain Paper UI SpriteSheet_58: 1412278519
+      Plain Paper UI SpriteSheet_59: -1864693004
+      Plain Paper UI SpriteSheet_6: 2018001654
+      Plain Paper UI SpriteSheet_60: -1908221641
+      Plain Paper UI SpriteSheet_61: 62427298
+      Plain Paper UI SpriteSheet_62: 1128033016
+      Plain Paper UI SpriteSheet_63: 829661232
+      Plain Paper UI SpriteSheet_64: 1214656275
+      Plain Paper UI SpriteSheet_65: -2006437498
+      Plain Paper UI SpriteSheet_66: -912431420
+      Plain Paper UI SpriteSheet_67: 1140996471
+      Plain Paper UI SpriteSheet_68: 1609822019
+      Plain Paper UI SpriteSheet_69: 1837740468
+      Plain Paper UI SpriteSheet_7: 393887501
+      Plain Paper UI SpriteSheet_70: -945722156
+      Plain Paper UI SpriteSheet_71: -368169513
+      Plain Paper UI SpriteSheet_72: -175708514
+      Plain Paper UI SpriteSheet_73: -914632101
+      Plain Paper UI SpriteSheet_74: -632635903
+      Plain Paper UI SpriteSheet_75: 810323399
+      Plain Paper UI SpriteSheet_76: 475827514
+      Plain Paper UI SpriteSheet_77: -360753696
+      Plain Paper UI SpriteSheet_78: -1907820380
+      Plain Paper UI SpriteSheet_79: -694697831
+      Plain Paper UI SpriteSheet_8: 2130309318
+      Plain Paper UI SpriteSheet_80: -1720210656
+      Plain Paper UI SpriteSheet_81: 800072125
+      Plain Paper UI SpriteSheet_82: 245143101
+      Plain Paper UI SpriteSheet_83: -668592252
+      Plain Paper UI SpriteSheet_84: -1694987262
+      Plain Paper UI SpriteSheet_85: 334421315
+      Plain Paper UI SpriteSheet_86: -737052915
+      Plain Paper UI SpriteSheet_87: -1351118845
+      Plain Paper UI SpriteSheet_88: -330119401
+      Plain Paper UI SpriteSheet_89: -1177781484
+      Plain Paper UI SpriteSheet_9: -1037471386
+      Plain Paper UI SpriteSheet_90: -494602529
+      Plain Paper UI SpriteSheet_91: -278858284
+      Plain Paper UI SpriteSheet_92: -1912602145
+      Plain Paper UI SpriteSheet_93: -865740125
+      Plain Paper UI SpriteSheet_94: 1202477523
+      Plain Paper UI SpriteSheet_95: 1955477838
+      Plain Paper UI SpriteSheet_96: 918210879
+      Plain Paper UI SpriteSheet_97: 1762132020
+      Plain Paper UI SpriteSheet_98: 1403604553
+      Plain Paper UI SpriteSheet_99: -177237892
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

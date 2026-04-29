@@ -1,0 +1,21 @@
+OVDF v1.1
+AIEntitiy, Assembly-CSharp
+MetaGuid:40f683cc3bd6435f9eddd8623e93b81e
+
+# $UztbdXtS1Z8snbYr6S5Bxq
+Position: $Ea1sbd3Wj7VYXuNvF4HRxZ:0
++ [Sirenix.OdinInspector.HideIfGroupAttribute]
+	GroupName = ""
+
+# $Ea1sbd3Wj7VYXuNvF4HRxZ
+Position: $root:18
++ [Sirenix.OdinInspector.BoxGroupAttribute]
+
+# interactDistance
+Position: $root:17
+
+# mainCamera
+Position: $UztbdXtS1Z8snbYr6S5Bxq:0
+
+# dialogue
+Position: $root:20
