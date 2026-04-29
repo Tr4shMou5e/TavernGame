@@ -11,9 +11,224 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09822671-2b3a-4860-a9c1-0fbab3b2e1d9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/CharsAssets/Aseprite/pixel_art_large_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CharsAssets/Aseprite/pixel_art_large_1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CharsAssets/StovetopMinigame/CookingRecipes.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CinemachineInputAxisController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CinemachineInputAxisController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CookingRecipeData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CookingRecipeData.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CookingRecipes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CookingRecipes.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DefaultCookingRecipes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DefaultCookingRecipes.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PanFryingChallenge.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PanFryingChallenge.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PotCookingChallenge.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PotCookingChallenge.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StoveTopCookingInteractableMiniGame.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StoveTopCookingInteractableMiniGame.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CharsAssets.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharsAssets.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CharsAssets/Aseprite.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharsAssets/Aseprite.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CharsAssets/Synty/PolygonGeneric/Materials/Generic_Glass.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharsAssets/Synty/PolygonGeneric/Materials/Generic_Glass.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PantryAssets.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharsAssets/StovetopMinigame.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PantryUI - Overlay.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PantryUI - Overlay.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MobileDependencyResolver/Editor/1.2.185.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BarMinigame.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/BarMinigame.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BarMinigame.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/BarMinigame.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rund'sPrefabs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MobileDependencyResolver/Editor.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rund'sPrefabs/BarMinigame.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rund'sPrefabs/BarMinigame.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharsAssets/StovetopMinigame/CookingRecipes.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rund'sPrefabs/BarStockUI - Overlay.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rund'sPrefabs/BarStockUI - Overlay.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/HUD.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rund'sPrefabs/ChestStockUI - Overlay.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/HUD.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rund'sPrefabs/ChestStockUI - Overlay.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rund'sPrefabs/PantryUI - Overlay.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rund'sPrefabs/PantryUI - Overlay.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rund'sPrefabs/TavernDesign.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rund'sPrefabs/TavernDesign.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Home.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Home.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tavern 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tavern 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OverviewPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OverviewPanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tavern Test 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tavern Test 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Ale.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Ale.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Ale.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Ale.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Apple.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Apple.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Apple.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Apple.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/AppleCider.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/AppleCider.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/AppleCider.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/AppleCider.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Beef.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Beef.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Beef.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Beef.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Butter.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Butter.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Butter.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Butter.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Carrot.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Carrot.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Carrot.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Carrot.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Cheese.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Cheese.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Cheese.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Cheese.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Cherries.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Cherries.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Cherries.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Cherries.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/CuredMeat.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/CuredMeat.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/CuredMeat.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/CuredMeat.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/CurrySpices.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/CurrySpices.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/CurrySpices.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/CurrySpices.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Elixir.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Elixir.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Elixir.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Elixir.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Fish.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Fish.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Fish.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Fish.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Grapes.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Grapes.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Grapes.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Grapes.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Herb.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Herb.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Herb.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Herb.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Honey.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Honey.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Honey.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Honey.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Lemon.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Lemon.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Lemon.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Lemon.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Orange.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Orange.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Orange.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Orange.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/PieCrust.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/PieCrust.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/PieCrust.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/PieCrust.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Potato.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Potato.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Potato.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Potato.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Pumpkin.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Pumpkin.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Pumpkin.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Pumpkin.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Rice.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Rice.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Rice.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Rice.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Salt.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Salt.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Salt.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Salt.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Sugar.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Sugar.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Sugar.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Sugar.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/SweetPotato.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/SweetPotato.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/SweetPotato.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/SweetPotato.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/TavernBrew.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/TavernBrew.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/TavernBrew.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/TavernBrew.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Tonic.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Tonic.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Tonic.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Tonic.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Turkey.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Turkey.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Turkey.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/FoodObjs/Turkey.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (1).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (1).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (1).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (1).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (10).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (10).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (10).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (10).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (11).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (11).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (11).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (11).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (12).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (12).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (12).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (12).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (13).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (13).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (13).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (13).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (14).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (14).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (14).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (14).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (15).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (15).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (15).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (15).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (16).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (16).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (16).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (16).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (17).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (17).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (17).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (17).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (18).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (18).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (18).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (18).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (19).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (19).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (19).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (19).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (2).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (2).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (2).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (2).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (20).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (20).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (20).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (20).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (21).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (21).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (21).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (21).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (22).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (22).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (22).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (22).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (23).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (23).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (23).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (23).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (24).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (24).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (24).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (24).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (25).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (25).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (25).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (25).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (26).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (26).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (26).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (26).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (27).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (27).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (27).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (27).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (28).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (28).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (28).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (28).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (29).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (29).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (29).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (29).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (3).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (3).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (3).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (3).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (30).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (30).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (30).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (30).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (31).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (31).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (31).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (31).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (32).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (32).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (32).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (32).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (33).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (33).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (33).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (33).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (34).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (34).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (34).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (34).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (35).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (35).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (35).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (35).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (36).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (36).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (36).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (36).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (37).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (37).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (37).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (37).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (38).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (38).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (38).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (38).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (39).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (39).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (39).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (39).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (4).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (4).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (4).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (4).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (40).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (40).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (40).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (40).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (41).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (41).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (41).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (41).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (42).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (42).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (42).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (42).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (43).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (43).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (43).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (43).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (44).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (44).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (44).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (44).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (45).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (45).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (45).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (45).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (46).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (46).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (46).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (46).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (47).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (47).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (47).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (47).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (48).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (48).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (48).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (48).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (49).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (49).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (49).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (49).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (5).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (5).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (5).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (5).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (50).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (50).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (50).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (50).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (51).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (51).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (51).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (51).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (52).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (52).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (52).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (52).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (53).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (53).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (53).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (53).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (6).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (6).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (6).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (6).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (7).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (7).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (7).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (7).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (8).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (8).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (8).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (8).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (9).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (9).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (9).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large (9).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/PantryAssets/pixel_art_large.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/pixel_art_large (54).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/pixel_art_large (54).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/pixel_art_large (54).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/pixel_art_large (54).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/pixel_art_large (55).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/pixel_art_large (55).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpirteAssets/pixel_art_large (55).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpirteAssets/pixel_art_large (55).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Outline.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Outline.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MobileDependencyResolver.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/FoodItem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/FoodItem.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/PantryItemUI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/PantryItemUI.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/InkSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InkSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +285,7 @@
     "app.teamhub.selectedTeam": "https://github.com/Tr4shMou5e/TavernGame",
     "cidr.known.project.marker": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "TestMerge",
+    "git-widget-placeholder": "Merging TestMerge",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -152,7 +367,7 @@
       <workItem from="1777000564418" duration="7083000" />
       <workItem from="1777176024006" duration="1638000" />
       <workItem from="1777422668743" duration="611000" />
-      <workItem from="1777425765631" duration="917000" />
+      <workItem from="1777425765631" duration="1518000" />
     </task>
     <task id="LOCAL-00001" summary="Revert Commit">
       <option name="closed" value="true" />
