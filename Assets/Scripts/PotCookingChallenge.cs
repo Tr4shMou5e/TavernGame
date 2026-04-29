@@ -56,6 +56,7 @@ public class PotCookingChallenge : MonoBehaviour
             }
         }
         
+        stirButton.onClick.AddListener(OnStirButtonPressed);
         InitializeStirGrid();
         UpdateUI();
     }
@@ -75,12 +76,6 @@ public class PotCookingChallenge : MonoBehaviour
         if (challengeComplete) return;
 
         cookTimer += Time.deltaTime;
-
-        // Check for spacebar stir input
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            OnStirButtonPressed();
-        }
 
         // Check ingredient timings
         if (recipe.ingredientTimings != null)
@@ -203,5 +198,10 @@ public class PotCookingChallenge : MonoBehaviour
     private void CompleteChallenge()
     {
         onComplete?.Invoke(stirScore, ingredientScore);
+    }
+
+    private void OnDestroy()
+    {
+        stirButton?.onClick.RemoveListener(OnStirButtonPressed);
     }
 }
