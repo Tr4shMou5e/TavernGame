@@ -5,10 +5,8 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class StoveTopCookingInteractableMiniGame : InteractableObject
+public class StoveTopCookingInteractableMiniGame : MonoBehaviour
 {
-    [SerializeField] private CookingRecipeData cookingRecipeData;
-    [SerializeField] private TextMeshProUGUI dishNameText;
     [SerializeField] private Canvas gameplayCanvas;
     [SerializeField] private Canvas resultsCanvas;
     [SerializeField] private Button closeResultsButton;
@@ -19,6 +17,7 @@ public class StoveTopCookingInteractableMiniGame : InteractableObject
     [SerializeField] private TextMeshProUGUI targetTempText;
     [SerializeField] private Image heatFillImage;
     [SerializeField] private GameObject heatControlPhaseUI;
+    [SerializeField] private TextMeshProUGUI dishNameText;
     
     // Challenge Phase UI (Pan or Pot)
     [SerializeField] private GameObject panChallengeUI;
@@ -40,6 +39,9 @@ public class StoveTopCookingInteractableMiniGame : InteractableObject
     private PanFryingChallenge panChallenge;
     private PotCookingChallenge potChallenge;
     
+    private bool miniGameRunning = false;
+    private bool minigameInitialized = false;
+    
     private enum CookingPhase { HeatControl, Challenge, Complete }
     
     // Scoring thresholds
@@ -47,41 +49,34 @@ public class StoveTopCookingInteractableMiniGame : InteractableObject
     private const int STAR_TWO_MIN = 51;
     private const int STAR_THREE_MIN = 76;
 
-    public override void Awake()
+    private void Start()
     {
-        base.Awake();
-        if (cookingRecipeData == null)
-            Debug.LogError("CookingRecipeData not assigned to StoveTopCookingInteractableMiniGame!");
+        // Initialize UI canvases to inactive
+        gameplayCanvas.gameObject.SetActive(false);
+        resultsCanvas.gameObject.SetActive(false);
     }
 
-    public override void Interact()
+    private void StartMinigame()
     {
-        if (miniGameRunning) return;
-        base.Interact();
-        
-        // Get the current recipe from the food item name
-        var currentFoodItem = orders?.GetFoodItemFromCustomer();
-        if (currentFoodItem == null)
-            return;
-
-        currentRecipe = cookingRecipeData.GetRecipeForDish(currentFoodItem.dishName);
-        if (string.IsNullOrEmpty(currentRecipe.dishName))
+        // Create a test recipe (Steak - Pan frying)
+        currentRecipe = new CookingRequirements
         {
-            Debug.LogWarning($"No cooking recipe found for {currentFoodItem.dishName}");
-            return;
-        }
+            dishName = "Test Steak",
+            cookingType = CookingType.Pan,
+            targetTemperature = 400f,
+            flipWindowTime = 7f,
+            cookDuration = 18f,
+            doneLevelTarget = DoneLevel.Medium,
+            ingredientTimings = new List<IngredientAddTiming>()
+        };
 
-        StartCooking();
-    }
-
-    private void StartCooking()
-    {
         totalScore = 0;
         heatControlScore = 0;
         challengeScore = 0;
         currentPhase = CookingPhase.HeatControl;
         targetTemperature = currentRecipe.targetTemperature;
-        currentTemperature = 50f; // Start at room temp
+        currentTemperature = 50f;
+        miniGameRunning = true;
 
         // Setup UI
         dishNameText.text = $"Cooking: {currentRecipe.dishName}";
@@ -98,10 +93,26 @@ public class StoveTopCookingInteractableMiniGame : InteractableObject
         resultsCanvas.gameObject.SetActive(false);
 
         heatControlStartTime = Time.time;
+        
+        Debug.Log("Minigame started! Press A/D to adjust heat to 400°F");
     }
 
     private void Update()
     {
+        // Check for C key to start minigame
+        if (!minigameInitialized && Input.GetKeyDown(KeyCode.C))
+        {
+            StartMinigame();
+            minigameInitialized = true;
+            Debug.Log("Press A/D to adjust heat to 400°F");
+        }
+
+        // Check for Enter key to close results
+        if (currentPhase == CookingPhase.Complete && Input.GetKeyDown(KeyCode.Return))
+        {
+            CloseResults();
+        }
+
         if (!miniGameRunning) return;
 
         switch (currentPhase)
@@ -117,8 +128,21 @@ public class StoveTopCookingInteractableMiniGame : InteractableObject
 
     private void UpdateHeatControl()
     {
-        // Update current temp based on slider
-        currentTemperature = heatSlider.value;
+        // Update current temp based on keyboard input (A/D or arrow keys)
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+        {
+            currentTemperature += 50f * Time.deltaTime; // Increase heat
+        }
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+        {
+            currentTemperature -= 50f * Time.deltaTime; // Decrease heat
+        }
+
+        // Clamp temperature between slider min and max
+        currentTemperature = Mathf.Clamp(currentTemperature, 0, 500);
+        
+        // Update slider to match
+        heatSlider.value = currentTemperature;
         currentTempText.text = $"{Mathf.Round(currentTemperature)}°F";
 
         // Update heat fill color (green when in range, orange when off)
@@ -161,6 +185,7 @@ public class StoveTopCookingInteractableMiniGame : InteractableObject
             if (panChallenge != null)
             {
                 panChallenge.Initialize(currentRecipe, OnPanChallengeComplete);
+                Debug.Log("Pan frying challenge started!");
             }
         }
         else // Pot
@@ -170,6 +195,7 @@ public class StoveTopCookingInteractableMiniGame : InteractableObject
             if (potChallenge != null)
             {
                 potChallenge.Initialize(currentRecipe, OnPotChallengeComplete);
+                Debug.Log("Pot cooking challenge started!");
             }
         }
     }
@@ -216,8 +242,7 @@ public class StoveTopCookingInteractableMiniGame : InteractableObject
         
         UpdateStarDisplay(scorePercentage);
         
-        SoundManager.PlaySound(SoundType.WinSound);
-        ToggleHasWon(true);
+        Debug.Log($"Final Score: {scorePercentage}/100");
     }
 
     private int GetStarRating(int percentage)
@@ -239,19 +264,19 @@ public class StoveTopCookingInteractableMiniGame : InteractableObject
 
     private void CloseResults()
     {
-        EndMiniGame();
         resultsCanvas.gameObject.SetActive(false);
-        miniGameParentGameObject.SetActive(false);
+        miniGameRunning = false;
+        minigameInitialized = false;
+        Debug.Log("Results closed! Press C again to restart the minigame.");
     }
 
     private void OnEnable()
     {
-        OnMiniGameStart += () => miniGameRunning = true;
-        closeResultsButton?.onClick.AddListener(CloseResults);
+        // Button listener removed - using Enter key instead
     }
 
     private void OnDisable()
     {
-        closeResultsButton?.onClick.RemoveListener(CloseResults);
+        // Button listener removed - using Enter key instead
     }
 }
