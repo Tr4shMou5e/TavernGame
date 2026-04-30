@@ -1,212 +1,78 @@
 using UnityEngine;
-using System.Collections.Generic;
+using Sirenix.OdinInspector;
 
 public class MenuDataPopulator : MonoBehaviour
 {
     [SerializeField] private MenuData menuData;
-    [SerializeField] private GameObject cuttingBoardGameObject;
-    [SerializeField] private GameObject stoveGameObject; // Used for both cooking AND baking
 
-    [ContextMenu("Populate All Dishes")]
-    public void PopulateAllDishes()
+    [Button("Populate Menu Data")]
+    public void PopulateMenuData()
     {
-        if (menuData == null)
+        var foodList = menuData.GetMenuItems();
+        
+        if (menuData == null || foodList == null)
         {
-            Debug.LogError("MenuData not assigned!");
+            Debug.LogError("MenuData or foodItems list is null!");
             return;
         }
 
-        // Define all dishes with their properties
-        var dishes = new List<DishData>
-        {
-            // Existing dishes - update them
-            new DishData 
-            { 
-                dishName = "Sushi",
-                cookingType = FoodItem.CookingType.Pot,
-                ingredients = new List<string> { "Fish", "Rice" },
-                processes = new List<GameObject> { cuttingBoardGameObject, stoveGameObject }
-            },
-            new DishData 
-            { 
-                dishName = "Tenders",
-                cookingType = FoodItem.CookingType.Pan,
-                ingredients = new List<string> { "Chicken", "Breadcrumbs", "Oil" },
-                processes = new List<GameObject> { cuttingBoardGameObject, stoveGameObject }
-            },
+        // Pies (4) - Baking
+        SetDishCookingType("Sweet Potato Pie", FoodItem.CookingType.Baking);
+        SetDishCookingType("Pumpkin Pie", FoodItem.CookingType.Baking);
+        SetDishCookingType("Apple Pie", FoodItem.CookingType.Baking);
+        SetDishCookingType("Cherry Pie", FoodItem.CookingType.Baking);
 
-            // Pies - use stove for baking
-            new DishData 
-            { 
-                dishName = "Sweet Potato Pie",
-                cookingType = FoodItem.CookingType.None,
-                ingredients = new List<string> { "Sweet Potato", "Sugar", "Pie crust" },
-                processes = new List<GameObject> { cuttingBoardGameObject, stoveGameObject }
-            },
-            new DishData 
-            { 
-                dishName = "Pumpkin Pie",
-                cookingType = FoodItem.CookingType.None,
-                ingredients = new List<string> { "Pumpkin", "Sugar", "Pie crust" },
-                processes = new List<GameObject> { cuttingBoardGameObject, stoveGameObject }
-            },
-            new DishData 
-            { 
-                dishName = "Apple Pie",
-                cookingType = FoodItem.CookingType.None,
-                ingredients = new List<string> { "Apple", "Sugar", "Pie crust" },
-                processes = new List<GameObject> { cuttingBoardGameObject, stoveGameObject }
-            },
-            new DishData 
-            { 
-                dishName = "Cherry Pie",
-                cookingType = FoodItem.CookingType.None,
-                ingredients = new List<string> { "Cherry Bunches", "Sugar", "Pie crust" },
-                processes = new List<GameObject> { cuttingBoardGameObject, stoveGameObject }
-            },
+        // Pot Dishes - Some may need cutting board first
+        SetDishCookingType("Vintage Stew", FoodItem.CookingType.Pot, requiresCuttingBoard: true);
+        SetDishCookingType("Curry", FoodItem.CookingType.Pot, requiresCuttingBoard: true);
+        SetDishCookingType("Sushi", FoodItem.CookingType.Pot, requiresCuttingBoard: true);
 
-            // Pan dishes
-            new DishData 
-            { 
-                dishName = "Roast Turkey",
-                cookingType = FoodItem.CookingType.Pan,
-                ingredients = new List<string> { "Turkey", "Herbs", "Butter" },
-                processes = new List<GameObject> { cuttingBoardGameObject, stoveGameObject }
-            },
-            new DishData 
-            { 
-                dishName = "Tavern Fish",
-                cookingType = FoodItem.CookingType.Pan,
-                ingredients = new List<string> { "Fish", "Lemon", "Butter" },
-                processes = new List<GameObject> { cuttingBoardGameObject, stoveGameObject }
-            },
-            new DishData 
-            { 
-                dishName = "Steak",
-                cookingType = FoodItem.CookingType.Pan,
-                ingredients = new List<string> { "Beef", "Salt", "Butter" },
-                processes = new List<GameObject> { cuttingBoardGameObject, stoveGameObject }
-            },
+        // No Cooking Required
+        SetDishCookingType("Charcuterie Board", FoodItem.CookingType.None);
 
-            // Pot dishes
-            new DishData 
-            { 
-                dishName = "Vintage Stew",
-                cookingType = FoodItem.CookingType.Pot,
-                ingredients = new List<string> { "Beef", "Carrot", "Potato" },
-                processes = new List<GameObject> { cuttingBoardGameObject, stoveGameObject }
-            },
-            new DishData 
-            { 
-                dishName = "Curry",
-                cookingType = FoodItem.CookingType.Pot,
-                ingredients = new List<string> { "Beef", "Curry Spices", "Rice" },
-                processes = new List<GameObject> { cuttingBoardGameObject, stoveGameObject }
-            },
+        // Drinks - No Cooking
+        SetDishCookingType("Honey Ale", FoodItem.CookingType.None);
+        SetDishCookingType("Spiced Cider", FoodItem.CookingType.None);
+        SetDishCookingType("Berry Mead", FoodItem.CookingType.None);
+        SetDishCookingType("Sailor's Lemon Brew", FoodItem.CookingType.None);
+        SetDishCookingType("Herbal Tonic", FoodItem.CookingType.None);
 
-            // No cooking
-            new DishData 
-            { 
-                dishName = "Charcuterie Board",
-                cookingType = FoodItem.CookingType.None,
-                ingredients = new List<string> { "Cheese", "Grapes", "Cured Meat" },
-                processes = new List<GameObject> { cuttingBoardGameObject }
-            },
+        // NOW setup all processesRequired based on cooking types
+        SetupAllProcessesRequired();
 
-            // Drinks - no cooking
-            new DishData 
-            { 
-                dishName = "Honey Ale",
-                cookingType = FoodItem.CookingType.None,
-                ingredients = new List<string> { "Ale", "Honey", "Ferment" },
-                processes = new List<GameObject>()
-            },
-            new DishData 
-            { 
-                dishName = "Spiced Cider",
-                cookingType = FoodItem.CookingType.None,
-                ingredients = new List<string> { "Apple", "Cinnamon", "Tonic" },
-                processes = new List<GameObject>()
-            },
-            new DishData 
-            { 
-                dishName = "Berry Mead",
-                cookingType = FoodItem.CookingType.None,
-                ingredients = new List<string> { "Honey", "Berries", "Elixir" },
-                processes = new List<GameObject>()
-            },
-            new DishData 
-            { 
-                dishName = "Sailor's Lemon Brew",
-                cookingType = FoodItem.CookingType.None,
-                ingredients = new List<string> { "Lemon", "Sugar", "Tavern Brew" },
-                processes = new List<GameObject>()
-            },
-            new DishData 
-            { 
-                dishName = "Herbal Tonic",
-                cookingType = FoodItem.CookingType.None,
-                ingredients = new List<string> { "Herbs", "Honey", "Tonic" },
-                processes = new List<GameObject>()
-            },
-        };
-
-        var menuItems = menuData.GetMenuItems();
-        int updatedCount = 0;
-
-        foreach (var dishData in dishes)
-        {
-            // Try to find existing dish
-            FoodItem existingItem = null;
-            foreach (var item in menuItems)
-            {
-                if (item.dishName == dishData.dishName)
-                {
-                    existingItem = item;
-                    break;
-                }
-            }
-
-            if (existingItem != null)
-            {
-                // Update existing
-                UpdateDish(existingItem, dishData);
-                updatedCount++;
-            }
-            else
-            {
-                Debug.LogWarning($"Dish '{dishData.dishName}' not found in MenuData.");
-            }
-        }
-
-        #if UNITY_EDITOR
-        UnityEditor.EditorUtility.SetDirty(menuData);
-        UnityEditor.AssetDatabase.SaveAssets();
-        #endif
-
-        Debug.Log($"\n✓ Menu population complete! Updated: {updatedCount} dishes");
+        Debug.Log("Menu data populated successfully!");
     }
 
-    private void UpdateDish(FoodItem item, DishData data)
+    private void SetDishCookingType(string dishName, FoodItem.CookingType cookingType, bool requiresCuttingBoard = false)
     {
-        item.cookingType = data.cookingType;
-
-        // Clear and set processes
-        if (item.processesRequired == null)
+        var foodList = menuData.GetMenuItems();
+        
+        foreach (var item in foodList)
         {
-            item.processesRequired = new List<GameObject>();
+            if (item.dishName == dishName)
+            {
+                item.cookingType = cookingType;
+                item.requiresCuttingBoard = requiresCuttingBoard;
+                Debug.Log($"Set {dishName} to {cookingType}" + (requiresCuttingBoard ? " (requires cutting board)" : ""));
+                return;
+            }
         }
-        item.processesRequired.Clear();
-        item.processesRequired.AddRange(data.processes);
-
-        Debug.Log($"✓ Updated {item.dishName} - Type: {item.cookingType}, Processes: {item.processesRequired.Count}");
+        Debug.LogWarning($"Dish '{dishName}' not found in MenuData!");
     }
 
-    private class DishData
+    /// <summary>
+    /// Calls SetupProcessesRequired() on all food items.
+    /// This populates processesRequired based on their cookingType.
+    /// </summary>
+    private void SetupAllProcessesRequired()
     {
-        public string dishName;
-        public FoodItem.CookingType cookingType;
-        public List<string> ingredients;
-        public List<GameObject> processes;
+        var foodList = menuData.GetMenuItems();
+        
+        foreach (var item in foodList)
+        {
+            item.SetupProcessesRequired();
+        }
+        
+        Debug.Log("All food items processes setup complete!");
     }
 }

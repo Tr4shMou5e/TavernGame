@@ -4,9 +4,6 @@ using System.Collections.Generic;
 public class MenuDataSetup : MonoBehaviour
 {
     [SerializeField] private MenuData menuData;
-    [SerializeField] private GameObject cuttingBoardGameObject;
-    [SerializeField] private GameObject stoveGameObject;
-    [SerializeField] private GameObject ovenGameObject;
 
     [ContextMenu("Setup All Recipes")]
     public void SetupTestRecipes()
@@ -20,32 +17,34 @@ public class MenuDataSetup : MonoBehaviour
         var menuItems = menuData.GetMenuItems();
 
         // Define recipe requirements
-        var recipeRequirements = new Dictionary<string, (FoodItem.CookingType cookingType, List<GameObject> processes)>
+        var recipeRequirements = new Dictionary<string, (FoodItem.CookingType cookingType, bool requiresCuttingBoard)>
         {
-            // Pies - require cutting board and oven
-            { "Sweet Potato Pie", (FoodItem.CookingType.None, new List<GameObject> { cuttingBoardGameObject, ovenGameObject }) },
-            { "Pumpkin Pie", (FoodItem.CookingType.None, new List<GameObject> { cuttingBoardGameObject, ovenGameObject }) },
-            { "Apple Pie", (FoodItem.CookingType.None, new List<GameObject> { cuttingBoardGameObject, ovenGameObject }) },
-            { "Cherry Pie", (FoodItem.CookingType.None, new List<GameObject> { cuttingBoardGameObject, ovenGameObject }) },
+            // Pies - Baking
+            { "Sweet Potato Pie", (FoodItem.CookingType.Baking, false) },
+            { "Pumpkin Pie", (FoodItem.CookingType.Baking, false) },
+            { "Apple Pie", (FoodItem.CookingType.Baking, false) },
+            { "Cherry Pie", (FoodItem.CookingType.Baking, false) },
 
-            // Pan-fried dishes - require cutting board and stove (pan)
-            { "Roast Turkey", (FoodItem.CookingType.Pan, new List<GameObject> { cuttingBoardGameObject, stoveGameObject }) },
-            { "Tavern Fish", (FoodItem.CookingType.Pan, new List<GameObject> { cuttingBoardGameObject, stoveGameObject }) },
-            { "Steak", (FoodItem.CookingType.Pan, new List<GameObject> { cuttingBoardGameObject, stoveGameObject }) },
+            // Other Baking dishes
+            { "Roast Turkey", (FoodItem.CookingType.Baking, true) },
+            { "Tavern Fish", (FoodItem.CookingType.Baking, true) },
+            { "Steak", (FoodItem.CookingType.Baking, true) },
+            { "Tenders", (FoodItem.CookingType.Baking, true) },
 
-            // Pot dishes - require cutting board and stove (pot)
-            { "Vintage Stew", (FoodItem.CookingType.Pot, new List<GameObject> { cuttingBoardGameObject, stoveGameObject }) },
-            { "Curry", (FoodItem.CookingType.Pot, new List<GameObject> { cuttingBoardGameObject, stoveGameObject }) },
+            // Pot dishes - require cutting board first
+            { "Vintage Stew", (FoodItem.CookingType.Pot, true) },
+            { "Curry", (FoodItem.CookingType.Pot, true) },
+            { "Sushi", (FoodItem.CookingType.Pot, true) },
 
             // No cooking - just cutting board
-            { "Charcuterie Board", (FoodItem.CookingType.None, new List<GameObject> { cuttingBoardGameObject }) },
+            { "Charcuterie Board", (FoodItem.CookingType.None, true) },
 
             // Drinks - no cooking required
-            { "Honey Ale", (FoodItem.CookingType.None, new List<GameObject>()) },
-            { "Spiced Cider", (FoodItem.CookingType.None, new List<GameObject>()) },
-            { "Berry Mead", (FoodItem.CookingType.None, new List<GameObject>()) },
-            { "Sailor's Lemon Brew", (FoodItem.CookingType.None, new List<GameObject>()) },
-            { "Herbal Tonic", (FoodItem.CookingType.None, new List<GameObject>()) },
+            { "Honey Ale", (FoodItem.CookingType.None, false) },
+            { "Spiced Cider", (FoodItem.CookingType.None, false) },
+            { "Berry Mead", (FoodItem.CookingType.None, false) },
+            { "Sailor's Lemon Brew", (FoodItem.CookingType.None, false) },
+            { "Herbal Tonic", (FoodItem.CookingType.None, false) },
         };
 
         int setupCount = 0;
@@ -55,26 +54,12 @@ public class MenuDataSetup : MonoBehaviour
             if (recipeRequirements.TryGetValue(item.dishName, out var requirements))
             {
                 item.cookingType = requirements.cookingType;
+                item.requiresCuttingBoard = requirements.requiresCuttingBoard;
 
-                if (item.processesRequired == null)
-                {
-                    item.processesRequired = new List<GameObject>();
-                }
-                else
-                {
-                    item.processesRequired.Clear();
-                }
+                // Use the SetupProcessesRequired method to auto-populate
+                item.SetupProcessesRequired();
 
-                // Add all required processes
-                foreach (var process in requirements.processes)
-                {
-                    if (process != null && !item.processesRequired.Contains(process))
-                    {
-                        item.processesRequired.Add(process);
-                    }
-                }
-
-                Debug.Log($"✓ Setup {item.dishName} - Type: {item.cookingType}, Processes: {item.processesRequired.Count}");
+                Debug.Log($"✓ Setup {item.dishName} - Type: {item.cookingType}, Requires Cutting Board: {item.requiresCuttingBoard}, Processes: {item.processesRequired.Count}");
                 setupCount++;
             }
         }
