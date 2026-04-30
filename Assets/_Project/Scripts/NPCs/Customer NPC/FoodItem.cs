@@ -12,8 +12,13 @@ public class FoodItem
     public string id;
     public float price;
     public int score;
-    [FormerlySerializedAs("processes")] [Tooltip("This is the list of what the food needs to be processed to be ready to eat.")]
+    [FormerlySerializedAs("processes")]
     public List<GameObject> processesRequired;
+    
+    // ADD THIS ENUM AND FIELD:
+    public enum CookingType { Pan, Pot, None }
+    public CookingType cookingType = CookingType.None;
+    
     public enum ProcessType
     {
         Catch,

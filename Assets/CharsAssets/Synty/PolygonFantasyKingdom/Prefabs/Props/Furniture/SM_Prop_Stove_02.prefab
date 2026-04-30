@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 64711206434095748}
   - component: {fileID: 5578867163528435896}
   - component: {fileID: 117907341369266645}
+  - component: {fileID: 5032637419831995049}
   m_Layer: 0
   m_Name: SM_Prop_Stove_02
   m_TagString: Untagged
@@ -128,13 +129,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4294ef43ec674ad690d9ca7966e3401e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OvenInteractableMiniGame
-  player: {fileID: 0}
-  miniGame: {fileID: 0}
+  playerScript: {fileID: 0}
+  miniGameParentGameObject: {fileID: 0}
   miniGameCamera: {fileID: 0}
   customCursor: {fileID: 0}
   withCustomCursor: 0
   scoreCanvas: {fileID: 0}
   withScoreCanvas: 1
+  menuSO: {fileID: 11400000, guid: d72ca3be659b68b41a1b55e9fe21e3fc, type: 2}
   flameControlTarget: {fileID: 0}
   flamePointer: {fileID: 0}
   flameVisual: {fileID: 0}
@@ -175,8 +177,8 @@ MonoBehaviour:
   endScoreText: {fileID: 0}
   closeButton: {fileID: 0}
   heatDuration: 10
-  miniGameTime: 60
-  score: 100
+  miniGameTime: 20
+  score: 200
   endStarMeters:
   - {fileID: 0}
   - {fileID: 0}
@@ -202,6 +204,39 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.7140192, y: 1.8229811, z: 2.118252}
   m_Center: {x: 0.039269403, y: 0.91149056, z: 0.63845193}
+--- !u!114 &5032637419831995049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704398280693240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35ddc7c2eeaa5df4da7bafcec56f18b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StoveTopCookingInteractableMiniGame
+  playerScript: {fileID: 0}
+  miniGameParentGameObject: {fileID: 0}
+  miniGameCamera: {fileID: 0}
+  customCursor: {fileID: 0}
+  withCustomCursor: 0
+  scoreCanvas: {fileID: 0}
+  withScoreCanvas: 0
+  menuSO: {fileID: 11400000, guid: d72ca3be659b68b41a1b55e9fe21e3fc, type: 2}
+  dishNameText: {fileID: 0}
+  gameplayCanvas: {fileID: 0}
+  resultsCanvas: {fileID: 0}
+  closeResultsButton: {fileID: 0}
+  heatSlider: {fileID: 0}
+  currentTempText: {fileID: 0}
+  targetTempText: {fileID: 0}
+  heatFillImage: {fileID: 0}
+  heatControlPhaseUI: {fileID: 0}
+  panChallengeUI: {fileID: 0}
+  potChallengeUI: {fileID: 0}
+  finalScoreText: {fileID: 0}
+  starMeters: []
 --- !u!1 &1740385601620622
 GameObject:
   m_ObjectHideFlags: 0
