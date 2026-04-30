@@ -60,11 +60,19 @@ public class PotCookingChallenge : MonoBehaviour
             PromptStir();
         }
 
-        // If waiting for stir and time window expires
+        // If waiting for stir, check for input
         if (waitingForStir)
         {
             float timeSincePrompt = Time.time - stirWindowStart;
-            if (timeSincePrompt > 5f) // 5+ seconds = bad stir missed
+            
+            // Check for Space key or button press
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                OnStirButtonPressed();
+            }
+            
+            // If 8+ seconds = missed
+            if (timeSincePrompt > 8f)
             {
                 MissedStir();
             }
@@ -83,39 +91,83 @@ public class PotCookingChallenge : MonoBehaviour
 
         waitingForStir = true;
         stirWindowStart = Time.time;
-        stirPromptText.text = "STIRnow!";
-        stirPromptText.color = Color.yellow;
+        
+        // Start countdown immediately
+        StartCountdown();
+        
         Debug.Log($"Stir prompt {successfulStirs + 1}/{totalStirPrompts}!");
+    }
+
+    private void StartCountdown()
+    {
+        // Countdown: Ready (0-1s) -> Set (1-2s) -> Stir Now! (2-3s)
+        stirPromptText.text = "Ready...";
+        stirPromptText.color = Color.red;
+        
+        // Schedule "Set" after 1 second
+        Invoke("ShowSet", 1f);
+        // Schedule "Stir Now!" after 2 seconds
+        Invoke("ShowStirNow", 2f);
+    }
+
+    private void ShowSet()
+    {
+        if (!waitingForStir) return;
+        stirPromptText.text = "Set...";
+        stirPromptText.color = Color.yellow;
+    }
+
+    private void ShowStirNow()
+    {
+        if (!waitingForStir) return;
+        stirPromptText.text = "Stir Now!";
+        stirPromptText.color = Color.green;
     }
 
     private void OnStirButtonPressed()
     {
         if (!waitingForStir || !isCooking) return;
 
+        CancelInvoke(); // Cancel any pending countdown messages
+        
         float timeSincePrompt = Time.time - stirWindowStart;
 
         int points = 0;
         string feedback = "";
 
-        if (timeSincePrompt <= 2f)
+        if (timeSincePrompt > 2f && timeSincePrompt <= 4f)
         {
-            // Perfect stir
-            points = 13; // 100 points / 8 stirs = 12.5, round to 13
+            // Perfect stir (2-4s)
+            points = 13;
             feedback = "Perfect!";
             stirPromptText.color = Color.green;
         }
-        else if (timeSincePrompt <= 5f)
+        else if (timeSincePrompt > 4f && timeSincePrompt <= 6f)
         {
-            // OK stir
-            points = 6; // Half of perfect
+            // Good stir (4-6s)
+            points = 6;
             feedback = "Good!";
             stirPromptText.color = new Color(1f, 0.8f, 0f); // Yellow/orange
         }
+        else if (timeSincePrompt > 6f && timeSincePrompt <= 8f)
+        {
+            // Bad stir (6-8s)
+            points = 1;
+            feedback = "Bad!";
+            stirPromptText.color = Color.red;
+        }
+        else if (timeSincePrompt > 8f)
+        {
+            // Missed stir (8s+)
+            points = 0;
+            feedback = "Missed!";
+            stirPromptText.color = Color.red;
+        }
         else
         {
-            // Bad stir (too late)
-            points = 1;
-            feedback = "Late...";
+            // Too early (before 2s)
+            points = 0;
+            feedback = "Too Early!";
             stirPromptText.color = Color.red;
         }
 
@@ -142,6 +194,8 @@ public class PotCookingChallenge : MonoBehaviour
 
     private void MissedStir()
     {
+        CancelInvoke(); // Cancel any pending countdown messages
+        
         successfulStirs++;
         stirPromptText.text = "Missed!";
         stirPromptText.color = Color.red;
@@ -166,12 +220,12 @@ public class PotCookingChallenge : MonoBehaviour
     {
         isCooking = false;
         waitingForStir = false;
+        CancelInvoke(); // Cancel any pending countdown messages
         stirPromptText.text = "Done!";
         stirPromptText.color = Color.green;
 
         Debug.Log($"Pot cooking complete! Score: {currentStirPoints}/100 ({successfulStirs} stirs)");
         
-        // Callback with final score (pot cooking only = stirring score)
         onChallengeComplete?.Invoke(currentStirPoints);
     }
 
