@@ -377,7 +377,6 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   interactDistance: 2
-  radius: 0.25
   player: {fileID: 0}
   mainCamera: {fileID: 0}
   customerMaleNames: {fileID: 11400000, guid: 7a01d932a8a2de74282630f1e16c8b0e, type: 2}
@@ -443,8 +442,8 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5588608352100551733}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: 9d545e43681431348908eab98e78aa45, type: 3}
+  m_Controller: {fileID: 9100000, guid: cce722afa0bc5c94f8b3389283f1a227, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

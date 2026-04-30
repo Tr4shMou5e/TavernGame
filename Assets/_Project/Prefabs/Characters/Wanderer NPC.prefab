@@ -150,8 +150,8 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 245126272590856358}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: 9d545e43681431348908eab98e78aa45, type: 3}
+  m_Controller: {fileID: 9100000, guid: cce722afa0bc5c94f8b3389283f1a227, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -211,11 +211,17 @@ MonoBehaviour:
   mainCamera: {fileID: 0}
   customerMaleNames: {fileID: 11400000, guid: 7a01d932a8a2de74282630f1e16c8b0e, type: 2}
   customerFemaleNames: {fileID: 11400000, guid: ed0f8fec8778acd4e99a5b5025fd7e60, type: 2}
+  <Id>k__BackingField:
+    Part1: 3094781651
+    Part2: 1103667759
+    Part3: 2255099777
+    Part4: 1326319687
   dialogue: {fileID: 11400000, guid: 71fd0f5c4ad23e442b82e647f103c725, type: 2}
   animator: {fileID: 7262600675968619002}
   agent: {fileID: 1914745694963305128}
   wanderRadius: 10
   changeStateManager: {fileID: 3912255234332588355}
+  footstepInterval: 0.55
 --- !u!114 &3912255234332588355
 MonoBehaviour:
   m_ObjectHideFlags: 0
