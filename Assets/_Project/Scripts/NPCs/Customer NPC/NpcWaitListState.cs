@@ -15,7 +15,7 @@ public class NpcWaitListState : NpcBaseState
     }
     public override void OnEnter()
     {
-        
+        WalkingAnimationState(false);
     }
     public override void Update()
     {

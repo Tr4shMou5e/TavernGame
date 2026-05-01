@@ -6,12 +6,15 @@ public abstract class BaseState : IState
     //!This is an example if we were to create a base state for the player
     
     // protected readonly PlayerController player;
-    // protected readonly Animator animator;
+    protected readonly Animator animator;
     //
     // protected static readonly int LocomotionHash = Animator.StringToHash("Locomotion");
-    // protected static readonly int JumpHash = Animator.StringToHash("Jump");
+    protected static readonly int WalkHash = Animator.StringToHash("Walking");
+    protected static readonly int IdleHash = Animator.StringToHash("Idle");
+    protected static readonly int SitHash = Animator.StringToHash("sitting down");
+    protected static readonly int FoodHash = Animator.StringToHash("Food state");
     //
-    // protected const float crossFadeDuration = 0.1f;
+    protected const float crossFadeDuration = 0.1f;
     //
     // protected BaseState(PlayerController player, Animator animator)
     // {
@@ -21,6 +24,7 @@ public abstract class BaseState : IState
     public virtual void OnEnter()
     {
         // noop
+
     }
 
     public virtual void Update()
