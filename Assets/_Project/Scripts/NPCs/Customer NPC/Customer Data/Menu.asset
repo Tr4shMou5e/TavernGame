@@ -35,9 +35,9 @@ MonoBehaviour:
     ingredients: []
     processes: 
   - dishName: Citrus Honey Ale
-    dishPrefab: {fileID: 0}
+    dishPrefab: {fileID: 1891968173039856, guid: 2211ef8365d937749ac67b87c33afc16, type: 3}
     dishImage: {fileID: 0}
-    id: 
+    id: -1069589873
     price: 3
     score: 0
     processesRequired:
@@ -48,9 +48,9 @@ MonoBehaviour:
     - {fileID: 11400000, guid: c8aaa245c8612e544b96e8c88db2d007, type: 2}
     processes: 000000000100000002000000
   - dishName: Spiced Cider
-    dishPrefab: {fileID: 0}
+    dishPrefab: {fileID: 1772588213614434, guid: f4e5b5b31745cd443b10b2ebfcbf2a5f, type: 3}
     dishImage: {fileID: 0}
-    id: 
+    id: -1581008263
     price: 6
     score: 0
     processesRequired:
@@ -61,9 +61,9 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 06acf25fb6007ad40998574391497417, type: 2}
     processes: 000000000100000002000000
   - dishName: Cherry Mead
-    dishPrefab: {fileID: 0}
+    dishPrefab: {fileID: 1115838888772330, guid: 729256840a973af45bdf43de7f6df69f, type: 3}
     dishImage: {fileID: 0}
-    id: 
+    id: -20658206
     price: 8
     score: 0
     processesRequired:
@@ -74,9 +74,9 @@ MonoBehaviour:
     - {fileID: 11400000, guid: aa61662cd9ba1024fb0e79dcafda54ae, type: 2}
     processes: 000000000100000002000000
   - dishName: Sailor's Lemon Brew
-    dishPrefab: {fileID: 0}
+    dishPrefab: {fileID: 1969602273324740, guid: ea96705f0a8ae18489c209f0485af3be, type: 3}
     dishImage: {fileID: 0}
-    id: 
+    id: -820820419
     price: 10
     score: 0
     processesRequired:
@@ -87,9 +87,9 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 9b37c439739c3364280536bb14b67990, type: 2}
     processes: 000000000100000002000000
   - dishName: Herbal Tonic
-    dishPrefab: {fileID: 0}
+    dishPrefab: {fileID: 1162984081943140, guid: 5395abb296986d5488c67caf45e323db, type: 3}
     dishImage: {fileID: 0}
-    id: 
+    id: 267174859
     price: 12
     score: 0
     processesRequired:

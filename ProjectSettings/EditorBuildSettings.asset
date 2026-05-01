@@ -8,12 +8,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainWorld.unity
     guid: 5821d03322def0546b84c9604c57e3b4
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Tavern Test 1.unity
     guid: 62ffa7a9087d1d34bb161c1e92502562
   - enabled: 1
+    path: Assets/Scenes/Tavern 1.unity
+    guid: 99c6c7a7dbf692e41be1e9a75fdf47a8
+  - enabled: 1
     path: Assets/Scenes/Home.unity
-    guid: 391fe626864d6324fbbc674a98dc6ac1
+    guid: 434bc5307d04f104d8cc9427e379990f
   - enabled: 1
     path: Assets/Scenes/TitleScreen.unity
     guid: 4d817d9ac78c1fc4dbb199cd1703d6e8
@@ -24,8 +27,8 @@ EditorBuildSettings:
     path: Assets/Scenes/MainTavern.unity
     guid: b3eef529c01898e4fb61415ef206a15b
   - enabled: 1
-    path: Assets/Scenes/Cookbook.unity
-    guid: a6b1f7260886f6f4c91c7c5b4319fc64
+    path: Assets/Scenes/CookBook.unity
+    guid: b5ea4a9f279d37740b3ef34f42035098
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
