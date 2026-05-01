@@ -174,6 +174,7 @@ public class CuttingBoardInteractableMiniGame : InteractableObject
     void StartTimer()
     {
         timer.Start();
+        Debug.Log(timer.CurrentTime);
     }
 
     private void OnEnable()

@@ -354,7 +354,7 @@ NavMeshAgent:
   m_Height: 2
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
+  m_ObstacleAvoidanceType: 0
 --- !u!114 &388651823938846186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -377,7 +377,6 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   interactDistance: 2
-  radius: 0.25
   player: {fileID: 0}
   mainCamera: {fileID: 0}
   customerMaleNames: {fileID: 11400000, guid: 7a01d932a8a2de74282630f1e16c8b0e, type: 2}

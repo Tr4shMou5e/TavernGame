@@ -20,7 +20,6 @@ public class NpcWanderer : AIEntitiy
     {
         mainCamera = Camera.main;
         player = GameObject.FindGameObjectWithTag("Player").transform;
-
         SetUpCharacterCostume();
     }
 

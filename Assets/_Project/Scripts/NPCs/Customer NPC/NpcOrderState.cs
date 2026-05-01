@@ -83,6 +83,8 @@ public class NpcOrderState : NpcBaseState
         UpdateOrderNode();
         CheckLineQuantity();
         DisplayOrder();
+        
+        
     }
 
     private void CheckLineQuantity()

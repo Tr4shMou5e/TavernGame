@@ -23,7 +23,7 @@ public abstract class InteractableObject : MonoBehaviour, IInteractable
     protected FoodItemInfoManager orders;
     protected InputManager inputManager;
     protected bool miniGameRunning;
-    protected bool isGameOver;
+    private bool hasWonGame;
     private bool playerInRange;
     private bool canPlayMiniGame;
     private bool miniGameHasBeenPlayed;
@@ -159,7 +159,7 @@ public abstract class InteractableObject : MonoBehaviour, IInteractable
         for (int i = 0; i < ordersList.Count; i++)
         {
             var entry = ordersList[i];
-            if (entry.Item1 is not null && entry.Item1.GetType() == myType && 
+            if (hasWonGame && entry.Item1 is not null && entry.Item1.GetType() == myType && 
                 orders.GetCustomer(customerOrder.FoodItem).name == orders.GetCustomer(orders.GetFoodItemFromCustomer()).name)
             {
                 entry.Item2 = true;
@@ -214,7 +214,12 @@ public abstract class InteractableObject : MonoBehaviour, IInteractable
             cursor.ChangeCursorSprite(null);
         }
     }
-    protected void ToggleHasWon(bool won) => OnGameLost?.Invoke(won);
+
+    protected void ToggleHasWon(bool won)
+    {
+        hasWonGame = won;
+        OnGameLost?.Invoke(won);
+    } 
     protected virtual void OnTriggerEnter(Collider other)
     {
         if (!other.CompareTag("Player")) return;

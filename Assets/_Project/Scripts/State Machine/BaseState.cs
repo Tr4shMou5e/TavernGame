@@ -6,7 +6,7 @@ public abstract class BaseState : IState
     //!This is an example if we were to create a base state for the player
     
     // protected readonly PlayerController player;
-    // protected readonly Animator animator;
+    protected readonly Animator animator;
     //
     // protected static readonly int LocomotionHash = Animator.StringToHash("Locomotion");
     // protected static readonly int JumpHash = Animator.StringToHash("Jump");
