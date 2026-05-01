@@ -19,14 +19,82 @@ MonoBehaviour:
     id: -38139740
     price: 1
     score: 0
-    processes:
-    - {fileID: 1704398280693240, guid: 509c47f2c423820489a23bb7979370f4, type: 3}
+    processesRequired:
+    - {fileID: 1802613797325304, guid: e00057df165cf81438a0466ab3345527, type: 3}
     - {fileID: 1169633171087820, guid: 6536648527e932d4d8c8d6a5d116afb2, type: 3}
+    requiresCuttingBoard: 1
+    cookingType: 0
+    ingredients: []
+    processes: 0000000000000000
   - dishName: Tenders
     dishPrefab: {fileID: 1617648471043338, guid: e82e76be2a7058c46bcaa8b5ddbe1edf, type: 3}
     dishImage: {fileID: 760349763, guid: 93088f5b83df96641aeacc8ff8f463d1, type: 3}
     id: 1947060471
     price: 10
     score: 0
-    processes:
+    processesRequired:
     - {fileID: 1704398280693240, guid: 509c47f2c423820489a23bb7979370f4, type: 3}
+    requiresCuttingBoard: 1
+    cookingType: 1
+    ingredients: []
+    processes: 00000000
+  - dishName: Roast Turkey
+    dishPrefab: {fileID: 1617648471043338, guid: e82e76be2a7058c46bcaa8b5ddbe1edf, type: 3}
+    dishImage: {fileID: 0}
+    id: -589048489
+    price: 0
+    score: 0
+    processesRequired:
+    - {fileID: 1704398280693240, guid: 509c47f2c423820489a23bb7979370f4, type: 3}
+    requiresCuttingBoard: 1
+    cookingType: 1
+    ingredients: []
+    processes: 
+  - dishName: Tavern Fish
+    dishPrefab: {fileID: 1531029426219852, guid: a0a05e26758ce4040a4056f8eb5ee3dc, type: 3}
+    dishImage: {fileID: 0}
+    id: 158995286
+    price: 0
+    score: 0
+    processesRequired:
+    - {fileID: 1704398280693240, guid: 509c47f2c423820489a23bb7979370f4, type: 3}
+    requiresCuttingBoard: 1
+    cookingType: 1
+    ingredients: []
+    processes: 
+  - dishName: Steak
+    dishPrefab: {fileID: 1450205895226170, guid: 4c36be13aadd36c4f81a3efe8d156d00, type: 3}
+    dishImage: {fileID: 0}
+    id: 1743012648
+    price: 0
+    score: 0
+    processesRequired:
+    - {fileID: 1704398280693240, guid: 509c47f2c423820489a23bb7979370f4, type: 3}
+    requiresCuttingBoard: 1
+    cookingType: 1
+    ingredients: []
+    processes: 
+  - dishName: Vintage Stew
+    dishPrefab: {fileID: 1592166129946028, guid: 910a294197b01f54a85f5a11df555db0, type: 3}
+    dishImage: {fileID: 0}
+    id: -741326181
+    price: 0
+    score: 0
+    processesRequired:
+    - {fileID: 1802613797325304, guid: e00057df165cf81438a0466ab3345527, type: 3}
+    requiresCuttingBoard: 1
+    cookingType: 0
+    ingredients: []
+    processes: 
+  - dishName: Curry
+    dishPrefab: {fileID: 1080750033584936, guid: 1214ee8e5ef5ca44aa77515466a7c1c0, type: 3}
+    dishImage: {fileID: 0}
+    id: -132264425
+    price: 0
+    score: 0
+    processesRequired:
+    - {fileID: 1802613797325304, guid: e00057df165cf81438a0466ab3345527, type: 3}
+    requiresCuttingBoard: 1
+    cookingType: 0
+    ingredients: []
+    processes: 
