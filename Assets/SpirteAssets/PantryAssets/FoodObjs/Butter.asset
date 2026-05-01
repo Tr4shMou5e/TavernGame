@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a41b6ce4b31642e288a56bf05e0045f9, type: 3}
   m_Name: Butter
   m_EditorClassIdentifier: Assembly-CSharp::FoodItems
-  itemName: 
-  icon: {fileID: 0}
+  itemName: Butter
+  icon: {fileID: 21300000, guid: dd4eaa659a553e14fa0048c8884d7457, type: 3}

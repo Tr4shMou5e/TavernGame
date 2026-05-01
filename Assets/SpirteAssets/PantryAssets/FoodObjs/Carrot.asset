@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a41b6ce4b31642e288a56bf05e0045f9, type: 3}
   m_Name: Carrot
   m_EditorClassIdentifier: Assembly-CSharp::FoodItems
-  itemName: 
-  icon: {fileID: 0}
+  itemName: Carrot
+  icon: {fileID: 21300000, guid: 2fd58405516969444a15f8c69daa45ae, type: 3}

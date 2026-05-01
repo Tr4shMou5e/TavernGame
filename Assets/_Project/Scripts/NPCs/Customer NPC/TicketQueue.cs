@@ -32,6 +32,7 @@ public class TicketQueue : SerializedMonoBehaviour
         
         processTranslation.Add(typeof(CuttingBoardInteractableMiniGame), RequiredProcess.CuttingBoard);
         processTranslation.Add(typeof(OvenInteractableMiniGame), RequiredProcess.Oven);
+        processTranslation.Add(typeof(BarMinigameManager), RequiredProcess.BarTap);
         
     }
 
@@ -183,7 +184,8 @@ public class TicketQueue : SerializedMonoBehaviour
     private enum RequiredProcess
     {
         CuttingBoard,
-        Oven
+        Oven,
+        BarTap
     }
 
     void OnEnable()

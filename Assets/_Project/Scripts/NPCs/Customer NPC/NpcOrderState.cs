@@ -153,7 +153,9 @@ public class NpcOrderState : NpcBaseState
             dishImage = selectedItem.dishImage,
             price = selectedItem.price,
             id = selectedItem.id,
-            processesRequired = selectedItem.processesRequired
+            processesRequired = selectedItem.processesRequired,
+            processes = selectedItem.processes,
+            ingredients = selectedItem.ingredients
         };
         entity.gameObject.name = name;
         selectedItem = foodItem;

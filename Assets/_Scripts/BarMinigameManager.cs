@@ -3,10 +3,11 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using static FoodItem;
+using ImprovedTimers;
 
-public class BarMinigameManager : MonoBehaviour
+public class BarMinigameManager : InteractableObject
 {
-    public MenuData menuData;
+
 
     public GameObject catchUI;
     public GameObject fillUI;
@@ -19,6 +20,7 @@ public class BarMinigameManager : MonoBehaviour
     public GameObject star3;
 
     public TextMeshProUGUI totalScoreText;
+    [SerializeField] float maxTime = 5;
 
     private FoodItem currentOrder;
     private List<ProcessType> steps;
@@ -27,6 +29,10 @@ public class BarMinigameManager : MonoBehaviour
     private int starTwoScore = 2500;
     private int starThreeScore = 4000;
     private int totalScore = 0;
+    private CountdownTimer timer;
+    
+
+
 
     int GetStars()
     {
@@ -36,7 +42,31 @@ public class BarMinigameManager : MonoBehaviour
         return 0;
     }
 
-    
+    public override void Awake()
+    {
+        base.Awake();
+        timer = new CountdownTimer(maxTime);
+    }
+
+    private void Update()
+    {
+        
+         if(timer.IsFinished)
+        {
+            timer.Reset();
+            
+            miniGameParentGameObject.SetActive(false);
+        }
+        Interact();
+    }
+
+
+    public override void Interact()
+    {
+        if(miniGameRunning)
+            return;
+        base.Interact();
+    }
 
     public void AddScore(int amount)
     {
@@ -50,7 +80,7 @@ public class BarMinigameManager : MonoBehaviour
 
     void StartMinigame()
     {
-        currentOrder = menuData.SelectRandomMenuItem();
+        currentOrder = orders.GetCustomerOrderKeys()[0].FoodItem;
         steps = currentOrder.processes;
 
         Debug.Log("Current Order: " + currentOrder.dishName);
@@ -61,10 +91,11 @@ public class BarMinigameManager : MonoBehaviour
 
     void RunStep()
     {
-        
+        beginUI.SetActive(false);
         catchUI.SetActive(false);
         fillUI.SetActive(false);
         shakeUI.SetActive(false);
+        resultUI.SetActive(false);
 
         if (currentStepIndex >= steps.Count)
         {
@@ -126,6 +157,7 @@ public class BarMinigameManager : MonoBehaviour
 
     void ShowResults()
     {
+        
         resultUI.SetActive(true);
 
         int stars = GetStars();
@@ -144,8 +176,23 @@ public class BarMinigameManager : MonoBehaviour
 
 
         totalScoreText.text = "Total Score: " + totalScore;
-
-        Debug.Log("Stars: " + stars);
+        ToggleHasWon(true);
+        EndMiniGame();
+        
     }
 
+    void OnEnable()
+    {
+        OnMiniGameEnd+=StartTimer;
+    }
+
+    void OnDisable()
+    {
+        OnMiniGameEnd-=StartTimer;
+    }
+
+    private void StartTimer()
+    {
+        timer.Start();
+    }
 }
