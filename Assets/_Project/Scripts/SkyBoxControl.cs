@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class SkyBoxControl : MonoBehaviour
 {
+    /**
     [SeralizeField] Renderer skyBox;
     private Material mat;
 
@@ -22,4 +23,5 @@ public class SkyBoxControl : MonoBehaviour
     {
         
     }
+    **/
 }
