@@ -14,13 +14,20 @@ public class FoodItem
     public int score;
     [FormerlySerializedAs("processes")] [Tooltip("This is the list of what the food needs to be processed to be ready to eat.")]
     public List<GameObject> processesRequired;
+    public enum CookingType
+    {
+        Pot,
+        Baking
+    }
+    public bool RequiresCuttingBoard;
     public enum ProcessType
     {
         Catch,
         Fill,
         Shake
     }
-
+    public CookingType cookingType;
     public List<IngredientsItems> ingredients;
     public List<ProcessType> processes;
+    
 }

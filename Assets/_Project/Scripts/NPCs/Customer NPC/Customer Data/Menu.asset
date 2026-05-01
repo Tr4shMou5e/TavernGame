@@ -13,35 +13,16 @@ MonoBehaviour:
   m_Name: Menu
   m_EditorClassIdentifier: Assembly-CSharp::MenuData
   menuItems:
-  - dishName: Sushi
-    dishPrefab: {fileID: 1240222912008402, guid: 8e8aeea58af467a47ac65c815b9ba273, type: 3}
-    dishImage: {fileID: 21300000, guid: b7db33522cd9b6848836452d75a9f692, type: 3}
-    id: -38139740
-    price: 1
-    score: 0
-    processesRequired:
-    - {fileID: 1704398280693240, guid: 509c47f2c423820489a23bb7979370f4, type: 3}
-    - {fileID: 1169633171087820, guid: 6536648527e932d4d8c8d6a5d116afb2, type: 3}
-    ingredients: []
-    processes: 
-  - dishName: Tenders
-    dishPrefab: {fileID: 1617648471043338, guid: e82e76be2a7058c46bcaa8b5ddbe1edf, type: 3}
-    dishImage: {fileID: 760349763, guid: 93088f5b83df96641aeacc8ff8f463d1, type: 3}
-    id: 1947060471
-    price: 10
-    score: 0
-    processesRequired:
-    - {fileID: 1704398280693240, guid: 509c47f2c423820489a23bb7979370f4, type: 3}
-    ingredients: []
-    processes: 
   - dishName: Citrus Honey Ale
     dishPrefab: {fileID: 1891968173039856, guid: 2211ef8365d937749ac67b87c33afc16, type: 3}
-    dishImage: {fileID: 0}
+    dishImage: {fileID: 21300000, guid: 0cf3956ea43558447a2df4b13ba1af10, type: 3}
     id: -1069589873
     price: 3
     score: 0
     processesRequired:
     - {fileID: 1283695979636722, guid: 2a21acb303c12494db6fba1d6b528344, type: 3}
+    RequiresCuttingBoard: 0
+    cookingType: 0
     ingredients:
     - {fileID: 11400000, guid: 23e150591e6681845a67ce693c888566, type: 2}
     - {fileID: 11400000, guid: c261ad63358951540b9f47c50f9c1d77, type: 2}
@@ -49,12 +30,14 @@ MonoBehaviour:
     processes: 000000000100000002000000
   - dishName: Spiced Cider
     dishPrefab: {fileID: 1772588213614434, guid: f4e5b5b31745cd443b10b2ebfcbf2a5f, type: 3}
-    dishImage: {fileID: 0}
+    dishImage: {fileID: 21300000, guid: 224c91b0eaa671f42bdabc8efde81a5f, type: 3}
     id: -1581008263
     price: 6
     score: 0
     processesRequired:
     - {fileID: 1283695979636722, guid: 2a21acb303c12494db6fba1d6b528344, type: 3}
+    RequiresCuttingBoard: 0
+    cookingType: 0
     ingredients:
     - {fileID: 11400000, guid: 0818f1a113529044e98eafed176114ce, type: 2}
     - {fileID: 11400000, guid: 558ea25a4e85f374da41d73de4c83bf7, type: 2}
@@ -62,12 +45,14 @@ MonoBehaviour:
     processes: 000000000100000002000000
   - dishName: Cherry Mead
     dishPrefab: {fileID: 1115838888772330, guid: 729256840a973af45bdf43de7f6df69f, type: 3}
-    dishImage: {fileID: 0}
+    dishImage: {fileID: 21300000, guid: d3f51dbb9b713fe46a54cfe33263846a, type: 3}
     id: -20658206
     price: 8
     score: 0
     processesRequired:
     - {fileID: 1283695979636722, guid: 2a21acb303c12494db6fba1d6b528344, type: 3}
+    RequiresCuttingBoard: 0
+    cookingType: 0
     ingredients:
     - {fileID: 11400000, guid: 23e150591e6681845a67ce693c888566, type: 2}
     - {fileID: 11400000, guid: fa700f2baebc5f942a55827d780d5b71, type: 2}
@@ -75,12 +60,14 @@ MonoBehaviour:
     processes: 000000000100000002000000
   - dishName: Sailor's Lemon Brew
     dishPrefab: {fileID: 1969602273324740, guid: ea96705f0a8ae18489c209f0485af3be, type: 3}
-    dishImage: {fileID: 0}
+    dishImage: {fileID: 21300000, guid: 77244e7eecf7cc14f9a0f7929425d87d, type: 3}
     id: -820820419
     price: 10
     score: 0
     processesRequired:
     - {fileID: 1283695979636722, guid: 2a21acb303c12494db6fba1d6b528344, type: 3}
+    RequiresCuttingBoard: 0
+    cookingType: 0
     ingredients:
     - {fileID: 11400000, guid: f5607d4b1b609e744afa57c3206791c1, type: 2}
     - {fileID: 11400000, guid: 0aecceb7aa1d52243a39f3b19a7eed7e, type: 2}
@@ -88,14 +75,129 @@ MonoBehaviour:
     processes: 000000000100000002000000
   - dishName: Herbal Tonic
     dishPrefab: {fileID: 1162984081943140, guid: 5395abb296986d5488c67caf45e323db, type: 3}
-    dishImage: {fileID: 0}
+    dishImage: {fileID: 21300000, guid: dd792e9c1e631cb45a6165613466d821, type: 3}
     id: 267174859
     price: 12
     score: 0
     processesRequired:
     - {fileID: 1283695979636722, guid: 2a21acb303c12494db6fba1d6b528344, type: 3}
+    RequiresCuttingBoard: 0
+    cookingType: 0
     ingredients:
     - {fileID: 11400000, guid: ad55b32164599064c99f8e407950a5de, type: 2}
     - {fileID: 11400000, guid: 23e150591e6681845a67ce693c888566, type: 2}
     - {fileID: 11400000, guid: ed136272bda116b4f91ea9d66188d382, type: 2}
     processes: 000000000100000002000000
+  - dishName: Tavern Fish
+    dishPrefab: {fileID: 1531029426219852, guid: a0a05e26758ce4040a4056f8eb5ee3dc, type: 3}
+    dishImage: {fileID: 21300000, guid: d472f3f2a632e174ea132dbc9082aa91, type: 3}
+    id: 158995286
+    price: 1
+    score: 0
+    processesRequired:
+    - {fileID: 1704398280693240, guid: 509c47f2c423820489a23bb7979370f4, type: 3}
+    - {fileID: 1169633171087820, guid: 6536648527e932d4d8c8d6a5d116afb2, type: 3}
+    RequiresCuttingBoard: 1
+    cookingType: 1
+    ingredients: []
+    processes: 
+  - dishName: Roast Turkey
+    dishPrefab: {fileID: 1617648471043338, guid: e82e76be2a7058c46bcaa8b5ddbe1edf, type: 3}
+    dishImage: {fileID: 21300000, guid: 63ab46ebeb17d0145ad162b24be7e8ba, type: 3}
+    id: -589048489
+    price: 10
+    score: 0
+    processesRequired:
+    - {fileID: 1704398280693240, guid: 509c47f2c423820489a23bb7979370f4, type: 3}
+    RequiresCuttingBoard: 0
+    cookingType: 0
+    ingredients: []
+    processes: 
+  - dishName: Steak
+    dishPrefab: {fileID: 9105465624791796968, guid: bb5a692c175398541a0145aa72c15bf9, type: 3}
+    dishImage: {fileID: 21300000, guid: 2b9f25bdd3b8694459e3ab6ded2b9a13, type: 3}
+    id: 1743012648
+    price: 0
+    score: 0
+    processesRequired: []
+    RequiresCuttingBoard: 1
+    cookingType: 1
+    ingredients: []
+    processes: 
+  - dishName: Vintage Stew
+    dishPrefab: {fileID: 1080750033584936, guid: 1214ee8e5ef5ca44aa77515466a7c1c0, type: 3}
+    dishImage: {fileID: 21300000, guid: 2154ed7467970fb47be008b8279e79af, type: 3}
+    id: -741326181
+    price: 0
+    score: 0
+    processesRequired: []
+    RequiresCuttingBoard: 1
+    cookingType: 0
+    ingredients: []
+    processes: 
+  - dishName: Curry
+    dishPrefab: {fileID: 1700687252999494, guid: 6dfd77ad534077245b6f1a2565c3c558, type: 3}
+    dishImage: {fileID: 21300000, guid: b2bbf6e0669c258409f1aedec3dfc5e2, type: 3}
+    id: -132264425
+    price: 0
+    score: 0
+    processesRequired: []
+    RequiresCuttingBoard: 1
+    cookingType: 0
+    ingredients: []
+    processes: 
+  - dishName: Sweet Potato Pie
+    dishPrefab: {fileID: 1540410277651384, guid: 1bede1038e1bcad4782cbd94796561a7, type: 3}
+    dishImage: {fileID: 21300000, guid: 057ec0102d8e52347b9225df0aebad64, type: 3}
+    id: -2113341555
+    price: 0
+    score: 0
+    processesRequired: []
+    RequiresCuttingBoard: 0
+    cookingType: 1
+    ingredients: []
+    processes: 
+  - dishName: Pumpkin Pie
+    dishPrefab: {fileID: 1441067566930036, guid: 6447db21960f85f4886f3c734f88404e, type: 3}
+    dishImage: {fileID: 21300000, guid: bf78865c4879fd74f9e0df73bbd04c70, type: 3}
+    id: 42484456
+    price: 0
+    score: 0
+    processesRequired: []
+    RequiresCuttingBoard: 0
+    cookingType: 1
+    ingredients: []
+    processes: 
+  - dishName: Apple Pie
+    dishPrefab: {fileID: 1047685797065720, guid: 7cc4832def3b5a2469b0b020b797d26a, type: 3}
+    dishImage: {fileID: 21300000, guid: 383ca2b4ee807594cbdf45abf5509683, type: 3}
+    id: -576472940
+    price: 0
+    score: 0
+    processesRequired: []
+    RequiresCuttingBoard: 0
+    cookingType: 1
+    ingredients: []
+    processes: 
+  - dishName: Cherry Pie
+    dishPrefab: {fileID: 1029657123070666, guid: 7924cc08042dfe24390c7108db37bd4c, type: 3}
+    dishImage: {fileID: 21300000, guid: 01fa874d14d7e7f4397b048c7693e87c, type: 3}
+    id: 1640517559
+    price: 0
+    score: 0
+    processesRequired: []
+    RequiresCuttingBoard: 0
+    cookingType: 1
+    ingredients: []
+    processes: 
+  - dishName: Charuterie Board
+    dishPrefab: {fileID: 1592166129946028, guid: 910a294197b01f54a85f5a11df555db0, type: 3}
+    dishImage: {fileID: 21300000, guid: 4d46ab56ab619914e97ad06484c8fb68, type: 3}
+    id: -638737302
+    price: 0
+    score: 0
+    processesRequired: []
+    RequiresCuttingBoard: 1
+    cookingType: 1
+    ingredients: []
+    processes: 

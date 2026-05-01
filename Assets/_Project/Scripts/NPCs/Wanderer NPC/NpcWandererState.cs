@@ -31,6 +31,7 @@ public class NpcWandererState : NpcBaseState
         {
             agent.isStopped = false;
             agent.SetDestination(destination);
+            WalkingAnimationState(true);
         }
         Debug.Log(agent.isStopped);
         waitingForNextPoint = false;
@@ -54,7 +55,7 @@ public class NpcWandererState : NpcBaseState
             {
                 waitingForNextPoint = false;
                 waitTimer.Stop();
-                
+
                 Wander();
             }
 
@@ -63,6 +64,7 @@ public class NpcWandererState : NpcBaseState
 
         if (HasReachedDestination())
         {
+            WalkingAnimationState(false);
             waitingForNextPoint = true;
             agent.ResetPath();
             waitTimer.Reset();
@@ -72,12 +74,14 @@ public class NpcWandererState : NpcBaseState
 
     private void Wander()
     {
+        
         var randomPoint = Random.insideUnitSphere * wanderRadius;
         randomPoint += startPoint;
         NavMesh.SamplePosition(randomPoint, out var hit, wanderRadius, 1);
         var finalPosition = hit.position;
         destination = finalPosition;
         agent.SetDestination(finalPosition);
+        WalkingAnimationState(true);
     }
     private bool HasReachedDestination()
     {
