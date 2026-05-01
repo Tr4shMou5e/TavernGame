@@ -20,11 +20,13 @@ public class PotCookingChallenge : MonoBehaviour
     private float nextStirTime;
     private bool waitingForStir = false;
     private float stirWindowStart;
+    private CookingRequirements currentRecipe;
 
     private Action<int> onChallengeComplete;
 
     public void Initialize(CookingRequirements recipe, Action<int> callback)
     {
+        currentRecipe = recipe;
         cookDuration = recipe.cookDuration;
         timeRemaining = cookDuration;
         isCooking = true;
@@ -224,7 +226,8 @@ public class PotCookingChallenge : MonoBehaviour
         stirPromptText.text = "Done!";
         stirPromptText.color = Color.green;
 
-        Debug.Log($"Pot cooking complete! Score: {currentStirPoints}/100 ({successfulStirs} stirs)");
+        float finalScore = (currentStirPoints / 100f) * 100f; // Score out of 100
+        Debug.Log($"Pot cooking complete! {currentRecipe.dishName} - Score: {currentStirPoints}/100 ({successfulStirs} stirs completed)");
         
         onChallengeComplete?.Invoke(currentStirPoints);
     }

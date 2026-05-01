@@ -29,6 +29,7 @@ public class PotInteractableMiniGame : InteractableObject
     private float currentTemperature;
     private float targetTemperature;
     private int challengeScore = 0;
+    private CookingRequirements potRecipe;
 
     public override void Awake()
     {
@@ -82,19 +83,20 @@ public class PotInteractableMiniGame : InteractableObject
         currentTemperature = 50f;
         challengeScore = 0;
         heatControlStartTime = Time.time;
-Debug.Log("StartCooking called!");
-    // SWITCH CAMERA
-    if (miniGameCamera != null)
-    {
-        Debug.Log("Switching to mini game camera");
-        Camera.main.enabled = false;
-        miniGameCamera.enabled = true;
-    }
-    else
-    {
-        Debug.Log("miniGameCamera is NULL!");
-    }
+        
+        Debug.Log("Starting pot cooking minigame - Heat Control Phase");
 
+        // SWITCH CAMERA
+        if (miniGameCamera != null)
+        {
+            Debug.Log("Switching to pot minigame camera");
+            Camera.main.enabled = false;
+            miniGameCamera.enabled = true;
+        }
+        else
+        {
+            Debug.LogWarning("miniGameCamera is NULL!");
+        }
 
         // Setup UI
         if (targetTempText != null)
@@ -110,7 +112,7 @@ Debug.Log("StartCooking called!");
         if (heatControlPhaseUI != null) heatControlPhaseUI.SetActive(true);
         if (potChallengeUI != null) potChallengeUI.SetActive(false);
 
-        Debug.Log($"Pot cooking started. Heat to {targetTemperature}°F");
+        Debug.Log($"Pot minigame started. Heat the pot to {targetTemperature}°F");
     }
 
     private void UpdateHeatControl()
@@ -152,11 +154,12 @@ Debug.Log("StartCooking called!");
         if (heatControlPhaseUI != null) heatControlPhaseUI.SetActive(false);
         if (potChallengeUI != null) potChallengeUI.SetActive(true);
 
-        var recipe = new CookingRequirements
+        // Create a pot cooking recipe for this minigame
+        potRecipe = new CookingRequirements
         {
+            dishName = "Pot Dish",
             cookingType = CookingType.Pot,
             targetTemperature = 325f,
-            flipWindowTime = 0f,
             cookDuration = 45f,
             doneLevelTarget = DoneLevel.Medium,
             ingredientTimings = new System.Collections.Generic.List<IngredientAddTiming>()
@@ -164,15 +167,19 @@ Debug.Log("StartCooking called!");
 
         if (potCookingChallenge != null)
         {
-            potCookingChallenge.Initialize(recipe, OnPotChallengeComplete);
-            Debug.Log("Transitioned to pot stirring challenge!");
+            potCookingChallenge.Initialize(potRecipe, OnPotChallengeComplete);
+            Debug.Log("Transitioned to pot stirring challenge - 8 stirs required!");
+        }
+        else
+        {
+            Debug.LogError("PotCookingChallenge component is not assigned!");
         }
     }
 
     private void OnPotChallengeComplete(int score)
     {
         challengeScore = score;
-        Debug.Log($"Pot challenge completed with score: {challengeScore}");
+        Debug.Log($"Pot minigame completed! Final score: {challengeScore}/100");
         
         // SWITCH BACK TO MAIN CAMERA
         if (PotMinigameCam != null)
@@ -180,9 +187,16 @@ Debug.Log("StartCooking called!");
             PotMinigameCam.enabled = false;
             Camera.main.enabled = true;
         }
+        else
+        {
+            Debug.LogWarning("PotMinigameCam is NULL!");
+        }
         
         currentPhase = CookingPhase.Complete;
-        miniGameParentGameObject.SetActive(false);
+        
+        if (miniGameParentGameObject != null)
+            miniGameParentGameObject.SetActive(false);
+        
         EndMiniGame();
     }
 

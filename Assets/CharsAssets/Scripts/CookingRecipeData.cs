@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum CookingType { Pan, Pot }
+public enum CookingType { Pot, Baking }
 public enum DoneLevel { Rare, Medium, WellDone }
 
 [System.Serializable]
@@ -18,10 +18,9 @@ public struct CookingRequirements
     public string dishName;
     public CookingType cookingType;
     public float targetTemperature; // in Fahrenheit
-    public float flipWindowTime; // For pan: when to flip (in seconds from start)
     public float cookDuration; // Total cook time in seconds
-    public DoneLevel doneLevelTarget; // For pan: Rare, Medium, WellDone
-    public List<IngredientAddTiming> ingredientTimings; // For pot: when to add ingredients
+    public DoneLevel doneLevelTarget; // Rare, Medium, WellDone
+    public List<IngredientAddTiming> ingredientTimings; // When to add ingredients during cooking
 }
 
 public class CookingRecipeData : ScriptableObject

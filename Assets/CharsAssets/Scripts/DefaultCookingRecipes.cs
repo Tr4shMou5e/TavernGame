@@ -11,13 +11,12 @@ public static class DefaultCookingRecipes
     {
         return new List<CookingRequirements>
         {
-            // PIES - Pot cooking (baking in a covered pot)
+            // PIES - Baking (oven baking)
             new CookingRequirements
             {
                 dishName = "Sweet Potato Pie",
-                cookingType = CookingType.Pot,
+                cookingType = CookingType.Baking,
                 targetTemperature = 350f,
-                flipWindowTime = 0f,
                 cookDuration = 45f,
                 doneLevelTarget = DoneLevel.Medium,
                 ingredientTimings = new List<IngredientAddTiming>
@@ -30,9 +29,8 @@ public static class DefaultCookingRecipes
             new CookingRequirements
             {
                 dishName = "Pumpkin Pie",
-                cookingType = CookingType.Pot,
+                cookingType = CookingType.Baking,
                 targetTemperature = 350f,
-                flipWindowTime = 0f,
                 cookDuration = 50f,
                 doneLevelTarget = DoneLevel.Medium,
                 ingredientTimings = new List<IngredientAddTiming>
@@ -45,9 +43,8 @@ public static class DefaultCookingRecipes
             new CookingRequirements
             {
                 dishName = "Apple Pie",
-                cookingType = CookingType.Pot,
+                cookingType = CookingType.Baking,
                 targetTemperature = 350f,
-                flipWindowTime = 0f,
                 cookDuration = 45f,
                 doneLevelTarget = DoneLevel.Medium,
                 ingredientTimings = new List<IngredientAddTiming>
@@ -60,9 +57,8 @@ public static class DefaultCookingRecipes
             new CookingRequirements
             {
                 dishName = "Cherry Pie",
-                cookingType = CookingType.Pot,
+                cookingType = CookingType.Baking,
                 targetTemperature = 350f,
-                flipWindowTime = 0f,
                 cookDuration = 50f,
                 doneLevelTarget = DoneLevel.Medium,
                 ingredientTimings = new List<IngredientAddTiming>
@@ -73,45 +69,12 @@ public static class DefaultCookingRecipes
                 }
             },
 
-            // MEATS - Pan frying
-            new CookingRequirements
-            {
-                dishName = "Roast Turkey",
-                cookingType = CookingType.Pan,
-                targetTemperature = 375f,
-                flipWindowTime = 8f,
-                cookDuration = 20f,
-                doneLevelTarget = DoneLevel.WellDone,
-                ingredientTimings = new List<IngredientAddTiming>()
-            },
-            new CookingRequirements
-            {
-                dishName = "Tavern Fish",
-                cookingType = CookingType.Pan,
-                targetTemperature = 360f,
-                flipWindowTime = 6f,
-                cookDuration = 15f,
-                doneLevelTarget = DoneLevel.Medium,
-                ingredientTimings = new List<IngredientAddTiming>()
-            },
-            new CookingRequirements
-            {
-                dishName = "Steak",
-                cookingType = CookingType.Pan,
-                targetTemperature = 400f,
-                flipWindowTime = 7f,
-                cookDuration = 18f,
-                doneLevelTarget = DoneLevel.Medium,
-                ingredientTimings = new List<IngredientAddTiming>()
-            },
-
             // STEW - Pot cooking
             new CookingRequirements
             {
                 dishName = "Vintage Stew",
                 cookingType = CookingType.Pot,
                 targetTemperature = 325f,
-                flipWindowTime = 0f,
                 cookDuration = 60f,
                 doneLevelTarget = DoneLevel.Medium,
                 ingredientTimings = new List<IngredientAddTiming>
@@ -122,25 +85,12 @@ public static class DefaultCookingRecipes
                 }
             },
 
-            // BOARD - Pan frying
-            new CookingRequirements
-            {
-                dishName = "Charcuterie Board",
-                cookingType = CookingType.Pan,
-                targetTemperature = 340f,
-                flipWindowTime = 5f,
-                cookDuration = 12f,
-                doneLevelTarget = DoneLevel.Rare,
-                ingredientTimings = new List<IngredientAddTiming>()
-            },
-
             // CURRY - Pot cooking
             new CookingRequirements
             {
                 dishName = "Curry",
                 cookingType = CookingType.Pot,
                 targetTemperature = 340f,
-                flipWindowTime = 0f,
                 cookDuration = 40f,
                 doneLevelTarget = DoneLevel.Medium,
                 ingredientTimings = new List<IngredientAddTiming>
@@ -150,8 +100,6 @@ public static class DefaultCookingRecipes
                     new IngredientAddTiming { ingredientName = "Rice", timeToAdd = 25f }
                 }
             }
-
-            // Drinks don't use stovetop, so they're excluded
         };
     }
 }

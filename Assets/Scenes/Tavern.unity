@@ -9009,6 +9009,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 469776558}
   m_CullTransparentMesh: 1
+--- !u!1 &471592202
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 471592203}
+  m_Layer: 0
+  m_Name: MenuDataPopulator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &471592203
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471592202}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.01203, y: 0.22464, z: -1.18978}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &472269523
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20010,7 +20041,7 @@ PrefabInstance:
     - target: {fileID: 1623176478713436824, guid: e00057df165cf81438a0466ab3345527, type: 3}
       propertyPath: miniGameCamera
       value: 
-      objectReference: {fileID: 767123939}
+      objectReference: {fileID: 1507428048}
     - target: {fileID: 1623176478713436824, guid: e00057df165cf81438a0466ab3345527, type: 3}
       propertyPath: potChallengeUI
       value: 
@@ -40295,3 +40326,4 @@ SceneRoots:
   - {fileID: 1541246471}
   - {fileID: 153586961}
   - {fileID: 270483830}
+  - {fileID: 471592203}
