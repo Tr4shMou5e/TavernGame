@@ -22,7 +22,6 @@ public class DayManager : MonoBehaviour
         DailyGoal = startingGoal;
     }
 
-    /// <summary>Call this whenever the player earns money (e.g. selling a dish).</summary>
     public void AddProfit(float amount)
     {
         CurrentFunds += amount;
@@ -35,7 +34,6 @@ public class DayManager : MonoBehaviour
         }
     }
 
-    /// <summary>Call this at the start of each new day (hook to WorldClock or a day-end trigger).</summary>
     public void StartNewDay(int dayCount)
     {
         DailyGoal           = startingGoal + (dayCount - 1) * goalIncreasePerDay;

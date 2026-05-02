@@ -14,7 +14,6 @@ public class PotInteractableMiniGame : InteractableObject
     [SerializeField] private Image stirProgressBar;
     [SerializeField] private Button stirButton;
     
-    // Heat Control UI
     [SerializeField] private Slider heatSlider;
     [SerializeField] private TextMeshProUGUI currentTempText;
     [SerializeField] private TextMeshProUGUI targetTempText;
@@ -86,7 +85,6 @@ public class PotInteractableMiniGame : InteractableObject
         
         Debug.Log("Starting pot cooking minigame - Heat Control Phase");
 
-        // SWITCH CAMERA
         if (miniGameCamera != null)
         {
             Debug.Log("Switching to pot minigame camera");
@@ -98,7 +96,6 @@ public class PotInteractableMiniGame : InteractableObject
             Debug.LogWarning("miniGameCamera is NULL!");
         }
 
-        // Setup UI
         if (targetTempText != null)
             targetTempText.text = $"Target: {Mathf.Round(targetTemperature)}°F";
         
@@ -117,7 +114,6 @@ public class PotInteractableMiniGame : InteractableObject
 
     private void UpdateHeatControl()
     {
-        // A/D keys to control heat
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
             currentTemperature += 50f * Time.deltaTime;
@@ -140,7 +136,6 @@ public class PotInteractableMiniGame : InteractableObject
             heatFillImage.color = inRange ? Color.green : new Color(1f, 0.65f, 0f);
         }
 
-        // Once heated correctly, transition to challenge
         if (inRange)
         {
             TransitionToChallenge();
@@ -154,7 +149,6 @@ public class PotInteractableMiniGame : InteractableObject
         if (heatControlPhaseUI != null) heatControlPhaseUI.SetActive(false);
         if (potChallengeUI != null) potChallengeUI.SetActive(true);
 
-        // Create a pot cooking recipe for this minigame
         potRecipe = new CookingRequirements
         {
             dishName = "Pot Dish",
@@ -181,7 +175,6 @@ public class PotInteractableMiniGame : InteractableObject
         challengeScore = score;
         Debug.Log($"Pot minigame completed! Final score: {challengeScore}/100");
         
-        // SWITCH BACK TO MAIN CAMERA
         if (PotMinigameCam != null)
         {
             PotMinigameCam.enabled = false;

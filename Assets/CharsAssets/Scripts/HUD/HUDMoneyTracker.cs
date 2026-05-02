@@ -8,9 +8,9 @@ public class MoneyHUD : MonoBehaviour
     [SerializeField] private DayManager dayManager;
 
     [Header("MoneyPanel UI")]
-    [SerializeField] private TMP_Text fundsText;       // e.g. "$42.50"
-    [SerializeField] private Slider   goalSlider;      // profit progress bar
-    [SerializeField] private TMP_Text goalProgressText;// e.g. "$42 / $100"
+    [SerializeField] private TMP_Text fundsText;       
+    [SerializeField] private Slider   goalSlider;     
+    [SerializeField] private TMP_Text goalProgressText;
 
     void Update()
     {
@@ -18,7 +18,7 @@ public class MoneyHUD : MonoBehaviour
 
         fundsText.text = $"${dayManager.CurrentFunds:F2}";
 
-        goalSlider.value = dayManager.GoalProgress;    // slider Min=0, Max=1
+        goalSlider.value = dayManager.GoalProgress;   
 
         goalProgressText.text =
             $"${dayManager.DailyProfit:F0} / ${dayManager.DailyGoal:F0}";

@@ -21,7 +21,6 @@ public class CookbookTabManager : MonoBehaviour
 
     void Update()
     {
-        // Show panel based on current page
         if (book.currentPage >= 1 && book.currentPage <= 2)
         {
             overviewPanel.SetActive(true);
@@ -42,7 +41,6 @@ public class CookbookTabManager : MonoBehaviour
         }
         else
         {
-            // Cover or other pages
             overviewPanel.SetActive(false);
             shopPanel.SetActive(false);
             recipesPanel.SetActive(false);
