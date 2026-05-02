@@ -3,38 +3,49 @@ using UnityEngine;
 
 public class SceneChange : MonoBehaviour
 {
-    [SerializeField] SceneNameType sceneName;
-    
+    [SerializeField] private SceneNameType sceneName;
+
     private bool isTriggered;
-    
+    private bool hasChangedScene;
+
     public static event Action<string> OnSceneChange;
-    void Update()
+
+    private void Update()
     {
-        if(!isTriggered) return;
-        if(InputManager.Instance.Interact())
+        if (!isTriggered)
+            return;
+
+        if (hasChangedScene)
+            return;
+
+        if (InputManager.Instance.Interact())
         {
+            hasChangedScene = true;
             OnSceneChange?.Invoke(sceneName.ToString());
         }
-        
     }
-    
+
     private void OnTriggerEnter(Collider other)
     {
-        if(!other.CompareTag("Player"))
+        if (!other.CompareTag("Player"))
             return;
+
         isTriggered = true;
     }
-    void OnTriggerExit(Collider other)
+
+    private void OnTriggerExit(Collider other)
     {
-        if(!isTriggered)
+        if (!other.CompareTag("Player"))
             return;
+
         isTriggered = false;
+        hasChangedScene = false;
     }
 
     private enum SceneNameType
     {
-        MainMenu,
-        Tavern,
+        MainWorld,
+        Tavern1,
         Home
     }
 }

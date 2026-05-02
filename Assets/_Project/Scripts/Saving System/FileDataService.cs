@@ -34,9 +34,12 @@ public class FileDataService : IDataService
     public GameData Load(string name)
     {
         string fileLocation = GetPathToFile(name);
-        
-        if(!File.Exists(fileLocation))
+
+        if (!File.Exists(fileLocation))
+        {
             throw new FileNotFoundException($"No persisted GameData with name '{name}'");
+        }
+            
         
         return serializer.Deserialize<GameData>(File.ReadAllText(fileLocation));
     }
