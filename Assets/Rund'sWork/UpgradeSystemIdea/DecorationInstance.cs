@@ -1,17 +1,18 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class DecorationInstance : MonoBehaviour
 {
-    public UpgradeData data;
-
-    void Start()
+    [SerializeField] private List<GameObject> decorations;
+    public void Refresh(UpgradeData upgrade)
     {
-        
-        gameObject.SetActive(data.unlocked);
-    }
-
-    public void Refresh()
-    {
-        gameObject.SetActive(data.unlocked);
+        Debug.Log("Refreshing Decoration: " + upgrade.decorationName);
+        foreach(var g in decorations)
+        {
+            Debug.Log("Refreshing Decoration: " + g.name);
+            if(g.name == upgrade.decorationName)
+                g.SetActive(true);
+        }
+        upgrade.unlocked = true;
     }
 }

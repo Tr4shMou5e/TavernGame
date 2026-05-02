@@ -10,6 +10,11 @@ public class UpgradeManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+
+        foreach (var deco in allDecorations)
+        {
+            deco.unlocked = false;
+        }
     }
 
     public float GetTotalPriceMultiplier()

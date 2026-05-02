@@ -7,17 +7,15 @@ public class UpgradePageController : MonoBehaviour
 
     private bool isOpen = false;
 
-    void Start()
+    void Awake()
     {
         upgradePage.SetActive(false);
     }
 
     void Update()
     {   
-        Debug.Log("Updating");
         if (Keyboard.current.uKey.wasPressedThisFrame)
         {
-            Debug.Log("Pressed Key");
             ToggleUpgradePage();
         }
     }

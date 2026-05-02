@@ -39,7 +39,7 @@ public class UpgradeButtonUI : MonoBehaviour
     {
         foreach (var deco in FindObjectsOfType<DecorationInstance>())
         {
-            deco.Refresh();
+            deco.Refresh(data);
         }
     }
 }

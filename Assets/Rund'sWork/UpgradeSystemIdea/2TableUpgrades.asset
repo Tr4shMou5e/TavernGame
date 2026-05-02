@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0dd59618c9d82c47af0cfc543867b4d, type: 3}
-  m_Name: 4SeatTableUpgrade
+  m_Script: {fileID: 11500000, guid: afc3113bb7b4e1e4e82833c8637bf489, type: 3}
+  m_Name: 2TableUpgrades
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeData
-  decorationName: 4 Seat Table Upgrade
-  prefab: {fileID: 0}
-  priceMultiplier: 0.5
-  cost: 20
+  decorationName: 2TableUpgrades
+  prefab: {fileID: 5129537703053335481, guid: 5ed60618231c3c44bb2597cad6645cf9, type: 3}
+  priceMultiplier: 0.1
+  cost: 30
   unlocked: 0
