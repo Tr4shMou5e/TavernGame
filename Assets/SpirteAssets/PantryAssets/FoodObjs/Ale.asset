@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Ale
   m_EditorClassIdentifier: Assembly-CSharp::FoodItems
   itemName: Ale
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 55cd00ff2572f7546a1358ea266adf78, type: 3}

@@ -55,16 +55,19 @@ public class NpcShopState : NpcBaseState
         }
 
         agent.SetDestination(shops[nearestIndex].transform.position);
+        WalkingAnimationState(true);
     }
 
     private void Shop()
     {
+        WalkingAnimationState(false);
         if (shopWaitTimer.IsFinished)
         {
             //!Instantiate a shopping bag?
             changeStateManager.ShopTimer.Reset();
             changeStateManager.IsShopWaitTimeDone = true;
             changeStateManager.IsShoppingDone = true;
+            WalkingAnimationState(true);
         }
     }
     private bool HasReachedDestination()

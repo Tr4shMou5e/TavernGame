@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a41b6ce4b31642e288a56bf05e0045f9, type: 3}
   m_Name: PieCrust
   m_EditorClassIdentifier: Assembly-CSharp::FoodItems
-  itemName: 
-  icon: {fileID: 0}
+  itemName: Pie Crust
+  icon: {fileID: 21300000, guid: 15b2e5dbc261e7648b024b90111198d0, type: 3}

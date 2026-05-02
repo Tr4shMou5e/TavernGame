@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afc3113bb7b4e1e4e82833c8637bf489, type: 3}
+  m_Name: SideTableDecorations
+  m_EditorClassIdentifier: Assembly-CSharp::UpgradeData
+  decorationName: SideTableDecorations
+  prefab: {fileID: 4739118040981213358, guid: 6173ae4659def3842ac3dee87b8ea944, type: 3}
+  priceMultiplier: 0.1
+  cost: 50
+  unlocked: 0
