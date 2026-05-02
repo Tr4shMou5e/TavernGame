@@ -45,24 +45,6 @@ public class PanFryingChallenge : MonoBehaviour
         flipWindowStart = recipe.flipWindowTime - 1.5f;
         flipWindowEnd = recipe.flipWindowTime + 1.5f;
         
-        flipButton.onClick.AddListener(OnFlipButtonPressed);
-        
-        UpdateUI();
-    }
-
-    public void UpdateChallenge()
-    {
-        if (challengeComplete) return;
-
-        cookTimer += Time.deltaTime;
-
-        // Check if cooking is done
-        if (cookTimer >= recipe.cookDuration)
-        {
-            FinishCooking();
-            return;
-        }
-
         UpdateUI();
     }
 
@@ -142,6 +124,28 @@ public class PanFryingChallenge : MonoBehaviour
         return DoneLevel.WellDone;
     }
 
+    public void UpdateChallenge()
+    {
+        if (challengeComplete) return;
+
+        cookTimer += Time.deltaTime;
+
+        // Check for spacebar flip input
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            OnFlipButtonPressed();
+        }
+
+        // Check if cooking is done
+        if (cookTimer >= recipe.cookDuration)
+        {
+            FinishCooking();
+            return;
+        }
+
+        UpdateUI();
+    }
+
     private void OnFlipButtonPressed()
     {
         if (hasFlipped || challengeComplete) return;
@@ -205,10 +209,5 @@ public class PanFryingChallenge : MonoBehaviour
     private void CompleteChallenge()
     {
         onComplete?.Invoke(flipScore, donenessScore);
-    }
-
-    private void OnDestroy()
-    {
-        flipButton?.onClick.RemoveListener(OnFlipButtonPressed);
     }
 }
