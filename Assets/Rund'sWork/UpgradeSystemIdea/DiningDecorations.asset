@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afc3113bb7b4e1e4e82833c8637bf489, type: 3}
+  m_Script: {fileID: 11500000, guid: bdea5b22816d8d042b18e148fa3d86f9, type: 3}
   m_Name: DiningDecorations
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeData
   decorationName: DiningDecorations
-  prefab: {fileID: 717104608127079804, guid: ac89d3bc879cb6349a4d3f88d57add97, type: 3}
-  priceMultiplier: 0.1
-  cost: 200
+  prefab: {fileID: 717104608127079804, guid: d78da2ee947182a4ab8381570411b599, type: 3}
+  priceMultiplier: 1.4
+  cost: 250
   unlocked: 0

@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: ToonSmoke
-  m_Shader: {fileID: -6465566751694194690, guid: 417309f1f1ef6a94bb5d01ed3bb2deda, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 986e2f3b925937a498dcca62bb0c43de, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []

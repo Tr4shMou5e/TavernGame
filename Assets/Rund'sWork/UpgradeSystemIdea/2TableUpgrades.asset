@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afc3113bb7b4e1e4e82833c8637bf489, type: 3}
+  m_Script: {fileID: 11500000, guid: bdea5b22816d8d042b18e148fa3d86f9, type: 3}
   m_Name: 2TableUpgrades
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeData
   decorationName: 2TableUpgrades
-  prefab: {fileID: 5129537703053335481, guid: 5ed60618231c3c44bb2597cad6645cf9, type: 3}
-  priceMultiplier: 0.1
-  cost: 30
+  prefab: {fileID: 5129537703053335481, guid: 82383fc489406ca4a85dadc88cd78187, type: 3}
+  priceMultiplier: 1.2
+  cost: 50
   unlocked: 0

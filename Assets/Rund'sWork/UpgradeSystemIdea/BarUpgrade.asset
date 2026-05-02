@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afc3113bb7b4e1e4e82833c8637bf489, type: 3}
+  m_Script: {fileID: 11500000, guid: bdea5b22816d8d042b18e148fa3d86f9, type: 3}
   m_Name: BarUpgrade
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeData
   decorationName: BarUpgrade
-  prefab: {fileID: 6984253869969423061, guid: 161fc0d43c240584a8f0cf3da8c24abb, type: 3}
-  priceMultiplier: 0.1
-  cost: 140
+  prefab: {fileID: 6984253869969423061, guid: fae385616b6b71044ad76fa9f684577c, type: 3}
+  priceMultiplier: 1.6
+  cost: 200
   unlocked: 0

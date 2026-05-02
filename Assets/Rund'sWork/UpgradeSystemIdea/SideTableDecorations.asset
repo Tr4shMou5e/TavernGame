@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afc3113bb7b4e1e4e82833c8637bf489, type: 3}
+  m_Script: {fileID: 11500000, guid: bdea5b22816d8d042b18e148fa3d86f9, type: 3}
   m_Name: SideTableDecorations
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeData
   decorationName: SideTableDecorations
-  prefab: {fileID: 4739118040981213358, guid: 6173ae4659def3842ac3dee87b8ea944, type: 3}
-  priceMultiplier: 0.1
-  cost: 50
+  prefab: {fileID: 4739118040981213358, guid: 26dfc75e90a5f8443abd1797e0c41684, type: 3}
+  priceMultiplier: 1.6
+  cost: 150
   unlocked: 0
