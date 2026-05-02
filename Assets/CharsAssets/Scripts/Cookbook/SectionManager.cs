@@ -10,72 +10,65 @@ public class SectionManager : MonoBehaviour
     public Button shopTabButton;
     public Button recipesTabButton;
 
-    private bool isAnimating = false;
-
     void Start()
     {
-        nextButton.onClick.AddListener(OnNextClicked);
-        prevButton.onClick.AddListener(OnPrevClicked);
-        overviewTabButton.onClick.AddListener(OnOverviewClicked);
-        shopTabButton.onClick.AddListener(OnShopClicked);
-        recipesTabButton.onClick.AddListener(OnRecipesClicked);
+        if (nextButton != null)
+            nextButton.onClick.AddListener(() => FlipNext());
+        else
+            Debug.LogError("Next Button not assigned!");
+
+        if (prevButton != null)
+            prevButton.onClick.AddListener(() => FlipPrev());
+        else
+            Debug.LogError("Prev Button not assigned!");
+
+        if (overviewTabButton != null)
+            overviewTabButton.onClick.AddListener(() => GoToPage(1));
+        else
+            Debug.LogError("Overview Tab not assigned!");
+
+        if (shopTabButton != null)
+            shopTabButton.onClick.AddListener(() => GoToPage(3));
+        else
+            Debug.LogError("Shop Tab not assigned!");
+
+        if (recipesTabButton != null)
+            recipesTabButton.onClick.AddListener(() => GoToPage(5));
+        else
+            Debug.LogError("Recipes Tab not assigned!");
     }
 
-    void OnNextClicked()
+    void FlipNext()
     {
-        if (isAnimating) return;
-        
+        Debug.Log("FlipNext called. Current page: " + book.currentPage);
         if (book.currentPage + 2 < book.TotalPageCount)
         {
-            isAnimating = true;
             book.currentPage += 2;
-            Invoke("ResetAnimFlag", 0.3f);
-            Debug.Log("Next: Page " + book.currentPage);
+            Debug.Log("Flipped to page: " + book.currentPage);
+        }
+        else
+        {
+            Debug.Log("At end of book!");
         }
     }
 
-    void OnPrevClicked()
+    void FlipPrev()
     {
-        if (isAnimating) return;
-        
+        Debug.Log("FlipPrev called. Current page: " + book.currentPage);
         if (book.currentPage - 2 >= 0)
         {
-            isAnimating = true;
             book.currentPage -= 2;
-            Invoke("ResetAnimFlag", 0.3f);
-            Debug.Log("Prev: Page " + book.currentPage);
+            Debug.Log("Flipped to page: " + book.currentPage);
+        }
+        else
+        {
+            Debug.Log("At start of book!");
         }
     }
 
-    void OnOverviewClicked()
+    void GoToPage(int page)
     {
-        if (isAnimating) return;
-        isAnimating = true;
-        book.currentPage = 1;
-        Invoke("ResetAnimFlag", 0.3f);
-        Debug.Log("Overview: Page 1");
-    }
-
-    void OnShopClicked()
-    {
-        if (isAnimating) return;
-        isAnimating = true;
-        book.currentPage = 3;
-        Invoke("ResetAnimFlag", 0.3f);
-        Debug.Log("Shop: Page 3");
-    }
-
-    void OnRecipesClicked()
-    {
-        if (isAnimating) return;
-        isAnimating = true;
-        book.currentPage = 5;
-        Invoke("ResetAnimFlag", 0.3f);
-        Debug.Log("Recipes: Page 5");
-    }
-
-    void ResetAnimFlag()
-    {
-        isAnimating = false;
+        Debug.Log("Going to page: " + page);
+        book.currentPage = page;
     }
 }
