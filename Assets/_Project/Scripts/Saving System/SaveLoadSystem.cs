@@ -128,8 +128,8 @@ public class SaveLoadSystem : PersistentSingleton<SaveLoadSystem>
     {
         gameData = new GameData
         {
-            Name = "Tavern",
-            CurrentLevelName = "Tavern"
+            Name = "Tavern 1",
+            CurrentLevelName = "Tavern 1"
         };
         SceneManager.LoadScene(gameData.CurrentLevelName);
     }
@@ -146,7 +146,7 @@ public class SaveLoadSystem : PersistentSingleton<SaveLoadSystem>
         
         if(String.IsNullOrWhiteSpace(gameData.CurrentLevelName))
         {
-            gameData.CurrentLevelName = "Tavern";
+            gameData.CurrentLevelName = "Tavern 1";
         }
         
         SceneManager.LoadScene(gameData.CurrentLevelName);

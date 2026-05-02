@@ -18,6 +18,7 @@ public class NpcEatState : NpcBaseState
     {
         eatTimer.Reset();
         eatTimer.Start();
+        EatingAnimationState(true);
     }
     public override void Update()
     {

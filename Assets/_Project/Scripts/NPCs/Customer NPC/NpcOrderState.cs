@@ -24,6 +24,7 @@ public class NpcOrderState : NpcBaseState
     private string name;
     private int currentOrderIndex;
     private bool isFoodSelected;
+    
 
     public static event Action OnOrderTaken;
     public NpcOrderState(AIEntitiy entity, 
@@ -68,6 +69,7 @@ public class NpcOrderState : NpcBaseState
         if (!changeStateManager.LineFull() && currentOrderNode is not null)
         {
             agent.SetDestination(targetPosition);
+            WalkingAnimationState(true);
         }
         // If the line is full, the agent will go to the waiting area
         else if(currentOrderNode is null)
@@ -83,6 +85,16 @@ public class NpcOrderState : NpcBaseState
         UpdateOrderNode();
         CheckLineQuantity();
         DisplayOrder();
+        if(HasReachedDestination()){
+            WalkingAnimationState(false);
+        }
+   
+    }
+
+    private bool HasReachedDestination()
+    {
+        return !agent.pathPending && agent.remainingDistance <= agent.stoppingDistance &&
+               (!agent.hasPath || agent.velocity.sqrMagnitude == 0f);
     }
 
     private void CheckLineQuantity()
@@ -110,6 +122,11 @@ public class NpcOrderState : NpcBaseState
         if (!changeStateManager.LineFull() && currentOrderNode is not null)
         {
             agent.SetDestination(currentOrderNode.position);
+            if(!HasReachedDestination())
+            {
+                WalkingAnimationState(true);
+            }
+            
         }
             
     }
@@ -120,7 +137,9 @@ public class NpcOrderState : NpcBaseState
             if(!isFoodSelected)
                 SelectFoodItem();
             ShowWorldGUI();
-            FacePlayer();
+            if(HasReachedDestination()){
+                FacePlayer();
+            }
         }
     }
     
@@ -134,7 +153,9 @@ public class NpcOrderState : NpcBaseState
             dishImage = selectedItem.dishImage,
             price = selectedItem.price,
             id = selectedItem.id,
-            processesRequired = selectedItem.processesRequired
+            processesRequired = selectedItem.processesRequired,
+            processes = selectedItem.processes,
+            ingredients = selectedItem.ingredients
         };
         entity.gameObject.name = name;
         selectedItem = foodItem;
@@ -207,5 +228,7 @@ public class NpcOrderState : NpcBaseState
         NpcCustomer.OnOrderTaken -= RegisterFoodItemOrder;
         if (currentOrderNode != null)
             currentOrderNode.isOccupied = false;
+        WalkingAnimationState(true);
     }
+
 }

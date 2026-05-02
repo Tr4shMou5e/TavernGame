@@ -21,6 +21,7 @@ public class NpcSitState : NpcBaseState
     private Transform playerTransform;
     private Transform parentTransform;
     private bool isPlayerLookingAtMe;
+
     
     public static event Action<AIEntitiy> OnFoodGiven;
     public NpcSitState(AIEntitiy entity, 
@@ -65,6 +66,12 @@ public class NpcSitState : NpcBaseState
         }
     }
 
+    private bool HasReachedDestination()
+    {
+        return !agent.pathPending && agent.remainingDistance <= agent.stoppingDistance &&
+               (!agent.hasPath || agent.velocity.sqrMagnitude == 0.1f);
+    }
+
     public override void Update()
     {
         UpdateWorldUI();
@@ -72,12 +79,26 @@ public class NpcSitState : NpcBaseState
         {
             selectedItem = foodItem;
         }
+
+        if(HasReachedDestination())
+        {
+            SittingAnimationState(true);
+            WalkingAnimationState(false);
+
+            if(Vector3.Dot(entity.gameObject.transform.forward, randomChair.gameObject.transform.forward) <= .9f)
+            {
+                entity.gameObject.transform.rotation = randomChair.gameObject.transform.rotation;
+            }
+        }
+
         if (!changeStateManager.PlayerInRange || !entity.IsPlayerLookingAtMe()) return;
         
         if (InputManager.Instance.Interact())
         {
             GiveFood();
         }
+
+        
     }
 
     private void UpdateWorldUI()
@@ -90,10 +111,10 @@ public class NpcSitState : NpcBaseState
     private void GiveFood()
     {
         heldItem = parentTransform.GetChild(0).gameObject;
-        var order = foodItemInfoManager.GetCustomerOrderKeys()[0];
+        var order = foodItemInfoManager.GetCustomer(selectedItem);
         // Check if the player is holding the correct food item the customer ordered and if the customer is the one who ordered it
         if (heldItem.name != selectedItem.dishName && 
-            order.Customer.name != entity.gameObject.name) return;
+            order.name != entity.gameObject.name) return;
                 
         // Notify the player that the food has been given, so the food can be destroyed in the background;
         OnFoodGiven?.Invoke(entity); 
