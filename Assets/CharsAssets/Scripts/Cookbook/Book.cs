@@ -395,6 +395,11 @@ public class Book : MonoBehaviour {
         if (OnFlip != null)
             OnFlip.Invoke();
     }
+
+    public void GoToPage(int pageNum)
+{
+    currentPage = pageNum;
+}
     public void TweenBack()
     {
         if (mode == FlipMode.RightToLeft)
