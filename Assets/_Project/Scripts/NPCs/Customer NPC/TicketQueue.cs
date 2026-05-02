@@ -33,6 +33,7 @@ public class TicketQueue : SerializedMonoBehaviour
         processTranslation.Add(typeof(CuttingBoardInteractableMiniGame), RequiredProcess.CuttingBoard);
         processTranslation.Add(typeof(OvenInteractableMiniGame), RequiredProcess.Oven);
         processTranslation.Add(typeof(PotInteractableMiniGame), RequiredProcess.Pot);
+        
     }
 
     void Update()

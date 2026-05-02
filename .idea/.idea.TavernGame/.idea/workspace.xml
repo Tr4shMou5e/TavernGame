@@ -12,20 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="09822671-2b3a-4860-a9c1-0fbab3b2e1d9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TavernGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TavernGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainWorld.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainWorld.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainWorld/NavMesh-NavMesh Surface Humanoid.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainWorld/NavMesh-NavMesh Surface Humanoid.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainWorld/NavMesh-NavMesh Surface Humanoid.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainWorld/NavMesh-NavMesh Surface Humanoid.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainWorld/NavMesh-NavMesh Surface Wanderer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainWorld/NavMesh-NavMesh Surface Wanderer.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainWorld/NavMesh-NavMesh Surface Wanderer.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainWorld/NavMesh-NavMesh Surface Wanderer.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tavern 1.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Shaders/Camera Texture.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Shaders/Camera Texture.renderTexture" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Prefabs/Characters/Customer NPC (1).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Prefabs/Characters/Customer NPC (1).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Prefabs/Managers.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Prefabs/Managers.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/NPCs/Customer NPC/SceneChange.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/NPCs/Customer NPC/SceneChange.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/NPCs/Customer NPC/SceneTransitionManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/NPCs/Customer NPC/SceneTransitionManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Saving System/FileDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Saving System/FileDataService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Saving System/SaveLoadSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Saving System/SaveLoadSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/NPCs/Customer NPC/TicketQueue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/NPCs/Customer NPC/TicketQueue.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
