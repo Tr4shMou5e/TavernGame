@@ -12,13 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="09822671-2b3a-4860-a9c1-0fbab3b2e1d9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TavernGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TavernGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharsAssets/Synty/PolygonFantasyKingdom/Prefabs/Items/SM_Item_Pot_01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharsAssets/Synty/PolygonFantasyKingdom/Prefabs/Items/SM_Item_Pot_01.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharsAssets/Synty/PolygonFantasyKingdom/Prefabs/Items/SM_Item_Pot_02.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharsAssets/Synty/PolygonFantasyKingdom/Prefabs/Items/SM_Item_Pot_02.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharsAssets/Synty/PolygonFantasyKingdom/Prefabs/Props/SM_Prop_Bar_Tap_Preset_01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharsAssets/Synty/PolygonFantasyKingdom/Prefabs/Props/SM_Prop_Bar_Tap_Preset_01.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharsAssets/Synty/PolygonFantasyKingdom/Prefabs/Props/SM_Prop_Torch_01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharsAssets/Synty/PolygonFantasyKingdom/Prefabs/Props/SM_Prop_Torch_01.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tavern 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tavern 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Prefabs/Characters/CharcterAnimations.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Prefabs/Characters/CharcterAnimations.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Prefabs/Characters/Customer NPC (1).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Prefabs/Characters/Customer NPC (1).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/NPCs/Customer NPC/TicketQueue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/NPCs/Customer NPC/TicketQueue.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

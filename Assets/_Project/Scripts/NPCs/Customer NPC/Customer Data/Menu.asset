@@ -15,7 +15,7 @@ MonoBehaviour:
   menuItems:
   - dishName: Citrus Honey Ale
     dishPrefab: {fileID: 1891968173039856, guid: 2211ef8365d937749ac67b87c33afc16, type: 3}
-    dishImage: {fileID: 0}
+    dishImage: {fileID: 21300000, guid: 0cf3956ea43558447a2df4b13ba1af10, type: 3}
     id: -1069589873
     price: 3
     score: 0
@@ -30,7 +30,7 @@ MonoBehaviour:
     processes: 000000000100000002000000
   - dishName: Spiced Cider
     dishPrefab: {fileID: 1772588213614434, guid: f4e5b5b31745cd443b10b2ebfcbf2a5f, type: 3}
-    dishImage: {fileID: 0}
+    dishImage: {fileID: 21300000, guid: 224c91b0eaa671f42bdabc8efde81a5f, type: 3}
     id: -1581008263
     price: 6
     score: 0
@@ -45,7 +45,7 @@ MonoBehaviour:
     processes: 000000000100000002000000
   - dishName: Cherry Mead
     dishPrefab: {fileID: 1115838888772330, guid: 729256840a973af45bdf43de7f6df69f, type: 3}
-    dishImage: {fileID: 0}
+    dishImage: {fileID: 21300000, guid: d3f51dbb9b713fe46a54cfe33263846a, type: 3}
     id: -20658206
     price: 8
     score: 0
@@ -60,7 +60,7 @@ MonoBehaviour:
     processes: 000000000100000002000000
   - dishName: Sailor's Lemon Brew
     dishPrefab: {fileID: 1969602273324740, guid: ea96705f0a8ae18489c209f0485af3be, type: 3}
-    dishImage: {fileID: 0}
+    dishImage: {fileID: 21300000, guid: 77244e7eecf7cc14f9a0f7929425d87d, type: 3}
     id: -820820419
     price: 10
     score: 0
@@ -75,7 +75,7 @@ MonoBehaviour:
     processes: 000000000100000002000000
   - dishName: Herbal Tonic
     dishPrefab: {fileID: 1162984081943140, guid: 5395abb296986d5488c67caf45e323db, type: 3}
-    dishImage: {fileID: 0}
+    dishImage: {fileID: 21300000, guid: dd792e9c1e631cb45a6165613466d821, type: 3}
     id: 267174859
     price: 12
     score: 0
@@ -90,7 +90,7 @@ MonoBehaviour:
     processes: 000000000100000002000000
   - dishName: Tavern Fish
     dishPrefab: {fileID: 1531029426219852, guid: a0a05e26758ce4040a4056f8eb5ee3dc, type: 3}
-    dishImage: {fileID: 0}
+    dishImage: {fileID: 21300000, guid: d472f3f2a632e174ea132dbc9082aa91, type: 3}
     id: 158995286
     price: 1
     score: 0
@@ -103,7 +103,7 @@ MonoBehaviour:
     processes: 
   - dishName: Roast Turkey
     dishPrefab: {fileID: 1617648471043338, guid: e82e76be2a7058c46bcaa8b5ddbe1edf, type: 3}
-    dishImage: {fileID: 0}
+    dishImage: {fileID: 21300000, guid: 63ab46ebeb17d0145ad162b24be7e8ba, type: 3}
     id: -589048489
     price: 10
     score: 0
@@ -115,7 +115,7 @@ MonoBehaviour:
     processes: 
   - dishName: Steak
     dishPrefab: {fileID: 9105465624791796968, guid: bb5a692c175398541a0145aa72c15bf9, type: 3}
-    dishImage: {fileID: 0}
+    dishImage: {fileID: 21300000, guid: 2b9f25bdd3b8694459e3ab6ded2b9a13, type: 3}
     id: 1743012648
     price: 0
     score: 0
@@ -126,7 +126,7 @@ MonoBehaviour:
     processes: 
   - dishName: Vintage Stew
     dishPrefab: {fileID: 1080750033584936, guid: 1214ee8e5ef5ca44aa77515466a7c1c0, type: 3}
-    dishImage: {fileID: 0}
+    dishImage: {fileID: 21300000, guid: 2154ed7467970fb47be008b8279e79af, type: 3}
     id: -741326181
     price: 0
     score: 0
@@ -137,7 +137,7 @@ MonoBehaviour:
     processes: 
   - dishName: Curry
     dishPrefab: {fileID: 1700687252999494, guid: 6dfd77ad534077245b6f1a2565c3c558, type: 3}
-    dishImage: {fileID: 0}
+    dishImage: {fileID: 21300000, guid: b2bbf6e0669c258409f1aedec3dfc5e2, type: 3}
     id: -132264425
     price: 0
     score: 0
@@ -148,7 +148,7 @@ MonoBehaviour:
     processes: 
   - dishName: Sweet Potato Pie
     dishPrefab: {fileID: 1540410277651384, guid: 1bede1038e1bcad4782cbd94796561a7, type: 3}
-    dishImage: {fileID: 0}
+    dishImage: {fileID: 21300000, guid: 057ec0102d8e52347b9225df0aebad64, type: 3}
     id: -2113341555
     price: 0
     score: 0
@@ -159,7 +159,7 @@ MonoBehaviour:
     processes: 
   - dishName: Pumpkin Pie
     dishPrefab: {fileID: 1441067566930036, guid: 6447db21960f85f4886f3c734f88404e, type: 3}
-    dishImage: {fileID: 0}
+    dishImage: {fileID: 21300000, guid: bf78865c4879fd74f9e0df73bbd04c70, type: 3}
     id: 42484456
     price: 0
     score: 0
@@ -170,7 +170,7 @@ MonoBehaviour:
     processes: 
   - dishName: Apple Pie
     dishPrefab: {fileID: 1047685797065720, guid: 7cc4832def3b5a2469b0b020b797d26a, type: 3}
-    dishImage: {fileID: 0}
+    dishImage: {fileID: 21300000, guid: 383ca2b4ee807594cbdf45abf5509683, type: 3}
     id: -576472940
     price: 0
     score: 0
@@ -181,7 +181,7 @@ MonoBehaviour:
     processes: 
   - dishName: Cherry Pie
     dishPrefab: {fileID: 1029657123070666, guid: 7924cc08042dfe24390c7108db37bd4c, type: 3}
-    dishImage: {fileID: 0}
+    dishImage: {fileID: 21300000, guid: 01fa874d14d7e7f4397b048c7693e87c, type: 3}
     id: 1640517559
     price: 0
     score: 0
@@ -192,7 +192,7 @@ MonoBehaviour:
     processes: 
   - dishName: Charuterie Board
     dishPrefab: {fileID: 1592166129946028, guid: 910a294197b01f54a85f5a11df555db0, type: 3}
-    dishImage: {fileID: 0}
+    dishImage: {fileID: 21300000, guid: 4d46ab56ab619914e97ad06484c8fb68, type: 3}
     id: -638737302
     price: 0
     score: 0
