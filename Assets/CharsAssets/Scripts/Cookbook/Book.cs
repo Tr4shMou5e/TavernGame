@@ -136,7 +136,6 @@ public class Book : MonoBehaviour {
             return localPos;
         }
     }
-
     void Update()
     {
         if (pageDragging && interactable)
@@ -277,7 +276,7 @@ public class Book : MonoBehaviour {
     }
     public void DragRightPageToPoint(Vector3 point)
     {
-        if (currentPage + 1 >= bookPages.Length) return;
+        if (currentPage >= bookPages.Length) return;
         pageDragging = true;
         mode = FlipMode.RightToLeft;
         f = point;
@@ -365,11 +364,11 @@ public class Book : MonoBehaviour {
         }
     }
     Coroutine currentCoroutine;
-    public void UpdateSprites()  // <-- change private to public
-{
-    LeftNext.sprite= (currentPage > 0 && currentPage <= bookPages.Length) ? bookPages[currentPage-1] : background;
-    RightNext.sprite=(currentPage>=0 &&currentPage<bookPages.Length) ? bookPages[currentPage] : background;
-}
+    void UpdateSprites()
+    {
+        LeftNext.sprite= (currentPage > 0 && currentPage <= bookPages.Length) ? bookPages[currentPage-1] : background;
+        RightNext.sprite=(currentPage>=0 &&currentPage<bookPages.Length) ? bookPages[currentPage] : background;
+    }
     public void TweenForward()
     {
         if(mode== FlipMode.RightToLeft)
@@ -397,39 +396,10 @@ public class Book : MonoBehaviour {
             OnFlip.Invoke();
     }
 
-    /// <summary>
-    /// Instantly jumps to a specific page without animation
-    /// Useful for tab navigation
-    /// </summary>
-    public void JumpToPage(int targetPage)
-    {
-        // Clamp to valid page range
-        targetPage = Mathf.Clamp(targetPage, 0, bookPages.Length - 1);
-        
-        // Make sure we're not mid-flip
-        if (currentCoroutine != null)
-        {
-            StopCoroutine(currentCoroutine);
-        }
-        
-        pageDragging = false;
-        currentPage = targetPage;
-        
-        // Deactivate any flip animations
-        Left.gameObject.SetActive(false);
-        Right.gameObject.SetActive(false);
-        Shadow.gameObject.SetActive(false);
-        ShadowLTR.gameObject.SetActive(false);
-        
-        // Clean up parent assignments
-        Left.transform.SetParent(BookPanel.transform, true);
-        Right.transform.SetParent(BookPanel.transform, true);
-        LeftNext.transform.SetParent(BookPanel.transform, true);
-        RightNext.transform.SetParent(BookPanel.transform, true);
-        
-        // Update the displayed pages
-        UpdateSprites();
-    }
+    public void GoToPage(int pageNum)
+{
+    currentPage = pageNum;
+}
     public void TweenBack()
     {
         if (mode == FlipMode.RightToLeft)
