@@ -5,7 +5,7 @@ AssetOrigin:
   productId: 55588
   packageName: Book - Page Curl
   packageVersion: 1.1
-  assetPath: Assets/Book-Page Curl/Example/sprites/P2_Back^P3_Front.png
+  assetPath: Assets/CharsAssets/Sprites/cookbooksprites/P2_Back^P3_Front.png
   uploadId: 417589
 TextureImporter:
   internalIDToNameTable:
